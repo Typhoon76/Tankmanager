@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CFAC999-A080-4A01-B41F-9958A26DD6BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TankManager.My.MyApplication</StartupObject>
+    <RootNamespace>TankManager</RootNamespace>
+    <AssemblyName>TankManager</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TankManager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TankManager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>if_gas_64313.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classRepair.vb" />
+    <Compile Include="classRefuel.vb" />
+    <Compile Include="classConnection.vb" />
+    <Compile Include="classIni.vb" />
+    <Compile Include="classSettings.vb" />
+    <Compile Include="dbSelectBenzinkostenGesamt.vb" />
+    <Compile Include="dbSelectReparaturenJahr.vb" />
+    <Compile Include="dbSelectReparaturenGesamt.vb" />
+    <Compile Include="dbSelectReparaturkostenGesamt.vb" />
+    <Compile Include="dbSelectBenzinkosten.vb" />
+    <Compile Include="dbSelectReparaturkosten.vb" />
+    <Compile Include="dbSelectComboboxJahre.vb" />
+    <Compile Include="dbSelectAlter.vb" />
+    <Compile Include="dbSelectVerbrauchGesamt.vb" />
+    <Compile Include="dbSelectVerbrauch.vb" />
+    <Compile Include="dbConnect.vb" />
+    <Compile Include="dbDisconnect.vb" />
+    <Compile Include="FormPrintingChoice.Designer.vb">
+      <DependentUpon>FormPrintingChoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrintingChoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEditRepair.Designer.vb">
+      <DependentUpon>formEditRepair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formEditRepair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEditRefuel.Designer.vb">
+      <DependentUpon>formEditRefuel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formEditRefuel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTest.Designer.vb">
+      <DependentUpon>formTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSettings.Designer.vb">
+      <DependentUpon>formSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInfo.Designer.vb">
+      <DependentUpon>formInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formExportPDF.Designer.vb">
+      <DependentUpon>formExportPDF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formExportPDF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formNewRepair.Designer.vb">
+      <DependentUpon>formNewRepair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formNewRepair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formNewRefuel.Designer.vb">
+      <DependentUpon>formNewRefuel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formNewRefuel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMain.Designer.vb">
+      <DependentUpon>formMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="init.vb" />
+    <Compile Include="dbSelectEinstellungen.vb" />
+    <Compile Include="dbSelectKmGefahren.vb" />
+    <Compile Include="dbSelectKmGefahrenGesamt.vb" />
+    <Compile Include="dbSelectTankenGesamt.vb" />
+    <Compile Include="dbSelectTankenJahr.vb" />
+    <Compile Include="dbSelectMinMaxJahr.vb" />
+    <Compile Include="checkMinMaxJahre.vb" />
+    <Compile Include="dbUpdateEinstellungen.vb" />
+    <Compile Include="defaults.vb" />
+    <Compile Include="dbInsertTanken.vb" />
+    <Compile Include="dbSelectTankenEintrag.vb" />
+    <Compile Include="dbSelectReparaturEintrag.vb" />
+    <Compile Include="checkValid.vb" />
+    <Compile Include="dbDeleteTankenEintrag.vb" />
+    <Compile Include="deleteRefuelItem.vb" />
+    <Compile Include="Language.vb" />
+    <Compile Include="dbInsertReparatur.vb" />
+    <Compile Include="dbInsertReparaturItem.vb" />
+    <Compile Include="dbUpdateReparaturEintrag.vb" />
+    <Compile Include="dbDeleteReparaturEintrag.vb" />
+    <Compile Include="dbDeleteReparaturArbeitsschritt.vb" />
+    <Compile Include="dbInsertReparaturArbeitsschritt.vb" />
+    <Compile Include="deleteRepairItem.vb" />
+    <Compile Include="updateRepairItem.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="writeRepair.vb" />
+    <Compile Include="setupDGV.vb" />
+    <Compile Include="updateRefuelItem.vb" />
+    <Compile Include="dbUpdateTankenEintrag.vb" />
+    <Compile Include="writeRefuel.vb" />
+    <Compile Include="saveSettings.vb" />
+    <Compile Include="readCosts.vb" />
+    <Compile Include="readRepair.vb" />
+    <Compile Include="readRefuel.vb" />
+    <Compile Include="readRefuelCosts.vb" />
+    <Compile Include="readRepairCosts.vb" />
+    <Compile Include="readMileage.vb" />
+    <Compile Include="readConsumption.vb" />
+    <Compile Include="readAge.vb" />
+    <Compile Include="readYears.vb" />
+    <Compile Include="readSettings.vb" />
+    <Compile Include="refreshDisplay.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="formEditRepair.resx">
+      <DependentUpon>formEditRepair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEditRefuel.resx">
+      <DependentUpon>formEditRefuel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formExportPDF.resx">
+      <DependentUpon>formExportPDF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formInfo.resx">
+      <DependentUpon>formInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMain.resx">
+      <DependentUpon>formMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formNewRefuel.resx">
+      <DependentUpon>formNewRefuel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formNewRepair.resx">
+      <DependentUpon>formNewRepair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrintingChoice.resx">
+      <DependentUpon>FormPrintingChoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSettings.resx">
+      <DependentUpon>formSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTest.resx">
+      <DependentUpon>formTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="if_gas_64313.ico" />
+    <None Include="if_gas_64313.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
