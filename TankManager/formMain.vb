@@ -169,9 +169,6 @@ Public Class formMain
 
         End Try
 
-        'TEST
-        'formTest.Show()
-
     End Sub
 
     Private Sub formMain_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
