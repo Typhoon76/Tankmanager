@@ -179,6 +179,7 @@
     <Compile Include="dbDeleteReparaturArbeitsschritt.vb" />
     <Compile Include="dbInsertReparaturArbeitsschritt.vb" />
     <Compile Include="deleteRepairItem.vb" />
+    <Compile Include="_version.vb" />
     <Compile Include="updateRepairItem.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>

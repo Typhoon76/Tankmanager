@@ -3,7 +3,7 @@
     Private Sub formInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         labelApplicationName.Text = My.Application.Info.AssemblyName
-        labelApplicationVersion.Text = "Version 0.0.0.0"
+        labelApplicationVersion.Text = "Version " & myVersionMajor & "." & myVersionMinor & "." & myVersionBuild & "." & myVersionRevision & " (" & myVersionDate & ")"
 
         If con.State = ConnectionState.Open Then
 

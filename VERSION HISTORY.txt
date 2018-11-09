@@ -1,0 +1,85 @@
+Versionsgeschichte
+
+Legende:
+
+ADD - Einfügungen/Hinzufügungen
+CHG - Änderungen
+REM - Löschungen
+FIX - Fehlerbeseitigungen
+
+####################################################################################################
+
+09.11.2018
+
+0.5.4.5 - ADD - Module _version.vb hinzugefügt und Daten in formInfo übernommen
+0.5.4.4 - CHG - die Druckvorschau druckt jetzt nicht mehr direkt, sondern zeigt erst noch den Druckdialog an
+0.5.4.3 - CHG - gitignore nochmal angepasst
+0.5.4.2 - ADD - das Icon des Programms sollte jetzt auch für das Fenster der Druckvorschau genutzt werden
+0.5.4.1 - FIX - der DruckDialog sollte jetzt nur noch drucken wenn man auf Drucken klickt
+0.5.4.0 - Versionsgeschichte hinzugefügt
+
+vorherige Versionen:
+
+0.5.3.0 - PageSetupDialog
+0.5.2.0 - PrintPreviewDialog 
+0.5.1.0 - PrintDialog
+0.5.0.0 - FormPrintingChoice 
+
+0.4.27.0 - formEditRepair - Code
+0.4.26.0 - formEditRepair - GUI
+0.4.25.0 - formNewRepair - Code Teil 2
+0.4.24.0 - formNewRepair - Code
+0.4.23.0 - formNewRepair - GUI
+0.4.22.2 - Bugfix 2: Sortierung erfolgt nach ID, Modulnamen für Tanken und Reparturen haben nicht das gleiche Namensschema
+0.4.22.1 - Bugfix 1: Jahresanzeige wechselt auf voreingestelltes Jahr (2018) 
+0.4.22.0 - Löschen von Einträgen im Datagridview Tanken
+0.4.21.0 - datagridviewTanken Eintrag anzeigen
+0.4.20.0 - formNewRefuel fertigstellen - Code Teil 2
+0.4.19.0 - formNewRefuel fertigstellen - Code
+0.4.18.0 - formNewRefuel fertigstellen - GUI
+0.4.17.0 - Module anpassen
+0.4.16.0 - formSettings fertigstellen
+0.4.15.0 - Tankmanager.ini
+0.4.14.0 - formInfo mit dem Bild ausrüsten
+0.4.13.0 - formSettings Einstellungen speichern
+0.4.12.0 - Pfusch beseitigen
+0.4.11.0 - formSettings Einstellungen übernehmen
+0.4.10.0 - formSettings erweitern
+0.4.9.0 - formSettings Einstellungen laden
+0.4.8.0 - formSettings erweitern
+0.4.7.0 - formSettings anpassen
+0.4.6.0 - Strings anpassen
+0.4.5.0 - comboboxJahrAuswahl
+0.4.4.0 - formMain Verbrauch
+0.4.3.0 - formMain anpassen und erweitern
+0.4.2.0 - formSettings
+0.4.1.0 - formInfo
+0.4.0.0 - formExportPDF
+
+0.3.11.0 - Fenster zum neue Tabelle erstellen
+0.3.10.0 - Fenster zum neue Reparatur eingeben
+0.3.9.0 - Fenster zum neue Daten eingeben
+0.3.8.0 - Alter des Autos einfügen2
+0.3.7.0 - Alter des Autos einfügen
+0.3.6.0 - Feintuning
+0.3.5.0 - Objekte in Hauptfenster einfügen Teil 23
+0.3.4.0 - Objekte in Hauptfenster einfügen Teil 1
+0.3.3.0 - Layout des Hauptfenster erstellen
+0.3.2.0 - Hauptfenster anpassen
+0.3.1.0 - Menü erstellen
+0.3.0.0 - Variablen initialisieren
+
+0.2.7.0 - Testen der Datenbankverbindung
+0.2.6.0 - Code für Datenbankverbindung hinzufügen
+0.2.5.0 - Datenbank Einstellungen hinzufügen
+0.2.4.0 - MySQL in VB.Net Projekt einfügen
+0.2.3.0 - Tabellen prüfen
+0.2.2.0 - Backup der Datenbank
+0.2.1.0 - Datenbankbenutzer prüfen
+0.2.0.0 - Datenbank prüfen
+
+0.1.2.0 - Richtige Namen vergeben
+0.1.1.0 - Hinzufügen der Module
+0.1.0.0 - Erstellen der benötigten Fenster
+
+0.0.0.0 - Erstellen des Projektes

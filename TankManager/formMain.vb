@@ -438,6 +438,17 @@ Public Class formMain
 
     Private Sub DruckvorschauToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DruckvorschauToolStripMenuItem.Click
 
+        'Drucken Icon im printPreviewDialog ersetzen
+        'https://www.codeproject.com/Questions/675237/How-to-Access-Print-Button-Event-of-Print-Preview
+        Dim b As New ToolStripButton
+        b.Image = CType(printPreviewFormMain.Controls(1), ToolStrip).ImageList.Images(0)
+        b.ToolTipText = "Drucken"
+        b.DisplayStyle = ToolStripItemDisplayStyle.Image
+        AddHandler b.Click, AddressOf printPreviewFormMain_PrintClick
+        CType(printPreviewFormMain.Controls(1), ToolStrip).Items.RemoveAt(0)
+        CType(printPreviewFormMain.Controls(1), ToolStrip).Items.Insert(0, b)
+        AddHandler printDocumentFormMain.PrintPage, AddressOf printDocumentFormMain_PrintPage
+
         'Variabel für Rückgabewert initialisieren
         Dim myPreviewRC = 0
 
@@ -475,6 +486,9 @@ Public Class formMain
                 'Fenstergröße setzen
                 .WindowState = FormWindowState.Maximized
 
+                'aktuelles Icon zuweisen
+                .Icon = Icon
+
                 'Dialog anzeigen
                 .ShowDialog()
 
@@ -511,12 +525,37 @@ Public Class formMain
                 'Fenstergröße setzen
                 .WindowState = FormWindowState.Maximized
 
+                'aktuelles Icon zuweisen
+                .Icon = Icon
+
                 'Dialog anzeigen
                 .ShowDialog()
 
             End With
 
         End If
+
+    End Sub
+
+    'https://www.codeproject.com/Questions/675237/How-to-Access-Print-Button-Event-of-Print-Preview
+    Private Sub printPreviewFormMain_PrintClick(sender As Object, e As EventArgs)
+
+        Try
+
+            'Dokument zuweisen
+            printDialogFormMain.Document = printDocumentFormMain
+
+            'Druckdialog anzeigen
+            If printDialogFormMain.ShowDialog() = DialogResult.OK Then
+
+                'Dokument drucken
+                printDocumentFormMain.Print()
+
+            End If
+
+        Catch ex As Exception
+
+        End Try
 
     End Sub
 
@@ -548,10 +587,12 @@ Public Class formMain
             End If
 
             'Druckdialog anzeigen
-            printDialogFormMain.ShowDialog()
+            If printDialogFormMain.ShowDialog() = DialogResult.OK Then
 
-            'Dokument drucken
-            printDocumentFormMain.Print()
+                'Dokument drucken
+                printDocumentFormMain.Print()
+
+            End If
 
             'wenn Rückgabewert = 2 (Reparaturliste)
         ElseIf myPreviewRC = 2 Then
@@ -573,10 +614,12 @@ Public Class formMain
             End If
 
             'Druckdialog anzeigen
-            printDialogFormMain.ShowDialog()
+            If printDialogFormMain.ShowDialog() = DialogResult.OK Then
 
-            'Dokument drucken
-            printDocumentFormMain.Print()
+                'Dokument drucken
+                printDocumentFormMain.Print()
+
+            End If
 
         End If
 
