@@ -4,6 +4,10 @@
     'TM_<FORM>_<OBJEKTTYP>_<OBJEKTNAME>_
 
     'formMain
+    Public TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF = "Exportieren in PDF Datei"
+    Public TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REFUEL = "Tabelle Tanken"
+    Public TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REPAIR = "Tabelle Reparaturen"
+
     Public TM_MAIN_DGV_REPAIR_NUMBER_TEXT = "Nummer"
     Public TM_MAIN_DGV_REPAIR_POSITION_TEXT = "Arbeitsschritt"
 

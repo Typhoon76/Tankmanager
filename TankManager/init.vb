@@ -39,4 +39,7 @@
     'Variable für Verbindungsstatus definieren
     Public connectState As Boolean = False
 
+    'Pfad für PDF Ausgabe
+    Public exportToPDFPath = "C:\Temp\"
+
 End Module

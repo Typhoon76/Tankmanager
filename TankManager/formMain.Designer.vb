@@ -25,6 +25,7 @@ Partial Class formMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formMain))
         Me.menustripFormMain = New System.Windows.Forms.MenuStrip()
         Me.DateiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SeiteEinrichtenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DruckvorschauToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DruckenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -35,7 +36,9 @@ Partial Class formMain
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
         Me.SuchenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExtrasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExportierenNachPDFToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuExtrasExportToPdf = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuExtrasExportToPdfDgvRefuel = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuExtrasExportToPdfDgvRepair = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
         Me.EinstellungenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HilfeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -94,7 +97,6 @@ Partial Class formMain
         Me.printPreviewFormMain = New System.Windows.Forms.PrintPreviewDialog()
         Me.printDialogFormMain = New System.Windows.Forms.PrintDialog()
         Me.pageSetupDialogFormMain = New System.Windows.Forms.PageSetupDialog()
-        Me.SeiteEinrichtenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.menustripFormMain.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -136,27 +138,33 @@ Partial Class formMain
         Me.DateiToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
         Me.DateiToolStripMenuItem.Text = "&Datei"
         '
+        'SeiteEinrichtenToolStripMenuItem
+        '
+        Me.SeiteEinrichtenToolStripMenuItem.Name = "SeiteEinrichtenToolStripMenuItem"
+        Me.SeiteEinrichtenToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.SeiteEinrichtenToolStripMenuItem.Text = "S&eite Einrichten"
+        '
         'DruckvorschauToolStripMenuItem
         '
         Me.DruckvorschauToolStripMenuItem.Name = "DruckvorschauToolStripMenuItem"
-        Me.DruckvorschauToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DruckvorschauToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.DruckvorschauToolStripMenuItem.Text = "Druck&vorschau"
         '
         'DruckenToolStripMenuItem
         '
         Me.DruckenToolStripMenuItem.Name = "DruckenToolStripMenuItem"
-        Me.DruckenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DruckenToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.DruckenToolStripMenuItem.Text = "&Drucken"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(152, 6)
         '
         'BeendenToolStripMenuItem
         '
         Me.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem"
-        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.BeendenToolStripMenuItem.Text = "&Beenden"
         '
         'EditToolStripMenuItem
@@ -191,26 +199,39 @@ Partial Class formMain
         '
         'ExtrasToolStripMenuItem
         '
-        Me.ExtrasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExportierenNachPDFToolStripMenuItem, Me.ToolStripMenuItem2, Me.EinstellungenToolStripMenuItem})
+        Me.ExtrasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuExtrasExportToPdf, Me.ToolStripMenuItem2, Me.EinstellungenToolStripMenuItem})
         Me.ExtrasToolStripMenuItem.Name = "ExtrasToolStripMenuItem"
         Me.ExtrasToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
         Me.ExtrasToolStripMenuItem.Text = "E&xtras"
         '
-        'ExportierenNachPDFToolStripMenuItem
+        'MenuExtrasExportToPdf
         '
-        Me.ExportierenNachPDFToolStripMenuItem.Name = "ExportierenNachPDFToolStripMenuItem"
-        Me.ExportierenNachPDFToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
-        Me.ExportierenNachPDFToolStripMenuItem.Text = "E&xportieren nach PDF"
+        Me.MenuExtrasExportToPdf.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuExtrasExportToPdfDgvRefuel, Me.MenuExtrasExportToPdfDgvRepair})
+        Me.MenuExtrasExportToPdf.Name = "MenuExtrasExportToPdf"
+        Me.MenuExtrasExportToPdf.Size = New System.Drawing.Size(180, 22)
+        Me.MenuExtrasExportToPdf.Text = "Export to PDF"
+        '
+        'MenuExtrasExportToPdfDgvRefuel
+        '
+        Me.MenuExtrasExportToPdfDgvRefuel.Name = "MenuExtrasExportToPdfDgvRefuel"
+        Me.MenuExtrasExportToPdfDgvRefuel.Size = New System.Drawing.Size(180, 22)
+        Me.MenuExtrasExportToPdfDgvRefuel.Text = "Table Refuel"
+        '
+        'MenuExtrasExportToPdfDgvRepair
+        '
+        Me.MenuExtrasExportToPdfDgvRepair.Name = "MenuExtrasExportToPdfDgvRepair"
+        Me.MenuExtrasExportToPdfDgvRepair.Size = New System.Drawing.Size(180, 22)
+        Me.MenuExtrasExportToPdfDgvRepair.Text = "Table Repair"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(183, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(177, 6)
         '
         'EinstellungenToolStripMenuItem
         '
         Me.EinstellungenToolStripMenuItem.Name = "EinstellungenToolStripMenuItem"
-        Me.EinstellungenToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.EinstellungenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EinstellungenToolStripMenuItem.Text = "&Einstellungen"
         '
         'HilfeToolStripMenuItem
@@ -824,12 +845,6 @@ Partial Class formMain
         '
         Me.printDialogFormMain.UseEXDialog = True
         '
-        'SeiteEinrichtenToolStripMenuItem
-        '
-        Me.SeiteEinrichtenToolStripMenuItem.Name = "SeiteEinrichtenToolStripMenuItem"
-        Me.SeiteEinrichtenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.SeiteEinrichtenToolStripMenuItem.Text = "S&eite Einrichten"
-        '
         'formMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -940,7 +955,7 @@ Partial Class formMain
     Friend WithEvents Label10 As Label
     Friend WithEvents DruckenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NeueReparaturToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExportierenNachPDFToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MenuExtrasExportToPdf As ToolStripMenuItem
     Friend WithEvents DruckvorschauToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents printDocumentFormMain As Printing.PrintDocument
@@ -957,4 +972,6 @@ Partial Class formMain
     Friend WithEvents switchReparaturen As Button
     Friend WithEvents pageSetupDialogFormMain As PageSetupDialog
     Friend WithEvents SeiteEinrichtenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MenuExtrasExportToPdfDgvRefuel As ToolStripMenuItem
+    Friend WithEvents MenuExtrasExportToPdfDgvRepair As ToolStripMenuItem
 End Class

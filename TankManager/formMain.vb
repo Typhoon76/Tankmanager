@@ -47,6 +47,12 @@ Public Class formMain
 
         '### BEGIN PROGRAM ###
 
+        'Menutexte setzen
+
+        MenuExtrasExportToPdf.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF
+        MenuExtrasExportToPdfDgvRefuel.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REFUEL
+        MenuExtrasExportToPdfDgvRepair.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REPAIR
+
         Try
 
             'prüfen ob connect funktion fehlerarray zurückgibt
@@ -149,6 +155,7 @@ Public Class formMain
 
             Else
 
+                SeiteEinrichtenToolStripMenuItem.Enabled = False
                 DruckvorschauToolStripMenuItem.Enabled = False
                 DruckenToolStripMenuItem.Enabled = False
 
@@ -156,7 +163,7 @@ Public Class formMain
                 NeueReparaturToolStripMenuItem.Enabled = False
                 SuchenToolStripMenuItem.Enabled = False
 
-                ExportierenNachPDFToolStripMenuItem.Enabled = False
+                MenuExtrasExportToPdf.Enabled = False
 
             End If
 
@@ -213,12 +220,6 @@ Public Class formMain
     Private Sub NeueReparaturToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NeueReparaturToolStripMenuItem.Click
 
         formNewRepair.Show()
-
-    End Sub
-
-    Private Sub ExportierenNachPDFToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExportierenNachPDFToolStripMenuItem.Click
-
-        formExportPDF.Show()
 
     End Sub
 
@@ -839,6 +840,18 @@ Public Class formMain
             End If
 
         Next
+
+    End Sub
+
+    Private Sub MenuExtrasExportToPdfDgvRefuel_Click(sender As Object, e As EventArgs) Handles MenuExtrasExportToPdfDgvRefuel.Click
+
+        ExportToPDF(datagridviewTanken, 1)
+
+    End Sub
+
+    Private Sub MenuExtrasExportToPdfDgvRepair_Click(sender As Object, e As EventArgs) Handles MenuExtrasExportToPdfDgvRepair.Click
+
+        ExportToPDF(datagridviewReparaturen, 2)
 
     End Sub
 

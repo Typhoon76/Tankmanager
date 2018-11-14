@@ -59,7 +59,6 @@ E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.formNewRe
 E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.formNewRepair.resources
 E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.FormPrintingChoice.resources
 E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.formSettings.resources
-E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.formTest.resources
 E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.Resources.resources
 E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.vbproj.GenerateResource.cache
 E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.vbproj.CoreCompileInputs.cache
@@ -67,3 +66,5 @@ E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.vbproj.Co
 E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.exe
 E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.xml
 E:\Sync\Github\Typhoon76\Tankmanager\TankManager\obj\Debug\TankManager.pdb
+E:\Sync\Github\Typhoon76\Tankmanager\TankManager\bin\Debug\itextsharp.dll
+E:\Sync\Github\Typhoon76\Tankmanager\TankManager\bin\Debug\itextsharp.xml

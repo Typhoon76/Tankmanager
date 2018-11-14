@@ -9,6 +9,17 @@ FIX - Fehlerbeseitigungen
 
 ####################################################################################################
 
+14.11.2018
+
+0.5.5.8 - ADD - Pfad für PDF Ausgabe erstmalig in Datei init.vb eingefügt, eintragen als Einstellung in Datenbank und formSettings folgt noch
+0.5.5.7 - CHG - Namensgebung der Ausgabedatei angepasst TankManager_<Tabelle>_<Datum>_<Uhrzeit>.pdf
+0.5.5.6 - ADD - Module Module3rdPartyExportPDF hinzugefügt
+0.5.5.5 - ADD - Bibliothek iTextSharp importiert
+0.5.5.4 - CHG - Menü Extras/Export zu PDF und Untereinträge lokalisiert
+0.5.5.3 - ADD - Einträge für Menü Extras/Export zu PDF und Untermenüs zu Module Language.vb hinzugefügt
+0.5.5.2 - ADD - Menü Extras/Export zu PDF Untermenüeinträge eingefügt
+0.5.5.1 - FIX - Menü Datei/Seite einrichten wird deaktiviert, wenn die Datenbankverbindung nicht erfolgreich ist
+
 09.11.2018
 
 0.5.4.6 - formTest entfernt
