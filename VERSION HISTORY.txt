@@ -12,17 +12,17 @@ FIX - Fehlerbeseitigungen
 
 17.11.18
 
-0.5.7.2 - Texte in FormInfo durch lokalisierbare Zeichenfolgen ersetzt
-0.5.7.1 - Namen von Objekten in FormInfo angepasst
-0.5.7.0 - Warnung IDE1006 Verstoß gegen Benennungsregel in FormInfo behoben
-0.5.6.7 - Sub Tim von FormMain in neues Modul Module3rdPartyTim verschoben
-0.5.6.6 - Sub CenterForm von FormMain in neues Modul Module3rdPartyCenterForm verschoben
-0.5.6.5 - Warnung IDE1006 Verstoß gegen Benennungsregel in FormMain behoben
-0.5.6.4 - Warnung IDE1006 Verstoß gegen Benennungsregel - Namen aller Form beginnen nun mit Großbuchstaben
-0.5.6.3 - Warnung IDE0017 - Objektinitialisierung vereinfacht
-0.5.6.2 - Namen der Menüeinträge in FormMain angepasst
-0.5.6.1 - Menütexte in FormMain durch lokalisierbare Zeichenfolgen ersetzt
-0.5.6.0 - Texte in FormMain durch lokalisierbare Zeichenfolgen ersetzt
+0.5.7.2 - CHG - Texte in FormInfo durch lokalisierbare Zeichenfolgen ersetzt
+0.5.7.1 - CHG - Namen von Objekten in FormInfo angepasst
+0.5.7.0 - CHG - Warnung IDE1006 Verstoß gegen Benennungsregel in FormInfo behoben
+0.5.6.7 - CHG - Sub Tim von FormMain in neues Modul Module3rdPartyTim verschoben
+0.5.6.6 - CHG - Sub CenterForm von FormMain in neues Modul Module3rdPartyCenterForm verschoben
+0.5.6.5 - CHG - Warnung IDE1006 Verstoß gegen Benennungsregel in FormMain behoben
+0.5.6.4 - CHG - Warnung IDE1006 Verstoß gegen Benennungsregel - Namen aller Form beginnen nun mit Großbuchstaben
+0.5.6.3 - CHG - Warnung IDE0017 - Objektinitialisierung vereinfacht
+0.5.6.2 - CHG - Namen der Menüeinträge in FormMain angepasst
+0.5.6.1 - CHG - Menütexte in FormMain durch lokalisierbare Zeichenfolgen ersetzt
+0.5.6.0 - CHG - Texte in FormMain durch lokalisierbare Zeichenfolgen ersetzt
 
 14.11.2018
 
