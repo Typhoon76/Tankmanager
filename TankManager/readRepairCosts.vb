@@ -22,7 +22,7 @@ Module readRepairCosts
         Else
 
             'sonst abfrage ergebnis in textbox schreiben
-            formMain.textboxGesamtkostenReparatur.Text = CType(myResultReparaturkostenGesamt, Single).ToString("F" & tankmanagerSettings.format_price)
+            formMain.TextboxGesamtkostenReparatur.Text = CType(myResultReparaturkostenGesamt, Single).ToString("F" & tankmanagerSettings.format_price)
 
         End If
 
@@ -50,7 +50,7 @@ Module readRepairCosts
         Else
 
             'sonst abfrage ergebnis in textbox schreiben
-            formMain.textboxReparaturkostenJahr.Text = CType(myResultReparaturkostenJahr, Single).ToString("F" & tankmanagerSettings.format_price)
+            formMain.TextboxReparaturkostenJahr.Text = CType(myResultReparaturkostenJahr, Single).ToString("F" & tankmanagerSettings.format_price)
 
         End If
 

@@ -22,7 +22,7 @@ Module readFuel
         Else
 
             'sonst abfrage ergebnis in textbox schreiben
-            formMain.textboxGesamtkostenBenzin.Text = CType(myResultBenzinkostenGesamt, Single).ToString("F" & tankmanagerSettings.format_price)
+            formMain.TextboxGesamtkostenBenzin.Text = CType(myResultBenzinkostenGesamt, Single).ToString("F" & tankmanagerSettings.format_price)
 
         End If
 
@@ -50,7 +50,7 @@ Module readFuel
         Else
 
             'sonst abfrage ergebnis in textbox schreiben
-            formMain.textboxBenzinkostenJahr.Text = CType(myResultBezinkostenJahr, Single).ToString("F" & tankmanagerSettings.format_price)
+            formMain.TextboxBenzinkostenJahr.Text = CType(myResultBezinkostenJahr, Single).ToString("F" & tankmanagerSettings.format_price)
 
         End If
 

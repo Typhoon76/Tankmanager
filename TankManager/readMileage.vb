@@ -22,7 +22,7 @@ Module readMileage
         Else
 
             'sonst abfrage ergebnis in textbox schreiben
-            formMain.textboxGesamtkilometerGefahren.Text = CType(myResultKmGefahrenGesamt, Single).ToString("F" & tankmanagerSettings.format_mileage)
+            formMain.TextboxGesamtkilometerGefahren.Text = CType(myResultKmGefahrenGesamt, Single).ToString("F" & tankmanagerSettings.format_mileage)
 
         End If
 
@@ -50,7 +50,7 @@ Module readMileage
         Else
 
             'sonst abfrage ergebnis in textbox schreiben
-            formMain.textboxKmGefahrenJahr.Text = CType(myResultKmGefahrenJahr, Single).ToString("F" & tankmanagerSettings.format_route)
+            formMain.TextboxKmGefahrenJahr.Text = CType(myResultKmGefahrenJahr, Single).ToString("F" & tankmanagerSettings.format_route)
 
         End If
 

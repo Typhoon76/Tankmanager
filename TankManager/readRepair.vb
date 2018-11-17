@@ -23,10 +23,10 @@ Module readRepair
         dbDAReparaturen.Fill(dbDTReparaturen)
 
         'Daten in Datagridview eintragen
-        formMain.datagridviewReparaturen.DataSource = dbDTReparaturen
+        formMain.DatagridviewReparaturen.DataSource = dbDTReparaturen
 
         'auswahl der zeile bei der ersten anzeige der daten entfernen
-        formMain.datagridviewReparaturen.ClearSelection()
+        formMain.DatagridviewReparaturen.ClearSelection()
 
     End Function
 

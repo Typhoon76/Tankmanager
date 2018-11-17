@@ -23,13 +23,13 @@ Module readRefuel
         dbDATanken.Fill(dbDTTanken)
 
         'Daten in Datagridview eintragen
-        formMain.datagridviewTanken.DataSource = dbDTTanken
+        formMain.DatagridviewTanken.DataSource = dbDTTanken
 
         'auswahl der zeile bei der ersten anzeige der daten entfernen
-        formMain.datagridviewTanken.ClearSelection()
+        formMain.DatagridviewTanken.ClearSelection()
 
         'anzahl datensätze in textbox eintragen
-        formMain.textboxJahrDatensaetze.Text = dbDTTanken.Rows.Count
+        formMain.TextboxJahrDatensaetze.Text = dbDTTanken.Rows.Count
 
     End Function
 

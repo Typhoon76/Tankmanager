@@ -103,53 +103,53 @@
     <Compile Include="FormPrintingChoice.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formEditRepair.Designer.vb">
-      <DependentUpon>formEditRepair.vb</DependentUpon>
+    <Compile Include="FormEditRepair.Designer.vb">
+      <DependentUpon>FormEditRepair.vb</DependentUpon>
     </Compile>
-    <Compile Include="formEditRepair.vb">
+    <Compile Include="FormEditRepair.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formEditRefuel.Designer.vb">
-      <DependentUpon>formEditRefuel.vb</DependentUpon>
+    <Compile Include="FormEditRefuel.Designer.vb">
+      <DependentUpon>FormEditRefuel.vb</DependentUpon>
     </Compile>
-    <Compile Include="formEditRefuel.vb">
+    <Compile Include="FormEditRefuel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formSettings.Designer.vb">
-      <DependentUpon>formSettings.vb</DependentUpon>
+    <Compile Include="FormSettings.Designer.vb">
+      <DependentUpon>FormSettings.vb</DependentUpon>
     </Compile>
-    <Compile Include="formSettings.vb">
+    <Compile Include="FormSettings.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formInfo.Designer.vb">
-      <DependentUpon>formInfo.vb</DependentUpon>
+    <Compile Include="FormInfo.Designer.vb">
+      <DependentUpon>FormInfo.vb</DependentUpon>
     </Compile>
-    <Compile Include="formInfo.vb">
+    <Compile Include="FormInfo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formExportPDF.Designer.vb">
-      <DependentUpon>formExportPDF.vb</DependentUpon>
+    <Compile Include="FormExportPDF.Designer.vb">
+      <DependentUpon>FormExportPDF.vb</DependentUpon>
     </Compile>
-    <Compile Include="formExportPDF.vb">
+    <Compile Include="FormExportPDF.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formNewRepair.Designer.vb">
-      <DependentUpon>formNewRepair.vb</DependentUpon>
+    <Compile Include="FormNewRepair.Designer.vb">
+      <DependentUpon>FormNewRepair.vb</DependentUpon>
     </Compile>
-    <Compile Include="formNewRepair.vb">
+    <Compile Include="FormNewRepair.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formNewRefuel.Designer.vb">
-      <DependentUpon>formNewRefuel.vb</DependentUpon>
+    <Compile Include="FormNewRefuel.Designer.vb">
+      <DependentUpon>FormNewRefuel.vb</DependentUpon>
     </Compile>
-    <Compile Include="formNewRefuel.vb">
+    <Compile Include="FormNewRefuel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMain.vb">
+    <Compile Include="FormMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMain.Designer.vb">
-      <DependentUpon>formMain.vb</DependentUpon>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="init.vb" />
@@ -176,6 +176,8 @@
     <Compile Include="dbDeleteReparaturArbeitsschritt.vb" />
     <Compile Include="dbInsertReparaturArbeitsschritt.vb" />
     <Compile Include="deleteRepairItem.vb" />
+    <Compile Include="Module3rdPartyTim.vb" />
+    <Compile Include="Module3rdPartyCenterForm.vb" />
     <Compile Include="Module3rdPartyExportPDF.vb" />
     <Compile Include="_version.vb" />
     <Compile Include="updateRepairItem.vb" />
@@ -213,32 +215,32 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="formEditRepair.resx">
-      <DependentUpon>formEditRepair.vb</DependentUpon>
+    <EmbeddedResource Include="FormEditRepair.resx">
+      <DependentUpon>FormEditRepair.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formEditRefuel.resx">
-      <DependentUpon>formEditRefuel.vb</DependentUpon>
+    <EmbeddedResource Include="FormEditRefuel.resx">
+      <DependentUpon>FormEditRefuel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formExportPDF.resx">
-      <DependentUpon>formExportPDF.vb</DependentUpon>
+    <EmbeddedResource Include="FormExportPDF.resx">
+      <DependentUpon>FormExportPDF.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formInfo.resx">
-      <DependentUpon>formInfo.vb</DependentUpon>
+    <EmbeddedResource Include="FormInfo.resx">
+      <DependentUpon>FormInfo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formMain.resx">
-      <DependentUpon>formMain.vb</DependentUpon>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formNewRefuel.resx">
-      <DependentUpon>formNewRefuel.vb</DependentUpon>
+    <EmbeddedResource Include="FormNewRefuel.resx">
+      <DependentUpon>FormNewRefuel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formNewRepair.resx">
-      <DependentUpon>formNewRepair.vb</DependentUpon>
+    <EmbeddedResource Include="FormNewRepair.resx">
+      <DependentUpon>FormNewRepair.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrintingChoice.resx">
       <DependentUpon>FormPrintingChoice.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formSettings.resx">
-      <DependentUpon>formSettings.vb</DependentUpon>
+    <EmbeddedResource Include="FormSettings.resx">
+      <DependentUpon>FormSettings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

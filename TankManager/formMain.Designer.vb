@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class formMain
+Partial Class FormMain
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -22,59 +22,59 @@ Partial Class formMain
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formMain))
-        Me.menustripFormMain = New System.Windows.Forms.MenuStrip()
-        Me.DateiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SeiteEinrichtenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DruckvorschauToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DruckenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMain))
+        Me.MenustripFormMain = New System.Windows.Forms.MenuStrip()
+        Me.FormMainMenuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuFileSetupPage = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuFilePreview = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuFilePrint = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BeendenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NeueTankquittungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NeueReparaturToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuFileExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuEdit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuEditNewRefuel = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuEditNewRepair = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.SuchenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExtrasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuExtrasExportToPdf = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuExtrasExportToPdfDgvRefuel = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuExtrasExportToPdfDgvRepair = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuEditSearch = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuXtras = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuXtrasExportToPDF = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuXtrasExportToPDFTableRefuel = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuXtrasExportToPDFTableRepair = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.EinstellungenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HilfeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuXtrasSettings = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuHelp = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMainMenuHelpInfo = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.groupboxGesamtkostenBenzin = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.textboxGesamtkostenBenzin = New System.Windows.Forms.TextBox()
+        Me.TextboxGesamtkostenBenzin = New System.Windows.Forms.TextBox()
         Me.groupboxGesamtkostenReparatur = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.textboxGesamtkostenReparatur = New System.Windows.Forms.TextBox()
+        Me.TextboxGesamtkostenReparatur = New System.Windows.Forms.TextBox()
         Me.groupboxGesamtkilometerGefahren = New System.Windows.Forms.GroupBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.textboxGesamtkilometerGefahren = New System.Windows.Forms.TextBox()
+        Me.TextboxGesamtkilometerGefahren = New System.Windows.Forms.TextBox()
         Me.groupboxGesamtkostenBezahlt = New System.Windows.Forms.GroupBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.textboxGesamtkostenBezahlt = New System.Windows.Forms.TextBox()
+        Me.TextboxGesamtkostenBezahlt = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.textboxGesamterVerbrauch = New System.Windows.Forms.TextBox()
+        Me.TextboxGesamterVerbrauch = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.groupboxBenzinkostenJahr = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.textboxBenzinkostenJahr = New System.Windows.Forms.TextBox()
+        Me.TextboxBenzinkostenJahr = New System.Windows.Forms.TextBox()
         Me.groupboxReparaturkostenJahr = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.textboxReparaturkostenJahr = New System.Windows.Forms.TextBox()
+        Me.TextboxReparaturkostenJahr = New System.Windows.Forms.TextBox()
         Me.groupboxKmGefahrenJahr = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.textboxKmGefahrenJahr = New System.Windows.Forms.TextBox()
+        Me.TextboxKmGefahrenJahr = New System.Windows.Forms.TextBox()
         Me.groupboxGesamtkostenJahr = New System.Windows.Forms.GroupBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.textboxGesamtkostenJahr = New System.Windows.Forms.TextBox()
+        Me.TextboxGesamtkostenJahr = New System.Windows.Forms.TextBox()
         Me.groupboxAutoDaten = New System.Windows.Forms.GroupBox()
         Me.textboxAutoAlter = New System.Windows.Forms.TextBox()
         Me.textboxAutoBaujahr = New System.Windows.Forms.TextBox()
@@ -82,22 +82,22 @@ Partial Class formMain
         Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.textboxVerbrauchJahr = New System.Windows.Forms.TextBox()
-        Me.switchReparaturen = New System.Windows.Forms.Button()
+        Me.TextboxVerbrauchJahr = New System.Windows.Forms.TextBox()
+        Me.SwitchReparaturen = New System.Windows.Forms.Button()
         Me.groupboxJahrAuswahl = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
-        Me.comboboxJahrAuswahl = New System.Windows.Forms.ComboBox()
+        Me.ComboboxJahrAuswahl = New System.Windows.Forms.ComboBox()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.textboxJahrDatensaetze = New System.Windows.Forms.TextBox()
+        Me.TextboxJahrDatensaetze = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
-        Me.datagridviewTanken = New System.Windows.Forms.DataGridView()
-        Me.datagridviewReparaturen = New System.Windows.Forms.DataGridView()
-        Me.printDocumentFormMain = New System.Drawing.Printing.PrintDocument()
-        Me.printPreviewFormMain = New System.Windows.Forms.PrintPreviewDialog()
-        Me.printDialogFormMain = New System.Windows.Forms.PrintDialog()
-        Me.pageSetupDialogFormMain = New System.Windows.Forms.PageSetupDialog()
-        Me.menustripFormMain.SuspendLayout()
+        Me.DatagridviewTanken = New System.Windows.Forms.DataGridView()
+        Me.DatagridviewReparaturen = New System.Windows.Forms.DataGridView()
+        Me.PrintDocumentFormMain = New System.Drawing.Printing.PrintDocument()
+        Me.PrintPreviewFormMain = New System.Windows.Forms.PrintPreviewDialog()
+        Me.PrintDialogFormMain = New System.Windows.Forms.PrintDialog()
+        Me.PageSetupDialogFormMain = New System.Windows.Forms.PageSetupDialog()
+        Me.MenustripFormMain.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -118,134 +118,134 @@ Partial Class formMain
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
-        CType(Me.datagridviewTanken, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.datagridviewReparaturen, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DatagridviewTanken, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DatagridviewReparaturen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'menustripFormMain
+        'MenustripFormMain
         '
-        Me.menustripFormMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DateiToolStripMenuItem, Me.EditToolStripMenuItem, Me.ExtrasToolStripMenuItem, Me.HilfeToolStripMenuItem})
-        Me.menustripFormMain.Location = New System.Drawing.Point(0, 0)
-        Me.menustripFormMain.Name = "menustripFormMain"
-        Me.menustripFormMain.Size = New System.Drawing.Size(1254, 24)
-        Me.menustripFormMain.TabIndex = 0
-        Me.menustripFormMain.Text = "MenuStrip1"
+        Me.MenustripFormMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormMainMenuFile, Me.FormMainMenuEdit, Me.FormMainMenuXtras, Me.FormMainMenuHelp})
+        Me.MenustripFormMain.Location = New System.Drawing.Point(0, 0)
+        Me.MenustripFormMain.Name = "MenustripFormMain"
+        Me.MenustripFormMain.Size = New System.Drawing.Size(1254, 24)
+        Me.MenustripFormMain.TabIndex = 0
+        Me.MenustripFormMain.Text = "MenuStrip1"
         '
-        'DateiToolStripMenuItem
+        'FormMainMenuFile
         '
-        Me.DateiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SeiteEinrichtenToolStripMenuItem, Me.DruckvorschauToolStripMenuItem, Me.DruckenToolStripMenuItem, Me.ToolStripSeparator1, Me.BeendenToolStripMenuItem})
-        Me.DateiToolStripMenuItem.Name = "DateiToolStripMenuItem"
-        Me.DateiToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
-        Me.DateiToolStripMenuItem.Text = "&Datei"
+        Me.FormMainMenuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormMainMenuFileSetupPage, Me.FormMainMenuFilePreview, Me.FormMainMenuFilePrint, Me.ToolStripSeparator1, Me.FormMainMenuFileExit})
+        Me.FormMainMenuFile.Name = "FormMainMenuFile"
+        Me.FormMainMenuFile.Size = New System.Drawing.Size(79, 20)
+        Me.FormMainMenuFile.Text = "MENU_FILE"
         '
-        'SeiteEinrichtenToolStripMenuItem
+        'FormMainMenuFileSetupPage
         '
-        Me.SeiteEinrichtenToolStripMenuItem.Name = "SeiteEinrichtenToolStripMenuItem"
-        Me.SeiteEinrichtenToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
-        Me.SeiteEinrichtenToolStripMenuItem.Text = "S&eite Einrichten"
+        Me.FormMainMenuFileSetupPage.Name = "FormMainMenuFileSetupPage"
+        Me.FormMainMenuFileSetupPage.Size = New System.Drawing.Size(224, 22)
+        Me.FormMainMenuFileSetupPage.Text = "MENU_FILE_SETUP_PAGE"
         '
-        'DruckvorschauToolStripMenuItem
+        'FormMainMenuFilePreview
         '
-        Me.DruckvorschauToolStripMenuItem.Name = "DruckvorschauToolStripMenuItem"
-        Me.DruckvorschauToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
-        Me.DruckvorschauToolStripMenuItem.Text = "Druck&vorschau"
+        Me.FormMainMenuFilePreview.Name = "FormMainMenuFilePreview"
+        Me.FormMainMenuFilePreview.Size = New System.Drawing.Size(224, 22)
+        Me.FormMainMenuFilePreview.Text = "MENU_FILE_PRINT_PREVIEW"
         '
-        'DruckenToolStripMenuItem
+        'FormMainMenuFilePrint
         '
-        Me.DruckenToolStripMenuItem.Name = "DruckenToolStripMenuItem"
-        Me.DruckenToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
-        Me.DruckenToolStripMenuItem.Text = "&Drucken"
+        Me.FormMainMenuFilePrint.Name = "FormMainMenuFilePrint"
+        Me.FormMainMenuFilePrint.Size = New System.Drawing.Size(224, 22)
+        Me.FormMainMenuFilePrint.Text = "MENU_FILE_PRINT"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(152, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(221, 6)
         '
-        'BeendenToolStripMenuItem
+        'FormMainMenuFileExit
         '
-        Me.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem"
-        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
-        Me.BeendenToolStripMenuItem.Text = "&Beenden"
+        Me.FormMainMenuFileExit.Name = "FormMainMenuFileExit"
+        Me.FormMainMenuFileExit.Size = New System.Drawing.Size(224, 22)
+        Me.FormMainMenuFileExit.Text = "MENU_FILE_EXIT"
         '
-        'EditToolStripMenuItem
+        'FormMainMenuEdit
         '
-        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NeueTankquittungToolStripMenuItem, Me.NeueReparaturToolStripMenuItem, Me.ToolStripMenuItem1, Me.SuchenToolStripMenuItem})
-        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(75, 20)
-        Me.EditToolStripMenuItem.Text = "&Bearbeiten"
+        Me.FormMainMenuEdit.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormMainMenuEditNewRefuel, Me.FormMainMenuEditNewRepair, Me.ToolStripMenuItem1, Me.FormMainMenuEditSearch})
+        Me.FormMainMenuEdit.Name = "FormMainMenuEdit"
+        Me.FormMainMenuEdit.Size = New System.Drawing.Size(82, 20)
+        Me.FormMainMenuEdit.Text = "MENU_EDIT"
         '
-        'NeueTankquittungToolStripMenuItem
+        'FormMainMenuEditNewRefuel
         '
-        Me.NeueTankquittungToolStripMenuItem.Name = "NeueTankquittungToolStripMenuItem"
-        Me.NeueTankquittungToolStripMenuItem.Size = New System.Drawing.Size(228, 22)
-        Me.NeueTankquittungToolStripMenuItem.Text = "Neue Tank&quittung eingeben"
+        Me.FormMainMenuEditNewRefuel.Name = "FormMainMenuEditNewRefuel"
+        Me.FormMainMenuEditNewRefuel.Size = New System.Drawing.Size(212, 22)
+        Me.FormMainMenuEditNewRefuel.Text = "MENU_EDIT_NEW_REFUEL"
         '
-        'NeueReparaturToolStripMenuItem
+        'FormMainMenuEditNewRepair
         '
-        Me.NeueReparaturToolStripMenuItem.Name = "NeueReparaturToolStripMenuItem"
-        Me.NeueReparaturToolStripMenuItem.Size = New System.Drawing.Size(228, 22)
-        Me.NeueReparaturToolStripMenuItem.Text = "Neue &Reparatur eintragen"
+        Me.FormMainMenuEditNewRepair.Name = "FormMainMenuEditNewRepair"
+        Me.FormMainMenuEditNewRepair.Size = New System.Drawing.Size(212, 22)
+        Me.FormMainMenuEditNewRepair.Text = "MENU_EDIT_NEW_REPAIR"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(225, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(209, 6)
         '
-        'SuchenToolStripMenuItem
+        'FormMainMenuEditSearch
         '
-        Me.SuchenToolStripMenuItem.Name = "SuchenToolStripMenuItem"
-        Me.SuchenToolStripMenuItem.Size = New System.Drawing.Size(228, 22)
-        Me.SuchenToolStripMenuItem.Text = "&Suchen"
+        Me.FormMainMenuEditSearch.Name = "FormMainMenuEditSearch"
+        Me.FormMainMenuEditSearch.Size = New System.Drawing.Size(212, 22)
+        Me.FormMainMenuEditSearch.Text = "MENU_EDIT_SEARCH"
         '
-        'ExtrasToolStripMenuItem
+        'FormMainMenuXtras
         '
-        Me.ExtrasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuExtrasExportToPdf, Me.ToolStripMenuItem2, Me.EinstellungenToolStripMenuItem})
-        Me.ExtrasToolStripMenuItem.Name = "ExtrasToolStripMenuItem"
-        Me.ExtrasToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
-        Me.ExtrasToolStripMenuItem.Text = "E&xtras"
+        Me.FormMainMenuXtras.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormMainMenuXtrasExportToPDF, Me.ToolStripMenuItem2, Me.FormMainMenuXtrasSettings})
+        Me.FormMainMenuXtras.Name = "FormMainMenuXtras"
+        Me.FormMainMenuXtras.Size = New System.Drawing.Size(99, 20)
+        Me.FormMainMenuXtras.Text = "MENU_EXTRAS"
         '
-        'MenuExtrasExportToPdf
+        'FormMainMenuXtrasExportToPDF
         '
-        Me.MenuExtrasExportToPdf.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuExtrasExportToPdfDgvRefuel, Me.MenuExtrasExportToPdfDgvRepair})
-        Me.MenuExtrasExportToPdf.Name = "MenuExtrasExportToPdf"
-        Me.MenuExtrasExportToPdf.Size = New System.Drawing.Size(180, 22)
-        Me.MenuExtrasExportToPdf.Text = "Export to PDF"
+        Me.FormMainMenuXtrasExportToPDF.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormMainMenuXtrasExportToPDFTableRefuel, Me.FormMainMenuXtrasExportToPDFTableRepair})
+        Me.FormMainMenuXtrasExportToPDF.Name = "FormMainMenuXtrasExportToPDF"
+        Me.FormMainMenuXtrasExportToPDF.Size = New System.Drawing.Size(247, 22)
+        Me.FormMainMenuXtrasExportToPDF.Text = "MENU_EXTRAS_EXPORT_TO_PDF"
         '
-        'MenuExtrasExportToPdfDgvRefuel
+        'FormMainMenuXtrasExportToPDFTableRefuel
         '
-        Me.MenuExtrasExportToPdfDgvRefuel.Name = "MenuExtrasExportToPdfDgvRefuel"
-        Me.MenuExtrasExportToPdfDgvRefuel.Size = New System.Drawing.Size(180, 22)
-        Me.MenuExtrasExportToPdfDgvRefuel.Text = "Table Refuel"
+        Me.FormMainMenuXtrasExportToPDFTableRefuel.Name = "FormMainMenuXtrasExportToPDFTableRefuel"
+        Me.FormMainMenuXtrasExportToPDFTableRefuel.Size = New System.Drawing.Size(329, 22)
+        Me.FormMainMenuXtrasExportToPDFTableRefuel.Text = "MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REFUEL"
         '
-        'MenuExtrasExportToPdfDgvRepair
+        'FormMainMenuXtrasExportToPDFTableRepair
         '
-        Me.MenuExtrasExportToPdfDgvRepair.Name = "MenuExtrasExportToPdfDgvRepair"
-        Me.MenuExtrasExportToPdfDgvRepair.Size = New System.Drawing.Size(180, 22)
-        Me.MenuExtrasExportToPdfDgvRepair.Text = "Table Repair"
+        Me.FormMainMenuXtrasExportToPDFTableRepair.Name = "FormMainMenuXtrasExportToPDFTableRepair"
+        Me.FormMainMenuXtrasExportToPDFTableRepair.Size = New System.Drawing.Size(329, 22)
+        Me.FormMainMenuXtrasExportToPDFTableRepair.Text = "MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REPAIR"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(244, 6)
         '
-        'EinstellungenToolStripMenuItem
+        'FormMainMenuXtrasSettings
         '
-        Me.EinstellungenToolStripMenuItem.Name = "EinstellungenToolStripMenuItem"
-        Me.EinstellungenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.EinstellungenToolStripMenuItem.Text = "&Einstellungen"
+        Me.FormMainMenuXtrasSettings.Name = "FormMainMenuXtrasSettings"
+        Me.FormMainMenuXtrasSettings.Size = New System.Drawing.Size(247, 22)
+        Me.FormMainMenuXtrasSettings.Text = "MENU_EXTRAS_SETTINGS"
         '
-        'HilfeToolStripMenuItem
+        'FormMainMenuHelp
         '
-        Me.HilfeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InfoToolStripMenuItem})
-        Me.HilfeToolStripMenuItem.Name = "HilfeToolStripMenuItem"
-        Me.HilfeToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HilfeToolStripMenuItem.Text = "&Hilfe"
+        Me.FormMainMenuHelp.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormMainMenuHelpInfo})
+        Me.FormMainMenuHelp.Name = "FormMainMenuHelp"
+        Me.FormMainMenuHelp.Size = New System.Drawing.Size(86, 20)
+        Me.FormMainMenuHelp.Text = "MENU_HELP"
         '
-        'InfoToolStripMenuItem
+        'FormMainMenuHelpInfo
         '
-        Me.InfoToolStripMenuItem.Name = "InfoToolStripMenuItem"
-        Me.InfoToolStripMenuItem.Size = New System.Drawing.Size(95, 22)
-        Me.InfoToolStripMenuItem.Text = "&Info"
+        Me.FormMainMenuHelpInfo.Name = "FormMainMenuHelpInfo"
+        Me.FormMainMenuHelpInfo.Size = New System.Drawing.Size(173, 22)
+        Me.FormMainMenuHelpInfo.Text = "MENU_HELP_INFO"
         '
         'TableLayoutPanel1
         '
@@ -318,7 +318,7 @@ Partial Class formMain
         'groupboxGesamtkostenBenzin
         '
         Me.groupboxGesamtkostenBenzin.Controls.Add(Me.Label6)
-        Me.groupboxGesamtkostenBenzin.Controls.Add(Me.textboxGesamtkostenBenzin)
+        Me.groupboxGesamtkostenBenzin.Controls.Add(Me.TextboxGesamtkostenBenzin)
         Me.groupboxGesamtkostenBenzin.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxGesamtkostenBenzin.Location = New System.Drawing.Point(3, 3)
         Me.groupboxGesamtkostenBenzin.Name = "groupboxGesamtkostenBenzin"
@@ -336,18 +336,18 @@ Partial Class formMain
         Me.Label6.TabIndex = 1
         Me.Label6.Text = "EUR"
         '
-        'textboxGesamtkostenBenzin
+        'TextboxGesamtkostenBenzin
         '
-        Me.textboxGesamtkostenBenzin.Location = New System.Drawing.Point(10, 20)
-        Me.textboxGesamtkostenBenzin.Name = "textboxGesamtkostenBenzin"
-        Me.textboxGesamtkostenBenzin.Size = New System.Drawing.Size(100, 20)
-        Me.textboxGesamtkostenBenzin.TabIndex = 0
-        Me.textboxGesamtkostenBenzin.TabStop = False
+        Me.TextboxGesamtkostenBenzin.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxGesamtkostenBenzin.Name = "TextboxGesamtkostenBenzin"
+        Me.TextboxGesamtkostenBenzin.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxGesamtkostenBenzin.TabIndex = 0
+        Me.TextboxGesamtkostenBenzin.TabStop = False
         '
         'groupboxGesamtkostenReparatur
         '
         Me.groupboxGesamtkostenReparatur.Controls.Add(Me.Label7)
-        Me.groupboxGesamtkostenReparatur.Controls.Add(Me.textboxGesamtkostenReparatur)
+        Me.groupboxGesamtkostenReparatur.Controls.Add(Me.TextboxGesamtkostenReparatur)
         Me.groupboxGesamtkostenReparatur.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxGesamtkostenReparatur.Location = New System.Drawing.Point(3, 63)
         Me.groupboxGesamtkostenReparatur.Name = "groupboxGesamtkostenReparatur"
@@ -365,18 +365,18 @@ Partial Class formMain
         Me.Label7.TabIndex = 1
         Me.Label7.Text = "EUR"
         '
-        'textboxGesamtkostenReparatur
+        'TextboxGesamtkostenReparatur
         '
-        Me.textboxGesamtkostenReparatur.Location = New System.Drawing.Point(10, 20)
-        Me.textboxGesamtkostenReparatur.Name = "textboxGesamtkostenReparatur"
-        Me.textboxGesamtkostenReparatur.Size = New System.Drawing.Size(100, 20)
-        Me.textboxGesamtkostenReparatur.TabIndex = 0
-        Me.textboxGesamtkostenReparatur.TabStop = False
+        Me.TextboxGesamtkostenReparatur.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxGesamtkostenReparatur.Name = "TextboxGesamtkostenReparatur"
+        Me.TextboxGesamtkostenReparatur.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxGesamtkostenReparatur.TabIndex = 0
+        Me.TextboxGesamtkostenReparatur.TabStop = False
         '
         'groupboxGesamtkilometerGefahren
         '
         Me.groupboxGesamtkilometerGefahren.Controls.Add(Me.Label8)
-        Me.groupboxGesamtkilometerGefahren.Controls.Add(Me.textboxGesamtkilometerGefahren)
+        Me.groupboxGesamtkilometerGefahren.Controls.Add(Me.TextboxGesamtkilometerGefahren)
         Me.groupboxGesamtkilometerGefahren.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxGesamtkilometerGefahren.Location = New System.Drawing.Point(3, 183)
         Me.groupboxGesamtkilometerGefahren.Name = "groupboxGesamtkilometerGefahren"
@@ -394,18 +394,18 @@ Partial Class formMain
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Km"
         '
-        'textboxGesamtkilometerGefahren
+        'TextboxGesamtkilometerGefahren
         '
-        Me.textboxGesamtkilometerGefahren.Location = New System.Drawing.Point(10, 20)
-        Me.textboxGesamtkilometerGefahren.Name = "textboxGesamtkilometerGefahren"
-        Me.textboxGesamtkilometerGefahren.Size = New System.Drawing.Size(100, 20)
-        Me.textboxGesamtkilometerGefahren.TabIndex = 0
-        Me.textboxGesamtkilometerGefahren.TabStop = False
+        Me.TextboxGesamtkilometerGefahren.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxGesamtkilometerGefahren.Name = "TextboxGesamtkilometerGefahren"
+        Me.TextboxGesamtkilometerGefahren.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxGesamtkilometerGefahren.TabIndex = 0
+        Me.TextboxGesamtkilometerGefahren.TabStop = False
         '
         'groupboxGesamtkostenBezahlt
         '
         Me.groupboxGesamtkostenBezahlt.Controls.Add(Me.Label9)
-        Me.groupboxGesamtkostenBezahlt.Controls.Add(Me.textboxGesamtkostenBezahlt)
+        Me.groupboxGesamtkostenBezahlt.Controls.Add(Me.TextboxGesamtkostenBezahlt)
         Me.groupboxGesamtkostenBezahlt.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxGesamtkostenBezahlt.Location = New System.Drawing.Point(3, 123)
         Me.groupboxGesamtkostenBezahlt.Name = "groupboxGesamtkostenBezahlt"
@@ -423,18 +423,18 @@ Partial Class formMain
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "EUR"
         '
-        'textboxGesamtkostenBezahlt
+        'TextboxGesamtkostenBezahlt
         '
-        Me.textboxGesamtkostenBezahlt.Location = New System.Drawing.Point(10, 20)
-        Me.textboxGesamtkostenBezahlt.Name = "textboxGesamtkostenBezahlt"
-        Me.textboxGesamtkostenBezahlt.Size = New System.Drawing.Size(100, 20)
-        Me.textboxGesamtkostenBezahlt.TabIndex = 0
-        Me.textboxGesamtkostenBezahlt.TabStop = False
+        Me.TextboxGesamtkostenBezahlt.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxGesamtkostenBezahlt.Name = "TextboxGesamtkostenBezahlt"
+        Me.TextboxGesamtkostenBezahlt.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxGesamtkostenBezahlt.TabIndex = 0
+        Me.TextboxGesamtkostenBezahlt.TabStop = False
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Controls.Add(Me.textboxGesamterVerbrauch)
+        Me.GroupBox2.Controls.Add(Me.TextboxGesamterVerbrauch)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox2.Location = New System.Drawing.Point(3, 243)
         Me.GroupBox2.Name = "GroupBox2"
@@ -452,13 +452,13 @@ Partial Class formMain
         Me.Label13.TabIndex = 1
         Me.Label13.Text = "Liter/100 Km"
         '
-        'textboxGesamterVerbrauch
+        'TextboxGesamterVerbrauch
         '
-        Me.textboxGesamterVerbrauch.Location = New System.Drawing.Point(10, 20)
-        Me.textboxGesamterVerbrauch.Name = "textboxGesamterVerbrauch"
-        Me.textboxGesamterVerbrauch.Size = New System.Drawing.Size(100, 20)
-        Me.textboxGesamterVerbrauch.TabIndex = 0
-        Me.textboxGesamterVerbrauch.TabStop = False
+        Me.TextboxGesamterVerbrauch.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxGesamterVerbrauch.Name = "TextboxGesamterVerbrauch"
+        Me.TextboxGesamterVerbrauch.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxGesamterVerbrauch.TabIndex = 0
+        Me.TextboxGesamterVerbrauch.TabStop = False
         '
         'TableLayoutPanel4
         '
@@ -470,7 +470,7 @@ Partial Class formMain
         Me.TableLayoutPanel4.Controls.Add(Me.groupboxGesamtkostenJahr, 0, 2)
         Me.TableLayoutPanel4.Controls.Add(Me.groupboxAutoDaten, 0, 6)
         Me.TableLayoutPanel4.Controls.Add(Me.GroupBox1, 0, 4)
-        Me.TableLayoutPanel4.Controls.Add(Me.switchReparaturen, 0, 7)
+        Me.TableLayoutPanel4.Controls.Add(Me.SwitchReparaturen, 0, 7)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
@@ -489,7 +489,7 @@ Partial Class formMain
         'groupboxBenzinkostenJahr
         '
         Me.groupboxBenzinkostenJahr.Controls.Add(Me.Label2)
-        Me.groupboxBenzinkostenJahr.Controls.Add(Me.textboxBenzinkostenJahr)
+        Me.groupboxBenzinkostenJahr.Controls.Add(Me.TextboxBenzinkostenJahr)
         Me.groupboxBenzinkostenJahr.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxBenzinkostenJahr.Location = New System.Drawing.Point(3, 3)
         Me.groupboxBenzinkostenJahr.Name = "groupboxBenzinkostenJahr"
@@ -507,18 +507,18 @@ Partial Class formMain
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "EUR"
         '
-        'textboxBenzinkostenJahr
+        'TextboxBenzinkostenJahr
         '
-        Me.textboxBenzinkostenJahr.Location = New System.Drawing.Point(10, 20)
-        Me.textboxBenzinkostenJahr.Name = "textboxBenzinkostenJahr"
-        Me.textboxBenzinkostenJahr.Size = New System.Drawing.Size(100, 20)
-        Me.textboxBenzinkostenJahr.TabIndex = 0
-        Me.textboxBenzinkostenJahr.TabStop = False
+        Me.TextboxBenzinkostenJahr.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxBenzinkostenJahr.Name = "TextboxBenzinkostenJahr"
+        Me.TextboxBenzinkostenJahr.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxBenzinkostenJahr.TabIndex = 0
+        Me.TextboxBenzinkostenJahr.TabStop = False
         '
         'groupboxReparaturkostenJahr
         '
         Me.groupboxReparaturkostenJahr.Controls.Add(Me.Label3)
-        Me.groupboxReparaturkostenJahr.Controls.Add(Me.textboxReparaturkostenJahr)
+        Me.groupboxReparaturkostenJahr.Controls.Add(Me.TextboxReparaturkostenJahr)
         Me.groupboxReparaturkostenJahr.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxReparaturkostenJahr.Location = New System.Drawing.Point(3, 63)
         Me.groupboxReparaturkostenJahr.Name = "groupboxReparaturkostenJahr"
@@ -536,18 +536,18 @@ Partial Class formMain
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "EUR"
         '
-        'textboxReparaturkostenJahr
+        'TextboxReparaturkostenJahr
         '
-        Me.textboxReparaturkostenJahr.Location = New System.Drawing.Point(10, 20)
-        Me.textboxReparaturkostenJahr.Name = "textboxReparaturkostenJahr"
-        Me.textboxReparaturkostenJahr.Size = New System.Drawing.Size(100, 20)
-        Me.textboxReparaturkostenJahr.TabIndex = 0
-        Me.textboxReparaturkostenJahr.TabStop = False
+        Me.TextboxReparaturkostenJahr.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxReparaturkostenJahr.Name = "TextboxReparaturkostenJahr"
+        Me.TextboxReparaturkostenJahr.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxReparaturkostenJahr.TabIndex = 0
+        Me.TextboxReparaturkostenJahr.TabStop = False
         '
         'groupboxKmGefahrenJahr
         '
         Me.groupboxKmGefahrenJahr.Controls.Add(Me.Label4)
-        Me.groupboxKmGefahrenJahr.Controls.Add(Me.textboxKmGefahrenJahr)
+        Me.groupboxKmGefahrenJahr.Controls.Add(Me.TextboxKmGefahrenJahr)
         Me.groupboxKmGefahrenJahr.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxKmGefahrenJahr.Location = New System.Drawing.Point(3, 183)
         Me.groupboxKmGefahrenJahr.Name = "groupboxKmGefahrenJahr"
@@ -565,18 +565,18 @@ Partial Class formMain
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Km"
         '
-        'textboxKmGefahrenJahr
+        'TextboxKmGefahrenJahr
         '
-        Me.textboxKmGefahrenJahr.Location = New System.Drawing.Point(10, 20)
-        Me.textboxKmGefahrenJahr.Name = "textboxKmGefahrenJahr"
-        Me.textboxKmGefahrenJahr.Size = New System.Drawing.Size(100, 20)
-        Me.textboxKmGefahrenJahr.TabIndex = 0
-        Me.textboxKmGefahrenJahr.TabStop = False
+        Me.TextboxKmGefahrenJahr.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxKmGefahrenJahr.Name = "TextboxKmGefahrenJahr"
+        Me.TextboxKmGefahrenJahr.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxKmGefahrenJahr.TabIndex = 0
+        Me.TextboxKmGefahrenJahr.TabStop = False
         '
         'groupboxGesamtkostenJahr
         '
         Me.groupboxGesamtkostenJahr.Controls.Add(Me.Label5)
-        Me.groupboxGesamtkostenJahr.Controls.Add(Me.textboxGesamtkostenJahr)
+        Me.groupboxGesamtkostenJahr.Controls.Add(Me.TextboxGesamtkostenJahr)
         Me.groupboxGesamtkostenJahr.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxGesamtkostenJahr.Location = New System.Drawing.Point(3, 123)
         Me.groupboxGesamtkostenJahr.Name = "groupboxGesamtkostenJahr"
@@ -594,13 +594,13 @@ Partial Class formMain
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "EUR"
         '
-        'textboxGesamtkostenJahr
+        'TextboxGesamtkostenJahr
         '
-        Me.textboxGesamtkostenJahr.Location = New System.Drawing.Point(10, 20)
-        Me.textboxGesamtkostenJahr.Name = "textboxGesamtkostenJahr"
-        Me.textboxGesamtkostenJahr.Size = New System.Drawing.Size(100, 20)
-        Me.textboxGesamtkostenJahr.TabIndex = 0
-        Me.textboxGesamtkostenJahr.TabStop = False
+        Me.TextboxGesamtkostenJahr.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxGesamtkostenJahr.Name = "TextboxGesamtkostenJahr"
+        Me.TextboxGesamtkostenJahr.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxGesamtkostenJahr.TabIndex = 0
+        Me.TextboxGesamtkostenJahr.TabStop = False
         '
         'groupboxAutoDaten
         '
@@ -660,7 +660,7 @@ Partial Class formMain
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label12)
-        Me.GroupBox1.Controls.Add(Me.textboxVerbrauchJahr)
+        Me.GroupBox1.Controls.Add(Me.TextboxVerbrauchJahr)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox1.Location = New System.Drawing.Point(3, 243)
         Me.GroupBox1.Name = "GroupBox1"
@@ -678,24 +678,24 @@ Partial Class formMain
         Me.Label12.TabIndex = 1
         Me.Label12.Text = "Liter/100 Km"
         '
-        'textboxVerbrauchJahr
+        'TextboxVerbrauchJahr
         '
-        Me.textboxVerbrauchJahr.Location = New System.Drawing.Point(10, 20)
-        Me.textboxVerbrauchJahr.Name = "textboxVerbrauchJahr"
-        Me.textboxVerbrauchJahr.Size = New System.Drawing.Size(100, 20)
-        Me.textboxVerbrauchJahr.TabIndex = 0
-        Me.textboxVerbrauchJahr.TabStop = False
+        Me.TextboxVerbrauchJahr.Location = New System.Drawing.Point(10, 20)
+        Me.TextboxVerbrauchJahr.Name = "TextboxVerbrauchJahr"
+        Me.TextboxVerbrauchJahr.Size = New System.Drawing.Size(100, 20)
+        Me.TextboxVerbrauchJahr.TabIndex = 0
+        Me.TextboxVerbrauchJahr.TabStop = False
         '
-        'switchReparaturen
+        'SwitchReparaturen
         '
-        Me.switchReparaturen.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.switchReparaturen.Location = New System.Drawing.Point(3, 505)
-        Me.switchReparaturen.Name = "switchReparaturen"
-        Me.switchReparaturen.Size = New System.Drawing.Size(140, 23)
-        Me.switchReparaturen.TabIndex = 6
-        Me.switchReparaturen.TabStop = False
-        Me.switchReparaturen.Text = "Reparaturen anzeigen >>"
-        Me.switchReparaturen.UseVisualStyleBackColor = True
+        Me.SwitchReparaturen.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.SwitchReparaturen.Location = New System.Drawing.Point(3, 505)
+        Me.SwitchReparaturen.Name = "SwitchReparaturen"
+        Me.SwitchReparaturen.Size = New System.Drawing.Size(140, 23)
+        Me.SwitchReparaturen.TabIndex = 6
+        Me.SwitchReparaturen.TabStop = False
+        Me.SwitchReparaturen.Text = "Reparaturen anzeigen >>"
+        Me.SwitchReparaturen.UseVisualStyleBackColor = True
         '
         'groupboxJahrAuswahl
         '
@@ -713,7 +713,7 @@ Partial Class formMain
         '
         Me.TableLayoutPanel6.ColumnCount = 1
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel6.Controls.Add(Me.comboboxJahrAuswahl, 0, 0)
+        Me.TableLayoutPanel6.Controls.Add(Me.ComboboxJahrAuswahl, 0, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.TableLayoutPanel7, 0, 1)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(3, 16)
@@ -724,19 +724,19 @@ Partial Class formMain
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(426, 69)
         Me.TableLayoutPanel6.TabIndex = 0
         '
-        'comboboxJahrAuswahl
+        'ComboboxJahrAuswahl
         '
-        Me.comboboxJahrAuswahl.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.comboboxJahrAuswahl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.comboboxJahrAuswahl.FormattingEnabled = True
-        Me.comboboxJahrAuswahl.IntegralHeight = False
-        Me.comboboxJahrAuswahl.ItemHeight = 13
-        Me.comboboxJahrAuswahl.Location = New System.Drawing.Point(231, 6)
-        Me.comboboxJahrAuswahl.Margin = New System.Windows.Forms.Padding(6, 6, 5, 3)
-        Me.comboboxJahrAuswahl.Name = "comboboxJahrAuswahl"
-        Me.comboboxJahrAuswahl.Size = New System.Drawing.Size(190, 21)
-        Me.comboboxJahrAuswahl.TabIndex = 0
-        Me.comboboxJahrAuswahl.TabStop = False
+        Me.ComboboxJahrAuswahl.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboboxJahrAuswahl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboboxJahrAuswahl.FormattingEnabled = True
+        Me.ComboboxJahrAuswahl.IntegralHeight = False
+        Me.ComboboxJahrAuswahl.ItemHeight = 13
+        Me.ComboboxJahrAuswahl.Location = New System.Drawing.Point(231, 6)
+        Me.ComboboxJahrAuswahl.Margin = New System.Windows.Forms.Padding(6, 6, 5, 3)
+        Me.ComboboxJahrAuswahl.Name = "ComboboxJahrAuswahl"
+        Me.ComboboxJahrAuswahl.Size = New System.Drawing.Size(190, 21)
+        Me.ComboboxJahrAuswahl.TabIndex = 0
+        Me.ComboboxJahrAuswahl.TabStop = False
         '
         'TableLayoutPanel7
         '
@@ -744,7 +744,7 @@ Partial Class formMain
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.Label1, 0, 0)
-        Me.TableLayoutPanel7.Controls.Add(Me.textboxJahrDatensaetze, 1, 0)
+        Me.TableLayoutPanel7.Controls.Add(Me.TextboxJahrDatensaetze, 1, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(0, 34)
         Me.TableLayoutPanel7.Margin = New System.Windows.Forms.Padding(0)
@@ -765,16 +765,16 @@ Partial Class formMain
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Anzahl Datensätze:"
         '
-        'textboxJahrDatensaetze
+        'TextboxJahrDatensaetze
         '
-        Me.textboxJahrDatensaetze.Enabled = False
-        Me.textboxJahrDatensaetze.Location = New System.Drawing.Point(231, 7)
-        Me.textboxJahrDatensaetze.Margin = New System.Windows.Forms.Padding(5, 7, 3, 3)
-        Me.textboxJahrDatensaetze.Name = "textboxJahrDatensaetze"
-        Me.textboxJahrDatensaetze.ReadOnly = True
-        Me.textboxJahrDatensaetze.Size = New System.Drawing.Size(190, 20)
-        Me.textboxJahrDatensaetze.TabIndex = 1
-        Me.textboxJahrDatensaetze.TabStop = False
+        Me.TextboxJahrDatensaetze.Enabled = False
+        Me.TextboxJahrDatensaetze.Location = New System.Drawing.Point(231, 7)
+        Me.TextboxJahrDatensaetze.Margin = New System.Windows.Forms.Padding(5, 7, 3, 3)
+        Me.TextboxJahrDatensaetze.Name = "TextboxJahrDatensaetze"
+        Me.TextboxJahrDatensaetze.ReadOnly = True
+        Me.TextboxJahrDatensaetze.Size = New System.Drawing.Size(190, 20)
+        Me.TextboxJahrDatensaetze.TabIndex = 1
+        Me.TextboxJahrDatensaetze.TabStop = False
         '
         'TableLayoutPanel8
         '
@@ -782,8 +782,8 @@ Partial Class formMain
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 800.0!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 648.0!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel8.Controls.Add(Me.datagridviewTanken, 0, 0)
-        Me.TableLayoutPanel8.Controls.Add(Me.datagridviewReparaturen, 1, 0)
+        Me.TableLayoutPanel8.Controls.Add(Me.DatagridviewTanken, 0, 0)
+        Me.TableLayoutPanel8.Controls.Add(Me.DatagridviewReparaturen, 1, 0)
         Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
@@ -792,75 +792,75 @@ Partial Class formMain
         Me.TableLayoutPanel8.Size = New System.Drawing.Size(798, 631)
         Me.TableLayoutPanel8.TabIndex = 1
         '
-        'datagridviewTanken
+        'DatagridviewTanken
         '
-        Me.datagridviewTanken.AllowUserToAddRows = False
-        Me.datagridviewTanken.AllowUserToDeleteRows = False
-        Me.datagridviewTanken.AllowUserToResizeRows = False
-        Me.datagridviewTanken.BackgroundColor = System.Drawing.SystemColors.Window
-        Me.datagridviewTanken.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datagridviewTanken.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.datagridviewTanken.Location = New System.Drawing.Point(3, 3)
-        Me.datagridviewTanken.MultiSelect = False
-        Me.datagridviewTanken.Name = "datagridviewTanken"
-        Me.datagridviewTanken.ReadOnly = True
-        Me.datagridviewTanken.RowHeadersVisible = False
-        Me.datagridviewTanken.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datagridviewTanken.Size = New System.Drawing.Size(794, 625)
-        Me.datagridviewTanken.TabIndex = 1
-        Me.datagridviewTanken.TabStop = False
+        Me.DatagridviewTanken.AllowUserToAddRows = False
+        Me.DatagridviewTanken.AllowUserToDeleteRows = False
+        Me.DatagridviewTanken.AllowUserToResizeRows = False
+        Me.DatagridviewTanken.BackgroundColor = System.Drawing.SystemColors.Window
+        Me.DatagridviewTanken.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DatagridviewTanken.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DatagridviewTanken.Location = New System.Drawing.Point(3, 3)
+        Me.DatagridviewTanken.MultiSelect = False
+        Me.DatagridviewTanken.Name = "DatagridviewTanken"
+        Me.DatagridviewTanken.ReadOnly = True
+        Me.DatagridviewTanken.RowHeadersVisible = False
+        Me.DatagridviewTanken.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DatagridviewTanken.Size = New System.Drawing.Size(794, 625)
+        Me.DatagridviewTanken.TabIndex = 1
+        Me.DatagridviewTanken.TabStop = False
         '
-        'datagridviewReparaturen
+        'DatagridviewReparaturen
         '
-        Me.datagridviewReparaturen.AllowUserToAddRows = False
-        Me.datagridviewReparaturen.AllowUserToDeleteRows = False
-        Me.datagridviewReparaturen.AllowUserToResizeRows = False
-        Me.datagridviewReparaturen.BackgroundColor = System.Drawing.SystemColors.Window
-        Me.datagridviewReparaturen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datagridviewReparaturen.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.datagridviewReparaturen.Location = New System.Drawing.Point(803, 3)
-        Me.datagridviewReparaturen.MultiSelect = False
-        Me.datagridviewReparaturen.Name = "datagridviewReparaturen"
-        Me.datagridviewReparaturen.ReadOnly = True
-        Me.datagridviewReparaturen.RowHeadersVisible = False
-        Me.datagridviewReparaturen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datagridviewReparaturen.Size = New System.Drawing.Size(642, 625)
-        Me.datagridviewReparaturen.TabIndex = 2
-        Me.datagridviewReparaturen.TabStop = False
+        Me.DatagridviewReparaturen.AllowUserToAddRows = False
+        Me.DatagridviewReparaturen.AllowUserToDeleteRows = False
+        Me.DatagridviewReparaturen.AllowUserToResizeRows = False
+        Me.DatagridviewReparaturen.BackgroundColor = System.Drawing.SystemColors.Window
+        Me.DatagridviewReparaturen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DatagridviewReparaturen.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DatagridviewReparaturen.Location = New System.Drawing.Point(803, 3)
+        Me.DatagridviewReparaturen.MultiSelect = False
+        Me.DatagridviewReparaturen.Name = "DatagridviewReparaturen"
+        Me.DatagridviewReparaturen.ReadOnly = True
+        Me.DatagridviewReparaturen.RowHeadersVisible = False
+        Me.DatagridviewReparaturen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DatagridviewReparaturen.Size = New System.Drawing.Size(642, 625)
+        Me.DatagridviewReparaturen.TabIndex = 2
+        Me.DatagridviewReparaturen.TabStop = False
         '
-        'printDocumentFormMain
+        'PrintDocumentFormMain
         '
         '
-        'printPreviewFormMain
+        'PrintPreviewFormMain
         '
-        Me.printPreviewFormMain.AutoScrollMargin = New System.Drawing.Size(0, 0)
-        Me.printPreviewFormMain.AutoScrollMinSize = New System.Drawing.Size(0, 0)
-        Me.printPreviewFormMain.ClientSize = New System.Drawing.Size(400, 300)
-        Me.printPreviewFormMain.Enabled = True
-        Me.printPreviewFormMain.Icon = CType(resources.GetObject("printPreviewFormMain.Icon"), System.Drawing.Icon)
-        Me.printPreviewFormMain.Name = "printPreviewFormMain"
-        Me.printPreviewFormMain.Visible = False
+        Me.PrintPreviewFormMain.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewFormMain.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewFormMain.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewFormMain.Enabled = True
+        Me.PrintPreviewFormMain.Icon = CType(resources.GetObject("PrintPreviewFormMain.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewFormMain.Name = "printPreviewFormMain"
+        Me.PrintPreviewFormMain.Visible = False
         '
-        'printDialogFormMain
+        'PrintDialogFormMain
         '
-        Me.printDialogFormMain.UseEXDialog = True
+        Me.PrintDialogFormMain.UseEXDialog = True
         '
-        'formMain
+        'FormMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1254, 661)
         Me.Controls.Add(Me.TableLayoutPanel1)
-        Me.Controls.Add(Me.menustripFormMain)
+        Me.Controls.Add(Me.MenustripFormMain)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.menustripFormMain
+        Me.MainMenuStrip = Me.MenustripFormMain
         Me.MaximumSize = New System.Drawing.Size(1920, 1080)
         Me.MinimumSize = New System.Drawing.Size(1270, 700)
-        Me.Name = "formMain"
+        Me.Name = "FormMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TankManager"
-        Me.menustripFormMain.ResumeLayout(False)
-        Me.menustripFormMain.PerformLayout()
+        Me.MenustripFormMain.ResumeLayout(False)
+        Me.MenustripFormMain.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
@@ -893,37 +893,37 @@ Partial Class formMain
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
         Me.TableLayoutPanel8.ResumeLayout(False)
-        CType(Me.datagridviewTanken, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.datagridviewReparaturen, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DatagridviewTanken, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DatagridviewReparaturen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents menustripFormMain As MenuStrip
-    Friend WithEvents DateiToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BeendenToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NeueTankquittungToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MenustripFormMain As MenuStrip
+    Friend WithEvents FormMainMenuFile As ToolStripMenuItem
+    Friend WithEvents FormMainMenuFileExit As ToolStripMenuItem
+    Friend WithEvents FormMainMenuEdit As ToolStripMenuItem
+    Friend WithEvents FormMainMenuEditNewRefuel As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
-    Friend WithEvents SuchenToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExtrasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FormMainMenuEditSearch As ToolStripMenuItem
+    Friend WithEvents FormMainMenuXtras As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripSeparator
-    Friend WithEvents EinstellungenToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HilfeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents InfoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FormMainMenuXtrasSettings As ToolStripMenuItem
+    Friend WithEvents FormMainMenuHelp As ToolStripMenuItem
+    Friend WithEvents FormMainMenuHelpInfo As ToolStripMenuItem
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
-    Friend WithEvents datagridviewTanken As DataGridView
+    Friend WithEvents DatagridviewTanken As DataGridView
     Friend WithEvents groupboxJahrAuswahl As GroupBox
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
-    Friend WithEvents comboboxJahrAuswahl As ComboBox
+    Friend WithEvents ComboboxJahrAuswahl As ComboBox
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
     Friend WithEvents Label1 As Label
-    Friend WithEvents textboxJahrDatensaetze As TextBox
+    Friend WithEvents TextboxJahrDatensaetze As TextBox
     Friend WithEvents groupboxGesamtkostenBenzin As GroupBox
     Friend WithEvents groupboxGesamtkostenReparatur As GroupBox
     Friend WithEvents groupboxGesamtkilometerGefahren As GroupBox
@@ -932,14 +932,14 @@ Partial Class formMain
     Friend WithEvents groupboxReparaturkostenJahr As GroupBox
     Friend WithEvents groupboxKmGefahrenJahr As GroupBox
     Friend WithEvents groupboxGesamtkostenJahr As GroupBox
-    Friend WithEvents textboxGesamtkostenBenzin As TextBox
-    Friend WithEvents textboxGesamtkostenReparatur As TextBox
-    Friend WithEvents textboxGesamtkilometerGefahren As TextBox
-    Friend WithEvents textboxGesamtkostenBezahlt As TextBox
-    Friend WithEvents textboxBenzinkostenJahr As TextBox
-    Friend WithEvents textboxReparaturkostenJahr As TextBox
-    Friend WithEvents textboxKmGefahrenJahr As TextBox
-    Friend WithEvents textboxGesamtkostenJahr As TextBox
+    Friend WithEvents TextboxGesamtkostenBenzin As TextBox
+    Friend WithEvents TextboxGesamtkostenReparatur As TextBox
+    Friend WithEvents TextboxGesamtkilometerGefahren As TextBox
+    Friend WithEvents TextboxGesamtkostenBezahlt As TextBox
+    Friend WithEvents TextboxBenzinkostenJahr As TextBox
+    Friend WithEvents TextboxReparaturkostenJahr As TextBox
+    Friend WithEvents TextboxKmGefahrenJahr As TextBox
+    Friend WithEvents TextboxGesamtkostenJahr As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
@@ -953,25 +953,25 @@ Partial Class formMain
     Friend WithEvents textboxAutoBaujahr As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents DruckenToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NeueReparaturToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MenuExtrasExportToPdf As ToolStripMenuItem
-    Friend WithEvents DruckvorschauToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FormMainMenuFilePrint As ToolStripMenuItem
+    Friend WithEvents FormMainMenuEditNewRepair As ToolStripMenuItem
+    Friend WithEvents FormMainMenuXtrasExportToPDF As ToolStripMenuItem
+    Friend WithEvents FormMainMenuFilePreview As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents printDocumentFormMain As Printing.PrintDocument
-    Friend WithEvents printPreviewFormMain As PrintPreviewDialog
-    Friend WithEvents printDialogFormMain As PrintDialog
+    Friend WithEvents PrintDocumentFormMain As Printing.PrintDocument
+    Friend WithEvents PrintPreviewFormMain As PrintPreviewDialog
+    Friend WithEvents PrintDialogFormMain As PrintDialog
     Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
-    Friend WithEvents datagridviewReparaturen As DataGridView
+    Friend WithEvents DatagridviewReparaturen As DataGridView
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label13 As Label
-    Friend WithEvents textboxGesamterVerbrauch As TextBox
+    Friend WithEvents TextboxGesamterVerbrauch As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents textboxVerbrauchJahr As TextBox
-    Friend WithEvents switchReparaturen As Button
-    Friend WithEvents pageSetupDialogFormMain As PageSetupDialog
-    Friend WithEvents SeiteEinrichtenToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MenuExtrasExportToPdfDgvRefuel As ToolStripMenuItem
-    Friend WithEvents MenuExtrasExportToPdfDgvRepair As ToolStripMenuItem
+    Friend WithEvents TextboxVerbrauchJahr As TextBox
+    Friend WithEvents SwitchReparaturen As Button
+    Friend WithEvents PageSetupDialogFormMain As PageSetupDialog
+    Friend WithEvents FormMainMenuFileSetupPage As ToolStripMenuItem
+    Friend WithEvents FormMainMenuXtrasExportToPDFTableRefuel As ToolStripMenuItem
+    Friend WithEvents FormMainMenuXtrasExportToPDFTableRepair As ToolStripMenuItem
 End Class

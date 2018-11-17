@@ -34,7 +34,7 @@
     Public tankmanagerRepair As New classRepair.Repairlist 'NEU
     Public iniFileName As String = Application.StartupPath & "\Tankmanager.ini"
     Public tankmanagerIni As New classIni(iniFileName)
-    Public comboboxJahrAuswahlErsterEintrag As String = "Alle Jahre anzeigen"
+    Public comboboxJahrAuswahlErsterEintrag As String = TM_MAIN_COMBOBOX_SHOW_ALL_YEARS
 
     'Variable für Verbindungsstatus definieren
     Public connectState As Boolean = False

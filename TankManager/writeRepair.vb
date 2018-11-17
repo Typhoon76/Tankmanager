@@ -27,10 +27,10 @@ Module writeRepair
             Dim MyRepairArbeitsschrittNummer As Integer = 0
             Dim MyRepairArbeitsschritt As String = ""
 
-            For i = 0 To formNewRepair.listviewNewRepair.Items.Count - 1
+            For i = 0 To FormNewRepair.listviewNewRepair.Items.Count - 1
 
-                MyRepairArbeitsschrittNummer = formNewRepair.listviewNewRepair.Items(i).Text
-                MyRepairArbeitsschritt = formNewRepair.listviewNewRepair.Items(i).SubItems(1).Text
+                MyRepairArbeitsschrittNummer = FormNewRepair.listviewNewRepair.Items(i).Text
+                MyRepairArbeitsschritt = FormNewRepair.listviewNewRepair.Items(i).SubItems(1).Text
 
                 'mysql kommando definieren
                 Dim myQuerySchreibeReparaturItem As New MySqlCommand(MySqlInsertReparaturItem(myDate, myCosts, MyRepairArbeitsschrittNummer, MyRepairArbeitsschritt), con)

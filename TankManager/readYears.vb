@@ -17,13 +17,13 @@ Module readYears
         If dbResultYears.HasRows = True Then
 
             'ersten Eintrag einfügen
-            formMain.comboboxJahrAuswahl.Items.Add(comboboxJahrAuswahlErsterEintrag)
+            formMain.ComboboxJahrAuswahl.Items.Add(comboboxJahrAuswahlErsterEintrag)
 
             'Daten einlesen
             While (dbResultYears.Read())
 
                 'Inhalt der Spalte Jahre in Combobox eintragen
-                formMain.comboboxJahrAuswahl.Items.Add(dbResultYears("ComboboxJahre"))
+                formMain.ComboboxJahrAuswahl.Items.Add(dbResultYears("ComboboxJahre"))
 
             End While
 

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class formEditRepair
+Partial Class FormEditRepair
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -22,7 +22,7 @@ Partial Class formEditRepair
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formEditRepair))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormEditRepair))
         Me.buttonEditRepairCancel = New System.Windows.Forms.Button()
         Me.buttonEditRepairLVAdd = New System.Windows.Forms.Button()
         Me.buttonEditRepairLVEdit = New System.Windows.Forms.Button()
@@ -225,7 +225,7 @@ Partial Class formEditRepair
         Me.buttonEditRepairDelete.Text = "Reparatur löschen"
         Me.buttonEditRepairDelete.UseVisualStyleBackColor = True
         '
-        'formEditRepair
+        'FormEditRepair
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -238,7 +238,7 @@ Partial Class formEditRepair
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximumSize = New System.Drawing.Size(815, 445)
         Me.MinimumSize = New System.Drawing.Size(815, 445)
-        Me.Name = "formEditRepair"
+        Me.Name = "FormEditRepair"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Eintrag bearbeiten"
         Me.groupboxEditRepair.ResumeLayout(False)

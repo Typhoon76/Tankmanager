@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class formNewRepair
+Partial Class FormNewRepair
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -22,7 +22,7 @@ Partial Class formNewRepair
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formNewRepair))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormNewRepair))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.groupboxNewRepair = New System.Windows.Forms.GroupBox()
         Me.buttonNewRepairLVAdd = New System.Windows.Forms.Button()
@@ -225,7 +225,7 @@ Partial Class formNewRepair
         Me.buttonNewRepairSaveAndNew.Text = "Speichern && Neuer Eintrag"
         Me.buttonNewRepairSaveAndNew.UseVisualStyleBackColor = True
         '
-        'formNewRepair
+        'FormNewRepair
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -238,7 +238,7 @@ Partial Class formNewRepair
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximumSize = New System.Drawing.Size(815, 445)
         Me.MinimumSize = New System.Drawing.Size(815, 445)
-        Me.Name = "formNewRepair"
+        Me.Name = "FormNewRepair"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Neue Reparatur erstellen"
         Me.TableLayoutPanel1.ResumeLayout(False)

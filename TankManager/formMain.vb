@@ -1,12 +1,12 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class formMain
+Public Class FormMain
 
     ''' <summary>
     ''' structire to hold printed page details
     ''' </summary>
     ''' <remarks></remarks>
-    Private Structure pageDetails
+    Private Structure PageDetails
         Dim columns As Integer
         Dim rows As Integer
         Dim startCol As Integer
@@ -16,7 +16,7 @@ Public Class formMain
     ''' dictionary to hold printed page details, with index key
     ''' </summary>
     ''' <remarks></remarks>
-    Private pages As Dictionary(Of Integer, pageDetails)
+    Private pages As Dictionary(Of Integer, PageDetails)
 
     Dim maxPagesWide As Integer
     Dim maxPagesTall As Integer
@@ -43,15 +43,30 @@ Public Class formMain
     Public kilometerJahrError As Boolean = False
     Public verbrauchJahrError As Boolean = False
 
-    Private Sub formMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FormMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         '### BEGIN PROGRAM ###
 
         'Menutexte setzen
+        FormMainMenuFile.Text = TM_MAIN_MENU_FILE
+        FormMainMenuFileSetupPage.Text = TM_MAIN_MENU_FILE_SETUP_PAGE
+        FormMainMenuFilePreview.Text = TM_MAIN_MENU_FILE_PRINT_PREVIEW
+        FormMainMenuFilePrint.Text = TM_MAIN_MENU_FILE_PRINT
+        FormMainMenuFileExit.Text = TM_MAIN_MENU_FILE_EXIT
 
-        MenuExtrasExportToPdf.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF
-        MenuExtrasExportToPdfDgvRefuel.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REFUEL
-        MenuExtrasExportToPdfDgvRepair.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REPAIR
+        FormMainMenuEdit.Text = TM_MAIN_MENU_EDIT
+        FormMainMenuEditNewRefuel.Text = TM_MAIN_MENU_EDIT_NEW_REFUEL
+        FormMainMenuEditNewRepair.Text = TM_MAIN_MENU_EDIT_NEW_REPAIR
+        FormMainMenuEditSearch.Text = TM_MAIN_MENU_EDIT_SEARCH
+
+        FormMainMenuXtras.Text = TM_MAIN_MENU_EXTRAS
+        FormMainMenuXtrasExportToPDF.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF
+        FormMainMenuXtrasExportToPDFTableRefuel.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REFUEL
+        FormMainMenuXtrasExportToPDFTableRepair.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REPAIR
+        FormMainMenuXtrasSettings.Text = TM_MAIN_MENU_EXTRAS_SETTINGS
+
+        FormMainMenuHelp.Text = TM_MAIN_MENU_HELP
+        FormMainMenuHelpInfo.Text = TM_MAIN_MENU_HELP_INFO
 
         Try
 
@@ -62,14 +77,14 @@ Public Class formMain
             If IsArray(myConnectArray) Then
 
                 'wenn ja, dann fehlermeldung anzeigen
-                MessageBox.Show("Verbindung konnte nicht geöffnet werden:" & vbCrLf & myConnectArray(0) & vbCrLf & "Errorcode: " & myConnectArray(1), "MySQL Server Verbindung", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show(TM_ERROR_MESSAGE_CONNECTION_TO_SERVER_COULD_NOT_OPEN & vbCrLf & myConnectArray(0) & vbCrLf & "Errorcode: " & myConnectArray(1), TM_ERROR_TYPE_MYSQL_SERVER_CONNECTION, MessageBoxButtons.OK, MessageBoxIcon.Error)
 
             ElseIf myConnectArray = vbBoolean And myConnectArray = True Then
 
                 'wenn nein und rückgabe = wahr
 
                 'erfolg anzeigen
-                If myDebug = True Then MessageBox.Show("Verbindung offen", "MySQL Server Verbindung", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                'If myDebug = True Then MessageBox.Show(TM_ERROR_MESSAGE_CONNECTION_OPEN, TM_ERROR_TYPE_MYSQL_SERVER_CONNECTION, MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 'connectState auf wahr setzen
                 connectState = True
@@ -79,7 +94,7 @@ Public Class formMain
                 'wenn nein und rückgabe = falsch
 
                 'bereits bestehende Verbindung melden
-                If myDebug = True Then MessageBox.Show("Verbindung besteht bereits", "MySQL Server Verbindung", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                'If myDebug = True Then MessageBox.Show(TM_ERROR_MESSAGE_CONNECTION_ALREADY_EXISTS, TM_ERROR_TYPE_MYSQL_SERVER_CONNECTION, MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 'connectState auf wahr setzen
                 connectState = True
@@ -111,8 +126,7 @@ Public Class formMain
                 If settingsError = True Then
 
                     'dann fehlermeldung anzeigen
-                    MessageBox.Show("Es ist ein Fehler aufgetreten" & vbCrLf &
-                                    "Die Einstellungen konnten nicht richtig aus der Tabelle 'tbl_einstellungen' gelesen werden", "Tabellen Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show(TM_ERROR_MESSAGE_MYSQL_TABLE_SETTINGS_COULD_NOT_READ_COMPLETE, TM_ERROR_TYPE_MYSQL_TABLE, MessageBoxButtons.OK, MessageBoxIcon.Error)
 
                 Else
 
@@ -122,7 +136,7 @@ Public Class formMain
 
                     If LeseJahre() = True Then
 
-                        MessageBox.Show("'tbl_tanken' enthält keine Daten", "Tabellen Fehler", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        MessageBox.Show(TM_ERROR_MESSAGE_MYSQL_TABLE_REFUEL_HAS_NO_DATA, TM_ERROR_TYPE_MYSQL_TABLE, MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                     Else
 
@@ -138,12 +152,13 @@ Public Class formMain
                         If comboboxJahrAuswahlResult = False Then
 
                             'meldung anzeigen
-                            MessageBox.Show("Der Standardwert (" & tankmanagerSettings.selectedYear & ") der Combobox 'comboboxJahrAuswahl' entspricht keinem erlaubten Wert.")
+                            'MessageBox.Show("Der Standardwert (" & tankmanagerSettings.selectedYear & ") der Combobox 'comboboxJahrAuswahl' entspricht keinem erlaubten Wert.")
+                            MessageBox.Show(TM_MAIN_COMBOBOX_SELECTED_VALUE_IS_NOT_VALID.Replace("%s", tankmanagerSettings.selectedYear))
 
                         Else
 
                             'ansonsten startwert setzen
-                            comboboxJahrAuswahl.SelectedItem = tankmanagerSettings.selectedYear
+                            ComboboxJahrAuswahl.SelectedItem = tankmanagerSettings.selectedYear
 
                         End If
 
@@ -155,15 +170,15 @@ Public Class formMain
 
             Else
 
-                SeiteEinrichtenToolStripMenuItem.Enabled = False
-                DruckvorschauToolStripMenuItem.Enabled = False
-                DruckenToolStripMenuItem.Enabled = False
+                FormMainMenuFileSetupPage.Enabled = False
+                FormMainMenuFilePreview.Enabled = False
+                FormMainMenuFilePrint.Enabled = False
 
-                NeueTankquittungToolStripMenuItem.Enabled = False
-                NeueReparaturToolStripMenuItem.Enabled = False
-                SuchenToolStripMenuItem.Enabled = False
+                FormMainMenuEditNewRefuel.Enabled = False
+                FormMainMenuEditNewRepair.Enabled = False
+                FormMainMenuEditSearch.Enabled = False
 
-                MenuExtrasExportToPdf.Enabled = False
+                FormMainMenuXtrasExportToPDF.Enabled = False
 
             End If
 
@@ -172,15 +187,15 @@ Public Class formMain
             'Fehler abfangen
 
             'fehler meldung und fehlercode anzeigen
-            MessageBox.Show("Es ist ein Fehler aufgetreten" & vbCrLf & myerror.Message & vbCrLf & "Errorcode: " & myerror.Number, "MySQL Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(TM_ERROR_MESSAGE_STANDARD & vbCrLf & myerror.Message & vbCrLf & TM_ERROR_CODE & myerror.Number, TM_ERROR_TYPE_MYSQL, MessageBoxButtons.OK, MessageBoxIcon.Error)
 
         End Try
 
     End Sub
 
-    Private Sub formMain_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+    Private Sub FormMain_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
 
-        If myClosingDialog() = True Then
+        If MyClosingDialog() = True Then
 
             'Fenster wird geschlossen
             Me.Dispose()
@@ -197,9 +212,9 @@ Public Class formMain
 
     End Sub
 
-    Private Sub BeendenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BeendenToolStripMenuItem.Click
+    Private Sub FormMainMenuFileExit_Click(sender As Object, e As EventArgs) Handles FormMainMenuFileExit.Click
 
-        If myClosingDialog() = True Then
+        If MyClosingDialog() = True Then
 
             'Fenster wird geschlossen
             Me.Dispose()
@@ -211,31 +226,31 @@ Public Class formMain
 
     End Sub
 
-    Private Sub NeueTankquittungToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NeueTankquittungToolStripMenuItem.Click
+    Private Sub FormMainMenuEditNewRefuel_Click(sender As Object, e As EventArgs) Handles FormMainMenuEditNewRefuel.Click
 
-        formNewRefuel.Show()
-
-    End Sub
-
-    Private Sub NeueReparaturToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NeueReparaturToolStripMenuItem.Click
-
-        formNewRepair.Show()
+        FormNewRefuel.Show()
 
     End Sub
 
-    Private Sub EinstellungenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EinstellungenToolStripMenuItem.Click
+    Private Sub FormMainMenuEditNewRepair_Click(sender As Object, e As EventArgs) Handles FormMainMenuEditNewRepair.Click
 
-        formSettings.Show()
-
-    End Sub
-
-    Private Sub InfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InfoToolStripMenuItem.Click
-
-        formInfo.Show()
+        FormNewRepair.Show()
 
     End Sub
 
-    Private Function myClosingDialog()
+    Private Sub FormMainMenuXtrasSettings_Click(sender As Object, e As EventArgs) Handles FormMainMenuXtrasSettings.Click
+
+        FormSettings.Show()
+
+    End Sub
+
+    Private Sub FormMainMenuHelpInfo_Click(sender As Object, e As EventArgs) Handles FormMainMenuHelpInfo.Click
+
+        FormInfo.Show()
+
+    End Sub
+
+    Private Function MyClosingDialog()
 
         '### Programm beenden
 
@@ -243,7 +258,7 @@ Public Class formMain
         Dim closingState = False
 
         'abfrage ob programm wirklich geschlossen werden soll
-        Select Case MsgBox("Wollen Sie das Programm wirklich beenden?", vbQuestion Or vbYesNo Or vbDefaultButton2, "Programm beenden ?")
+        Select Case MsgBox(TM_MESSAGE_QUESTION_EXIT_PROGRAM, vbQuestion Or vbYesNo Or vbDefaultButton2, TM_MESSAGE_TITLE_EXIT_PROGRAM)
 
             Case vbYes
 
@@ -257,14 +272,14 @@ Public Class formMain
                 If IsArray(myDisconnectArray) Then
 
                     'wenn ja, dann fehlermeldung anzeigen
-                    MessageBox.Show("Verbindung konnte nicht geschlossen werden:" & vbCrLf & myDisconnectArray(0) & vbCrLf & "Errorcode: " & myDisconnectArray(1), "MySQL Server Verbindung", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show(TM_ERROR_MESSAGE_CONNECTION_TO_SERVER_COULD_NOT_CLOSED & vbCrLf & myDisconnectArray(0) & vbCrLf & TM_ERROR_CODE & myDisconnectArray(1), TM_ERROR_TYPE_MYSQL_SERVER_CONNECTION, MessageBoxButtons.OK, MessageBoxIcon.Error)
 
                 ElseIf myDisconnectArray = vbBoolean And myDisconnectArray = True And connectState = True Then
 
                     'wenn nein und rückgabe gleich wahr
 
                     'erfolg anzeigen
-                    If myDebug = True Then MessageBox.Show("Verbindung geschlossen", "MySQL Server Verbindung", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    'If myDebug = True Then MessageBox.Show(TM_ERROR_MESSAGE_CONNECTION_CLOSED, TM_ERROR_TYPE_MYSQL_SERVER_CONNECTION, MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 End If
 
@@ -285,138 +300,72 @@ Public Class formMain
 
     End Function
 
-    Private Sub comboboxJahrAuswahl_SelectedIndexChanged(sender As Object, e As EventArgs) Handles comboboxJahrAuswahl.SelectedIndexChanged
+    Private Sub ComboboxJahrAuswahl_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboboxJahrAuswahl.SelectedIndexChanged
 
         'formMain neu aufbauen
         refreshFormMain()
 
     End Sub
 
-    Private Sub switchReparaturen_Click(sender As Object, e As EventArgs) Handles switchReparaturen.Click
+    Private Sub SwitchReparaturen_Click(sender As Object, e As EventArgs) Handles SwitchReparaturen.Click
 
         'timer starten
-        tim.Enabled = True
+        Tim.Enabled = True
 
         'die blaue markierung des buttons entfernen durch setzen des focus auf ein anderes objekt
         Label1.Focus()
 
     End Sub
 
-    Private WithEvents tim As New Timer With {.Interval = 1}
-
-    Private Sub tim_Tick(sender As Object, e As EventArgs) Handles tim.Tick
-
-        'wenn fensterstatusminimal wahr
-        If windowsStateMinimized = True Then
-
-            'fenstergröße plus 10
-            Me.Width = Me.Width + 10
-
-            'wenn fenstergröße maximal
-            If Me.Width = 1920 Then
-
-                'timer stoppen
-                tim.Enabled = False
-
-                'fensterstatusminimal auf falsch setzen
-                windowsStateMinimized = False
-
-                'button text ändern
-                switchReparaturen.Text = "<< Reparaturen verbergen"
-
-            End If
-
-        ElseIf windowsStateMinimized = False Then
-
-            'wenn fenster vergrößert
-
-            'fenstergröße minus 10
-            Me.Width = Me.Width - 10
-
-            'wenn fenstergröße minila
-            If Me.Width = 1270 Then
-
-                'timer stoppen
-                tim.Enabled = False
-
-                'fensterstatusminimal auf wahr setzen
-                windowsStateMinimized = True
-
-                'button text ändern
-                switchReparaturen.Text = "Reparaturen anzeigen >>"
-
-            End If
-
-        End If
-
-        'fenster zentrieren
-        CenterForm(Me)
-
-    End Sub
-
-    'von seite https://stackoverflow.com/questions/19392083/center-form-on-screen-or-on-parent
-    Public Shared Sub CenterForm(ByVal frm As Form, Optional ByVal parent As Form = Nothing)
-        '' Note: call this from frm's Load event!
-        Dim r As Rectangle
-        If parent IsNot Nothing Then
-            r = parent.RectangleToScreen(parent.ClientRectangle)
-        Else
-            r = Screen.FromPoint(frm.Location).WorkingArea
-        End If
-
-        Dim x = r.Left + (r.Width - frm.Width) \ 2
-        Dim y = r.Top + (r.Height - frm.Height) \ 2
-        frm.Location = New Point(x, y)
-    End Sub
-
-    Private Sub datagridviewTanken_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagridviewTanken.CellDoubleClick
+    Private Sub DatagridviewTanken_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DatagridviewTanken.CellDoubleClick
 
         'Index der Zeile ermitteln
-        Dim rowIndex As Integer = datagridviewTanken.CurrentRow.Index
+        Dim rowIndex As Integer = DatagridviewTanken.CurrentRow.Index
 
         'ID des Eintrags auslesen
-        Dim myID = datagridviewTanken.Item(0, rowIndex).Value.ToString
+        Dim myID = DatagridviewTanken.Item(0, rowIndex).Value.ToString
 
         'wenn Abfrage auf die ID ohne Fehler
         If LeseTankenEintrag(MySqlSelectTankenEintrag(myID)) = False Then
 
             'Eintrag anzeigen
-            formEditRefuel.Show()
+            FormEditRefuel.Show()
 
         Else
 
             'ansonsten Fehler anzeigen
-            MessageBox.Show("Eintrag Nummer " & myID & " konnte nicht gelesen werden", "Datenfehler", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            'MessageBox.Show("Eintrag Nummer " & myID & " konnte nicht gelesen werden", TM_ERROR_TYPE_DATA, MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(TM_ERROR_MESSAGE_ENTRY_COULD_NOT_READ.Replace("%s", myID), TM_ERROR_TYPE_DATA, MessageBoxButtons.OK, MessageBoxIcon.Error)
 
         End If
 
     End Sub
 
-    Private Sub datagridviewReparaturen_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagridviewReparaturen.CellDoubleClick
+    Private Sub DatagridviewReparaturen_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DatagridviewReparaturen.CellDoubleClick
 
         'Index der Zeile ermitteln
-        Dim rowIndex As Integer = datagridviewReparaturen.CurrentRow.Index
+        Dim rowIndex As Integer = DatagridviewReparaturen.CurrentRow.Index
 
         'ID des Eintrags auslesen
-        Dim myID = datagridviewReparaturen.Item(0, rowIndex).Value.ToString
+        Dim myID = DatagridviewReparaturen.Item(0, rowIndex).Value.ToString
 
         'wenn ein Eintrag der ID in der DB gefunden wurde
         If LeseReparaturEintrag(MySqlSelectReparaturEintrag(myID)) = False Then
 
             'dann Eintrag anzeigen
-            formEditRepair.Show()
+            FormEditRepair.Show()
 
         End If
 
     End Sub
 
-    Private Sub SeiteEinrichtenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SeiteEinrichtenToolStripMenuItem.Click
+    Private Sub FormMainMenuFileSetupPage_Click(sender As Object, e As EventArgs) Handles FormMainMenuFileSetupPage.Click
 
         'Einstellungen setzen
-        With pageSetupDialogFormMain
+        With PageSetupDialogFormMain
 
             'Dokument zuweisen
-            .Document = printDocumentFormMain
+            .Document = PrintDocumentFormMain
 
             'Einstellungen für Ränder setzen
             .PageSettings.Margins.Left = 10
@@ -434,49 +383,50 @@ Public Class formMain
 
     End Sub
 
-    Private Sub DruckvorschauToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DruckvorschauToolStripMenuItem.Click
+    Private Sub FormMainMenuFilePreview_Click(sender As Object, e As EventArgs) Handles FormMainMenuFilePreview.Click
 
         'Drucken Icon im printPreviewDialog ersetzen
         'https://www.codeproject.com/Questions/675237/How-to-Access-Print-Button-Event-of-Print-Preview
-        Dim b As New ToolStripButton
-        b.Image = CType(printPreviewFormMain.Controls(1), ToolStrip).ImageList.Images(0)
-        b.ToolTipText = "Drucken"
-        b.DisplayStyle = ToolStripItemDisplayStyle.Image
-        AddHandler b.Click, AddressOf printPreviewFormMain_PrintClick
-        CType(printPreviewFormMain.Controls(1), ToolStrip).Items.RemoveAt(0)
-        CType(printPreviewFormMain.Controls(1), ToolStrip).Items.Insert(0, b)
-        AddHandler printDocumentFormMain.PrintPage, AddressOf printDocumentFormMain_PrintPage
+        Dim b As New ToolStripButton With {
+            .Image = CType(PrintPreviewFormMain.Controls(1), ToolStrip).ImageList.Images(0),
+            .ToolTipText = "Drucken",
+            .DisplayStyle = ToolStripItemDisplayStyle.Image
+        }
+        AddHandler b.Click, AddressOf PrintPreviewFormMain_PrintClick
+        CType(PrintPreviewFormMain.Controls(1), ToolStrip).Items.RemoveAt(0)
+        CType(PrintPreviewFormMain.Controls(1), ToolStrip).Items.Insert(0, b)
+        AddHandler PrintDocumentFormMain.PrintPage, AddressOf PrintDocumentFormMain_PrintPage
 
         'Variabel für Rückgabewert initialisieren
-        Dim myPreviewRC = 0
+        Dim myPreviewRC As Integer = 0
 
         'Abfrage was angezeigt werden soll
-        myPreviewRC = requestChoice("Abfrage für Vorschau", "Welche Vorschau soll angezeigt werden?", "Vorschau Tankenliste", "Vorschau Reparaturliste")
+        myPreviewRC = RequestChoice(TM_MAIN_PREVIEW_REQUEST_TITLE, TM_MAIN_PREVIEW_REQUEST_QUESTION, TM_MAIN_TABLE_REFUEL, TM_MAIN_TABLE_REPAIRS)
 
         'wenn Rückgabewert = 1 (Tankliste)
         If myPreviewRC = 1 Then
 
             'das datagridviewTanken zuweisen
-            DruckDataGridView = datagridviewTanken
+            DruckDataGridView = DatagridviewTanken
 
             'wenn Jahresauswahl numerisch ist
-            If IsNumeric(comboboxJahrAuswahl.Text) Then
+            If IsNumeric(ComboboxJahrAuswahl.Text) Then
 
                 'Titel auf das Jahr setzen
-                TitleDruckDataGridView.Text = "Tankliste: " & comboboxJahrAuswahl.Text
+                TitleDruckDataGridView.Text = TM_MAIN_TABLE_REFUEL_COLON & ComboboxJahrAuswahl.Text
 
             Else
 
                 'ansonsten Titel auf alle Jahre setzen
-                TitleDruckDataGridView.Text = "Tankliste: Alle Jahre"
+                TitleDruckDataGridView.Text = TM_MAIN_TABLE_REFUEL_COLON & TM_MAIN_TABLE_ALL_YEARS_PART
 
             End If
 
             'Einstellungen für Vorschau setzen
-            With printPreviewFormMain
+            With PrintPreviewFormMain
 
                 'Dokument zuweisen
-                .Document = printDocumentFormMain
+                .Document = PrintDocumentFormMain
 
                 'Startposition setzen
                 .StartPosition = FormStartPosition.CenterScreen
@@ -496,26 +446,26 @@ Public Class formMain
         ElseIf myPreviewRC = 2 Then
 
             'das datagridviewReparaturen zuweisen
-            DruckDataGridView = datagridviewReparaturen
+            DruckDataGridView = DatagridviewReparaturen
 
             'wenn Jahresauswahl numerisch ist
-            If IsNumeric(comboboxJahrAuswahl.Text) Then
+            If IsNumeric(ComboboxJahrAuswahl.Text) Then
 
                 'Titel auf das Jahr setzen
-                TitleDruckDataGridView.Text = "Reparaturliste: " & comboboxJahrAuswahl.Text
+                TitleDruckDataGridView.Text = TM_MAIN_TABLE_REPAIRS_COLON & ComboboxJahrAuswahl.Text
 
             Else
 
                 'ansonsten Titel auf alle Jahre setzen
-                TitleDruckDataGridView.Text = "Reparaturliste: Alle Jahre"
+                TitleDruckDataGridView.Text = TM_MAIN_TABLE_REPAIRS_COLON & TM_MAIN_TABLE_ALL_YEARS_PART
 
             End If
 
             'Einstellungen für Vorschau setzen
-            With printPreviewFormMain
+            With PrintPreviewFormMain
 
                 'Dokument zuweisen
-                .Document = printDocumentFormMain
+                .Document = PrintDocumentFormMain
 
                 'Startposition setzen
                 .StartPosition = FormStartPosition.CenterScreen
@@ -536,18 +486,18 @@ Public Class formMain
     End Sub
 
     'https://www.codeproject.com/Questions/675237/How-to-Access-Print-Button-Event-of-Print-Preview
-    Private Sub printPreviewFormMain_PrintClick(sender As Object, e As EventArgs)
+    Private Sub PrintPreviewFormMain_PrintClick(sender As Object, e As EventArgs)
 
         Try
 
             'Dokument zuweisen
-            printDialogFormMain.Document = printDocumentFormMain
+            PrintDialogFormMain.Document = PrintDocumentFormMain
 
             'Druckdialog anzeigen
-            If printDialogFormMain.ShowDialog() = DialogResult.OK Then
+            If PrintDialogFormMain.ShowDialog() = DialogResult.OK Then
 
                 'Dokument drucken
-                printDocumentFormMain.Print()
+                PrintDocumentFormMain.Print()
 
             End If
 
@@ -557,65 +507,65 @@ Public Class formMain
 
     End Sub
 
-    Private Sub DruckenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DruckenToolStripMenuItem.Click
+    Private Sub FormMainMenuFilePrint_Click(sender As Object, e As EventArgs) Handles FormMainMenuFilePrint.Click
 
         'Variabel für Rückgabewert initialisieren
-        Dim myPreviewRC = 0
+        Dim myPrintRC As Integer = 0
 
         'Abfrage was gedruckt werden soll
-        myPreviewRC = requestChoice("Abfrage für Druck", "Welche Liste soll gedruckt werden?", "Tankenliste", "Reparaturliste")
+        myPrintRC = RequestChoice(TM_MAIN_PRINT_REQUEST_TITLE, TM_MAIN_PRINT_REQUEST_QUESTION, TM_MAIN_TABLE_REFUEL, TM_MAIN_TABLE_REPAIRS)
 
         'wenn Rückgabewert = 1 (Tankliste)
-        If myPreviewRC = 1 Then
+        If myPrintRC = 1 Then
 
             'das datagridviewTanken zuweisen
-            DruckDataGridView = datagridviewTanken
+            DruckDataGridView = DatagridviewTanken
 
             'wenn Jahresauswahl numerisch ist
-            If IsNumeric(comboboxJahrAuswahl.Text) Then
+            If IsNumeric(ComboboxJahrAuswahl.Text) Then
 
                 'Titel auf das Jahr setzen
-                TitleDruckDataGridView.Text = "Tankliste: " & comboboxJahrAuswahl.Text
+                TitleDruckDataGridView.Text = TM_MAIN_TABLE_REFUEL_COLON & ComboboxJahrAuswahl.Text
 
             Else
 
                 'ansonsten Titel auf alle Jahre setzen
-                TitleDruckDataGridView.Text = "Tankliste: Alle Jahre"
+                TitleDruckDataGridView.Text = TM_MAIN_TABLE_REFUEL_COLON & TM_MAIN_TABLE_ALL_YEARS_PART
 
             End If
 
             'Druckdialog anzeigen
-            If printDialogFormMain.ShowDialog() = DialogResult.OK Then
+            If PrintDialogFormMain.ShowDialog() = DialogResult.OK Then
 
                 'Dokument drucken
-                printDocumentFormMain.Print()
+                PrintDocumentFormMain.Print()
 
             End If
 
             'wenn Rückgabewert = 2 (Reparaturliste)
-        ElseIf myPreviewRC = 2 Then
+        ElseIf myPrintRC = 2 Then
 
             'das datagridviewReparaturen zuweisen
-            DruckDataGridView = datagridviewReparaturen
+            DruckDataGridView = DatagridviewReparaturen
 
             'wenn Jahresauswahl numerisch ist
-            If IsNumeric(comboboxJahrAuswahl.Text) Then
+            If IsNumeric(ComboboxJahrAuswahl.Text) Then
 
                 'Titel auf das Jahr setzen
-                TitleDruckDataGridView.Text = "Reparaturliste: " & comboboxJahrAuswahl.Text
+                TitleDruckDataGridView.Text = TM_MAIN_TABLE_REPAIRS_COLON & ComboboxJahrAuswahl.Text
 
             Else
 
                 'ansonsten Titel auf alle Jahre setzen
-                TitleDruckDataGridView.Text = "Reparaturliste: Alle Jahre"
+                TitleDruckDataGridView.Text = TM_MAIN_TABLE_REPAIRS_COLON & TM_MAIN_TABLE_ALL_YEARS_PART
 
             End If
 
             'Druckdialog anzeigen
-            If printDialogFormMain.ShowDialog() = DialogResult.OK Then
+            If PrintDialogFormMain.ShowDialog() = DialogResult.OK Then
 
                 'Dokument drucken
-                printDocumentFormMain.Print()
+                PrintDocumentFormMain.Print()
 
             End If
 
@@ -623,7 +573,7 @@ Public Class formMain
 
     End Sub
 
-    Private Function requestChoice(myTitleText, myDescriptionText, myRefuelText, myRepairText)
+    Private Function RequestChoice(myTitleText, myDescriptionText, myRefuelText, myRepairText)
 
         'Variabel für Rückgabecode initialisieren
         Dim myReturnCode = 0
@@ -656,10 +606,10 @@ Public Class formMain
             'dann Rückgabecode abfragen
             myReturnCode = FormPrintingChoice.returning()
 
-            'Rückgabecode zurückgeben
-            Return myReturnCode
-
         End If
+
+        'Rückgabecode zurückgeben
+        Return myReturnCode
 
     End Function
 
@@ -669,35 +619,35 @@ Public Class formMain
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     ''' <remarks></remarks>
-    Private Sub printDocumentFormMain_BeginPrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles printDocumentFormMain.BeginPrint
+    Private Sub PrintDocumentFormMain_BeginPrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles PrintDocumentFormMain.BeginPrint
 
         'Fix für Querformat
         Dim myWidth, myHeight As Single
 
         'wenn Querformat
-        If printDocumentFormMain.DefaultPageSettings.Landscape = True Then
+        If PrintDocumentFormMain.DefaultPageSettings.Landscape = True Then
 
             'dann Breite und Höhe tauschen
-            myWidth = printDocumentFormMain.DefaultPageSettings.PrintableArea.Height
-            myHeight = printDocumentFormMain.DefaultPageSettings.PrintableArea.Width
+            myWidth = PrintDocumentFormMain.DefaultPageSettings.PrintableArea.Height
+            myHeight = PrintDocumentFormMain.DefaultPageSettings.PrintableArea.Width
 
         Else
 
             'ansonsten Breite und Höhe zuweisen
-            myWidth = printDocumentFormMain.DefaultPageSettings.PrintableArea.Width
-            myHeight = printDocumentFormMain.DefaultPageSettings.PrintableArea.Height
+            myWidth = PrintDocumentFormMain.DefaultPageSettings.PrintableArea.Width
+            myHeight = PrintDocumentFormMain.DefaultPageSettings.PrintableArea.Height
 
         End If
 
-        pages = New Dictionary(Of Integer, pageDetails)
+        pages = New Dictionary(Of Integer, PageDetails)
 
         'Dim maxWidth As Integer = CInt(printDocumentFormMain.DefaultPageSettings.PrintableArea.Width) - 40
         'Dim maxHeight As Integer = CInt(printDocumentFormMain.DefaultPageSettings.PrintableArea.Height) - 40 + TitleDruckDataGridView.Height
         Dim maxWidth As Integer = CInt(myWidth) - 40
-        Dim maxHeight As Integer = CInt(myHeight) - 40 + TitleDruckDataGridView.Height - printDocumentFormMain.DefaultPageSettings.Margins.Bottom
+        Dim maxHeight As Integer = CInt(myHeight) - 40 + TitleDruckDataGridView.Height - PrintDocumentFormMain.DefaultPageSettings.Margins.Bottom
 
         Dim pageCounter As Integer = 0
-        pages.Add(pageCounter, New pageDetails)
+        pages.Add(pageCounter, New PageDetails)
 
         Dim columnCounter As Integer = 0
 
@@ -708,15 +658,15 @@ Public Class formMain
                 columnSum += DruckDataGridView.Columns(c).Width
                 columnCounter += 1
             Else
-                pages(pageCounter) = New pageDetails With {.columns = columnCounter, .rows = 0, .startCol = pages(pageCounter).startCol}
+                pages(pageCounter) = New PageDetails With {.columns = columnCounter, .rows = 0, .startCol = pages(pageCounter).startCol}
                 columnSum = DruckDataGridView.RowHeadersWidth + DruckDataGridView.Columns(c).Width
                 columnCounter = 1
                 pageCounter += 1
-                pages.Add(pageCounter, New pageDetails With {.startCol = c})
+                pages.Add(pageCounter, New PageDetails With {.startCol = c})
             End If
             If c = DruckDataGridView.Columns.Count - 1 Then
                 If pages(pageCounter).columns = 0 Then
-                    pages(pageCounter) = New pageDetails With {.columns = columnCounter, .rows = 0, .startCol = pages(pageCounter).startCol}
+                    pages(pageCounter) = New PageDetails With {.columns = columnCounter, .rows = 0, .startCol = pages(pageCounter).startCol}
                 End If
             End If
         Next
@@ -735,14 +685,14 @@ Public Class formMain
                 rowSum += DruckDataGridView.Rows(r).Height
                 rowCounter += 1
             Else
-                pages(pageCounter) = New pageDetails With {.columns = pages(pageCounter).columns, .rows = rowCounter, .startCol = pages(pageCounter).startCol, .startRow = pages(pageCounter).startRow}
+                pages(pageCounter) = New PageDetails With {.columns = pages(pageCounter).columns, .rows = rowCounter, .startCol = pages(pageCounter).startCol, .startRow = pages(pageCounter).startRow}
                 For x As Integer = 1 To maxPagesWide - 1
-                    pages(pageCounter + x) = New pageDetails With {.columns = pages(pageCounter + x).columns, .rows = rowCounter, .startCol = pages(pageCounter + x).startCol, .startRow = pages(pageCounter).startRow}
+                    pages(pageCounter + x) = New PageDetails With {.columns = pages(pageCounter + x).columns, .rows = rowCounter, .startCol = pages(pageCounter + x).startCol, .startRow = pages(pageCounter).startRow}
                 Next
 
                 pageCounter += maxPagesWide
                 For x As Integer = 0 To maxPagesWide - 1
-                    pages.Add(pageCounter + x, New pageDetails With {.columns = pages(x).columns, .rows = 0, .startCol = pages(x).startCol, .startRow = r})
+                    pages.Add(pageCounter + x, New PageDetails With {.columns = pages(x).columns, .rows = 0, .startCol = pages(x).startCol, .startRow = r})
                 Next
 
                 rowSum = DruckDataGridView.ColumnHeadersHeight + DruckDataGridView.Rows(r).Height
@@ -751,7 +701,7 @@ Public Class formMain
             If r = DruckDataGridView.Rows.Count - 2 Then
                 For x As Integer = 0 To maxPagesWide - 1
                     If pages(pageCounter + x).rows = 0 Then
-                        pages(pageCounter + x) = New pageDetails With {.columns = pages(pageCounter + x).columns, .rows = rowCounter, .startCol = pages(pageCounter + x).startCol, .startRow = pages(pageCounter + x).startRow}
+                        pages(pageCounter + x) = New PageDetails With {.columns = pages(pageCounter + x).columns, .rows = rowCounter, .startCol = pages(pageCounter + x).startCol, .startRow = pages(pageCounter + x).startRow}
                     End If
                 Next
             End If
@@ -770,14 +720,15 @@ Public Class formMain
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     ''' <remarks></remarks>
-    Private Sub printDocumentFormMain_PrintPage(ByVal sender As System.Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles printDocumentFormMain.PrintPage
+    Private Sub PrintDocumentFormMain_PrintPage(ByVal sender As System.Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocumentFormMain.PrintPage
 
         'Dim rect As New Rectangle(20, 20, CInt(printDocumentFormMain.DefaultPageSettings.PrintableArea.Width), Label1.Height)
-        Dim rect As New Rectangle(20, 20, CInt(printDocumentFormMain.DefaultPageSettings.PrintableArea.Width), TitleDruckDataGridView.Height - printDocumentFormMain.DefaultPageSettings.Margins.Bottom)
+        Dim rect As New Rectangle(20, 20, CInt(PrintDocumentFormMain.DefaultPageSettings.PrintableArea.Width), TitleDruckDataGridView.Height - PrintDocumentFormMain.DefaultPageSettings.Margins.Bottom)
 
-        Dim sf As New StringFormat
-        sf.Alignment = StringAlignment.Center
-        sf.LineAlignment = StringAlignment.Center
+        Dim sf As New StringFormat With {
+            .Alignment = StringAlignment.Center,
+            .LineAlignment = StringAlignment.Center
+        }
 
         'e.Graphics.DrawString(Label1.Text, Label1.Font, Brushes.Black, rect, sf)
         e.Graphics.DrawString(TitleDruckDataGridView.Text, TitleDruckDataGridView.Font, Brushes.Black, rect, sf)
@@ -843,15 +794,15 @@ Public Class formMain
 
     End Sub
 
-    Private Sub MenuExtrasExportToPdfDgvRefuel_Click(sender As Object, e As EventArgs) Handles MenuExtrasExportToPdfDgvRefuel.Click
+    Private Sub FormMainMenuXtrasExportToPDFTableRefuel_Click(sender As Object, e As EventArgs) Handles FormMainMenuXtrasExportToPDFTableRefuel.Click
 
-        ExportToPDF(datagridviewTanken, 1)
+        ExportToPDF(DatagridviewTanken, 1)
 
     End Sub
 
-    Private Sub MenuExtrasExportToPdfDgvRepair_Click(sender As Object, e As EventArgs) Handles MenuExtrasExportToPdfDgvRepair.Click
+    Private Sub FormMainMenuXtrasExportToPDFTableRepair_Click(sender As Object, e As EventArgs) Handles FormMainMenuXtrasExportToPDFTableRepair.Click
 
-        ExportToPDF(datagridviewReparaturen, 2)
+        ExportToPDF(DatagridviewReparaturen, 2)
 
     End Sub
 

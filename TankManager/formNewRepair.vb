@@ -1,4 +1,4 @@
-﻿Public Class formNewRepair
+﻿Public Class FormNewRepair
 
     Private Sub formNewRepair_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

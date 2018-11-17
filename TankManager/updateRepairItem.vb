@@ -13,11 +13,11 @@ Module updateRepairItem
 
         'Datumformat für DB anpassen
         'Dim MyRepairDate As String = Convert.ToDateTime(repairDate).ToString("yyyy-MM-dd")
-        Dim MyRepairDate As String = Convert.ToDateTime(formEditRepair.dateTimePickerEditRepair.Value).ToString("yyyy-MM-dd")
+        Dim MyRepairDate As String = Convert.ToDateTime(FormEditRepair.dateTimePickerEditRepair.Value).ToString("yyyy-MM-dd")
 
         'Kommas durch Punkte setzen
         'Dim MyRepairCosts As String = repairCosts.Replace(",", ".")
-        Dim MyRepairCosts As String = formEditRepair.textboxEditRepairCosts.Text.Replace(",", ".")
+        Dim MyRepairCosts As String = FormEditRepair.textboxEditRepairCosts.Text.Replace(",", ".")
 
         Try
 
@@ -58,10 +58,10 @@ Module updateRepairItem
                     Dim MyRepairArbeitsschrittNummer As Integer = 0
                     Dim MyRepairArbeitsschritt As String = ""
 
-                    For i = 0 To formEditRepair.listviewEditRepair.Items.Count - 1
+                    For i = 0 To FormEditRepair.listviewEditRepair.Items.Count - 1
 
-                        MyRepairArbeitsschrittNummer = formEditRepair.listviewEditRepair.Items(i).Text
-                        MyRepairArbeitsschritt = formEditRepair.listviewEditRepair.Items(i).SubItems(1).Text
+                        MyRepairArbeitsschrittNummer = FormEditRepair.listviewEditRepair.Items(i).Text
+                        MyRepairArbeitsschritt = FormEditRepair.listviewEditRepair.Items(i).SubItems(1).Text
 
                         'mysql kommando definieren
                         Dim myQueryUpdateReparaturArbeitschritt As New MySqlCommand(MySqlInsertReparaturArbeitsschritt(MyID, MyRepairArbeitsschrittNummer, MyRepairArbeitsschritt), con)

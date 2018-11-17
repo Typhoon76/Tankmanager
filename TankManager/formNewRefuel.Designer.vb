@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class formNewRefuel
+Partial Class FormNewRefuel
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -22,7 +22,7 @@ Partial Class formNewRefuel
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formNewRefuel))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormNewRefuel))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -414,7 +414,7 @@ Partial Class formNewRefuel
         Me.buttonNewRefuelSaveAndExit.Text = "Speichern && Schließen"
         Me.buttonNewRefuelSaveAndExit.UseVisualStyleBackColor = True
         '
-        'formNewRefuel
+        'FormNewRefuel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -427,7 +427,7 @@ Partial Class formNewRefuel
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximumSize = New System.Drawing.Size(815, 340)
         Me.MinimumSize = New System.Drawing.Size(815, 340)
-        Me.Name = "formNewRefuel"
+        Me.Name = "FormNewRefuel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Neuen Eintrag erstellen"
         Me.TableLayoutPanel1.ResumeLayout(False)

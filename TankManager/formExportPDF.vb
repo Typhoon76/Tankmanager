@@ -1,4 +1,4 @@
-﻿Public Class formExportPDF
+﻿Public Class FormExportPDF
 
     ' vb.net export datagridview to pdf
     ' https://itextpdf.com/

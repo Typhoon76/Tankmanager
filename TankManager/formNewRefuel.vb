@@ -1,4 +1,4 @@
-﻿Public Class formNewRefuel
+﻿Public Class FormNewRefuel
 
     Private Sub formNewRefuel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

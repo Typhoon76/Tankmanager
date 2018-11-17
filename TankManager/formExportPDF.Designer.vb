@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class formExportPDF
+Partial Class FormExportPDF
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -22,7 +22,7 @@ Partial Class formExportPDF
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formExportPDF))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormExportPDF))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.groupboxExportPDFOptionen = New System.Windows.Forms.GroupBox()
         Me.radiobuttonExportPDFTabelle = New System.Windows.Forms.RadioButton()
@@ -340,7 +340,7 @@ Partial Class formExportPDF
         Me.buttonExportPDFExport.Text = "Exportieren"
         Me.buttonExportPDFExport.UseVisualStyleBackColor = True
         '
-        'formExportPDF
+        'FormExportPDF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -350,7 +350,7 @@ Partial Class formExportPDF
         Me.Controls.Add(Me.buttonExportPDFExport)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "formExportPDF"
+        Me.Name = "FormExportPDF"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Exportieren in PDF"
         Me.TableLayoutPanel1.ResumeLayout(False)

@@ -45,10 +45,10 @@ Module Module3rdPartyExportPDF
         End If
 
         'wenn Jahresauswahl numerisch ist
-        If IsNumeric(formMain.comboboxJahrAuswahl.Text) Then
+        If IsNumeric(formMain.ComboboxJahrAuswahl.Text) Then
 
             'Jahr an Dateiname anhängen
-            myFile = myFile & formMain.comboboxJahrAuswahl.Text
+            myFile = myFile & formMain.ComboboxJahrAuswahl.Text
 
         Else
 

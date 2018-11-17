@@ -27,19 +27,19 @@ TankManager
   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="T:TankManager.formMain.pageDetails">
+<member name="T:TankManager.FormMain.PageDetails">
  <summary>
  structire to hold printed page details
  </summary>
  <remarks></remarks>
 </member>
-<member name="F:TankManager.formMain.pages">
+<member name="F:TankManager.FormMain.pages">
  <summary>
  dictionary to hold printed page details, with index key
  </summary>
  <remarks></remarks>
 </member>
-<member name="M:TankManager.formMain.printDocumentFormMain_BeginPrint(System.Object,System.Drawing.Printing.PrintEventArgs)">
+<member name="M:TankManager.FormMain.PrintDocumentFormMain_BeginPrint(System.Object,System.Drawing.Printing.PrintEventArgs)">
  <summary>
  the majority of this Sub is calculating printed page ranges
  </summary>
@@ -47,7 +47,7 @@ TankManager
  <param name="e"></param>
  <remarks></remarks>
 </member>
-<member name="M:TankManager.formMain.printDocumentFormMain_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+<member name="M:TankManager.FormMain.PrintDocumentFormMain_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
  <summary>
  this is the actual printing routine.
  using the pagedetails i calculated earlier, it prints a title,

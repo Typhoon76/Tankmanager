@@ -3,7 +3,7 @@
     Public Function refreshFormMain()
 
         'ergebnis der comboxbox auswahl definieren und gleich den ausgewählten wert eintragen
-        Dim resultComboboxJahr As String = formMain.comboboxJahrAuswahl.SelectedItem.ToString
+        Dim resultComboboxJahr As String = formMain.ComboboxJahrAuswahl.SelectedItem.ToString
 
         'variable für mysql befehl erstellen und eine leere zeichenkette zuweisen
         Dim myQueryJahre As String = ""
@@ -60,7 +60,7 @@
             LeseTanken(myQueryJahre)
 
             'testen ob datagridview zeilen hat
-            If formMain.datagridviewTanken.Rows.Count > 0 Then
+            If formMain.DatagridviewTanken.Rows.Count > 0 Then
 
                 'DGV Tanken Anzeige anpssen
                 setupDGVTankenDisplay()
@@ -109,19 +109,19 @@
                     'ansonsten Textboxen für Jahresdaten leeren
 
                     'preis pro jahr löschen
-                    formMain.textboxBenzinkostenJahr.Text = ""
+                    formMain.TextboxBenzinkostenJahr.Text = ""
 
                     'reparaturkosten pro jahr löschen
-                    formMain.textboxReparaturkostenJahr.Text = ""
+                    formMain.TextboxReparaturkostenJahr.Text = ""
 
                     'gesamtkosten pro jahr löschen
-                    formMain.textboxGesamtkostenJahr.Text = ""
+                    formMain.TextboxGesamtkostenJahr.Text = ""
 
                     'km gefahren löschen
-                    formMain.textboxKmGefahrenJahr.Text = ""
+                    formMain.TextboxKmGefahrenJahr.Text = ""
 
                     'gesamtverbrauch pro jahr löschen
-                    formMain.textboxVerbrauchJahr.Text = ""
+                    formMain.TextboxVerbrauchJahr.Text = ""
 
                 End If
 
@@ -129,7 +129,7 @@
                 LeseReparaturen(myQueryReparaturen)
 
                 'testen ob datagridview zeilen hat
-                If formMain.datagridviewReparaturen.Rows.Count > 0 Then
+                If formMain.DatagridviewReparaturen.Rows.Count > 0 Then
 
                     'DataGridView Reparaturen füllen
                     setupDGVReparaturenDisplay()
@@ -169,24 +169,24 @@
     Public Function setupDGVTankenDisplay()
 
         'erstes datum erfassen
-        Dim myTankenDate = formMain.datagridviewTanken.Rows(0).Cells(1).Value
+        Dim myTankenDate = formMain.DatagridviewTanken.Rows(0).Cells(1).Value
 
         'alle zeilen durchlaufen
-        For i = 1 To formMain.datagridviewTanken.Rows.Count - 1
+        For i = 1 To formMain.DatagridviewTanken.Rows.Count - 1
 
             'wenn einstellung für mehrfache gleiche Datumsangaben ausblenden auf 1 steht
             If tankmanagerSettings.tankenHideDoubleDateEntries = True Then
 
                 'wenn datum in zeile gleich datum der vorherigen zeile
-                If formMain.datagridviewTanken.Rows(i).Cells(1).Value = myTankenDate Then
+                If formMain.DatagridviewTanken.Rows(i).Cells(1).Value = myTankenDate Then
 
                     'dann datum leer lassen
-                    formMain.datagridviewTanken.Rows(i).Cells(1).Value = ""
+                    formMain.DatagridviewTanken.Rows(i).Cells(1).Value = ""
 
                 Else
 
                     'ansonsten neues datum erfassen
-                    myTankenDate = formMain.datagridviewTanken.Rows(i).Cells(1).Value
+                    myTankenDate = formMain.DatagridviewTanken.Rows(i).Cells(1).Value
 
                 End If
 
@@ -199,28 +199,28 @@
     Public Function setupDGVReparaturenDisplay()
 
         'erstes datum und ersten preis erfassen
-        Dim myReparaturDate = formMain.datagridviewReparaturen.Rows(0).Cells(1).Value
-        Dim myReparaturPrice = formMain.datagridviewReparaturen.Rows(0).Cells(2).Value
+        Dim myReparaturDate = formMain.DatagridviewReparaturen.Rows(0).Cells(1).Value
+        Dim myReparaturPrice = formMain.DatagridviewReparaturen.Rows(0).Cells(2).Value
 
         'wenn einstellung für mehrfache gleiche Datumsangaben oder mehrfache gleiche Zeitangaben ausblenden auf 1 steht
         If tankmanagerSettings.reparaturHideDoubleDateEntries = True Or tankmanagerSettings.reparaturHideDoublePriceEntries = True Then
 
             'alle zeilen durchlaufen
-            For i = 1 To formMain.datagridviewReparaturen.Rows.Count - 1
+            For i = 1 To formMain.DatagridviewReparaturen.Rows.Count - 1
 
                 'wenn einstellung für mehrfache doppelte Datumsangaben ausblenden auf 1 steht
                 If tankmanagerSettings.reparaturHideDoubleDateEntries = True Then
 
                     'wenn datum in zeile gleich datum der vorherigen zeile
-                    If formMain.datagridviewReparaturen.Rows(i).Cells(1).Value = myReparaturDate Then
+                    If formMain.DatagridviewReparaturen.Rows(i).Cells(1).Value = myReparaturDate Then
 
                         'dann datum leer lassen
-                        formMain.datagridviewReparaturen.Rows(i).Cells(1).Value = ""
+                        formMain.DatagridviewReparaturen.Rows(i).Cells(1).Value = ""
 
                     Else
 
                         'ansonsten neues datum erfassen
-                        myReparaturDate = formMain.datagridviewReparaturen.Rows(i).Cells(1).Value
+                        myReparaturDate = formMain.DatagridviewReparaturen.Rows(i).Cells(1).Value
 
                     End If
 
@@ -230,17 +230,17 @@
                 If tankmanagerSettings.reparaturHideDoublePriceEntries = True Then
 
                     'wenn preis in zeile gleich preis der vorherigen zeile
-                    If formMain.datagridviewReparaturen.Rows(i).Cells(2).Value IsNot DBNull.Value Then
+                    If formMain.DatagridviewReparaturen.Rows(i).Cells(2).Value IsNot DBNull.Value Then
 
-                        If formMain.datagridviewReparaturen.Rows(i).Cells(2).Value = myReparaturPrice Then
+                        If formMain.DatagridviewReparaturen.Rows(i).Cells(2).Value = myReparaturPrice Then
 
                             'dann preis leer lassen
-                            formMain.datagridviewReparaturen.Rows(i).Cells(2).Value = DBNull.Value
+                            formMain.DatagridviewReparaturen.Rows(i).Cells(2).Value = DBNull.Value
 
                         Else
 
                             'ansonsten neuen preis erfassen
-                            myReparaturPrice = formMain.datagridviewReparaturen.Rows(i).Cells(2).Value
+                            myReparaturPrice = formMain.DatagridviewReparaturen.Rows(i).Cells(2).Value
 
                         End If
                     End If

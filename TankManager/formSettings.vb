@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class formSettings
+Public Class FormSettings
 
     Private Sub formSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -162,7 +162,7 @@ Public Class formSettings
             refreshFormMain()
 
             'formMain auf aktuelle Jahresansicht setzen
-            formMain.comboboxJahrAuswahl.SelectedItem = comboboxSettingsJahresauswahl.SelectedItem.ToString()
+            formMain.ComboboxJahrAuswahl.SelectedItem = comboboxSettingsJahresauswahl.SelectedItem.ToString()
 
         End If
 

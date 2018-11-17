@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class formInfo
+Partial Class FormInfo
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -22,150 +22,150 @@ Partial Class formInfo
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formInfo))
-        Me.buttonInfoSchliessen = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.textboxInfoServeradresse = New System.Windows.Forms.TextBox()
-        Me.textboxInfoServerport = New System.Windows.Forms.TextBox()
-        Me.textboxInfoAngemeldetAls = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.labelApplicationName = New System.Windows.Forms.Label()
-        Me.labelApplicationVersion = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormInfo))
+        Me.ButtonInfoClose = New System.Windows.Forms.Button()
+        Me.LabelServerAddress = New System.Windows.Forms.Label()
+        Me.LabelServerPort = New System.Windows.Forms.Label()
+        Me.TextboxInfoServeradresse = New System.Windows.Forms.TextBox()
+        Me.TextboxInfoServerport = New System.Windows.Forms.TextBox()
+        Me.TextboxInfoLoggedInAs = New System.Windows.Forms.TextBox()
+        Me.LabelLoggedInAs = New System.Windows.Forms.Label()
+        Me.PictureBoxInfo = New System.Windows.Forms.PictureBox()
+        Me.LabelApplicationName = New System.Windows.Forms.Label()
+        Me.LabelApplicationVersion = New System.Windows.Forms.Label()
+        CType(Me.PictureBoxInfo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'buttonInfoSchliessen
+        'ButtonInfoClose
         '
-        Me.buttonInfoSchliessen.Location = New System.Drawing.Point(120, 325)
-        Me.buttonInfoSchliessen.Name = "buttonInfoSchliessen"
-        Me.buttonInfoSchliessen.Size = New System.Drawing.Size(150, 25)
-        Me.buttonInfoSchliessen.TabIndex = 0
-        Me.buttonInfoSchliessen.Text = "Schließen"
-        Me.buttonInfoSchliessen.UseVisualStyleBackColor = True
+        Me.ButtonInfoClose.Location = New System.Drawing.Point(120, 325)
+        Me.ButtonInfoClose.Name = "ButtonInfoClose"
+        Me.ButtonInfoClose.Size = New System.Drawing.Size(150, 25)
+        Me.ButtonInfoClose.TabIndex = 0
+        Me.ButtonInfoClose.Text = "Close"
+        Me.ButtonInfoClose.UseVisualStyleBackColor = True
         '
-        'Label1
+        'LabelServerAddress
         '
-        Me.Label1.Location = New System.Drawing.Point(48, 96)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(290, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Serveradresse"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LabelServerAddress.Location = New System.Drawing.Point(48, 96)
+        Me.LabelServerAddress.Name = "LabelServerAddress"
+        Me.LabelServerAddress.Size = New System.Drawing.Size(290, 13)
+        Me.LabelServerAddress.TabIndex = 1
+        Me.LabelServerAddress.Text = "serveradress:"
+        Me.LabelServerAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label2
+        'LabelServerPort
         '
-        Me.Label2.Location = New System.Drawing.Point(48, 144)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(290, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Serverport"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LabelServerPort.Location = New System.Drawing.Point(48, 144)
+        Me.LabelServerPort.Name = "LabelServerPort"
+        Me.LabelServerPort.Size = New System.Drawing.Size(290, 13)
+        Me.LabelServerPort.TabIndex = 2
+        Me.LabelServerPort.Text = "serverport:"
+        Me.LabelServerPort.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'textboxInfoServeradresse
+        'TextboxInfoServeradresse
         '
-        Me.textboxInfoServeradresse.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.textboxInfoServeradresse.Location = New System.Drawing.Point(48, 120)
-        Me.textboxInfoServeradresse.Name = "textboxInfoServeradresse"
-        Me.textboxInfoServeradresse.ReadOnly = True
-        Me.textboxInfoServeradresse.Size = New System.Drawing.Size(290, 13)
-        Me.textboxInfoServeradresse.TabIndex = 3
-        Me.textboxInfoServeradresse.Text = "{{Server Address}}"
-        Me.textboxInfoServeradresse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextboxInfoServeradresse.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextboxInfoServeradresse.Location = New System.Drawing.Point(48, 120)
+        Me.TextboxInfoServeradresse.Name = "TextboxInfoServeradresse"
+        Me.TextboxInfoServeradresse.ReadOnly = True
+        Me.TextboxInfoServeradresse.Size = New System.Drawing.Size(290, 13)
+        Me.TextboxInfoServeradresse.TabIndex = 3
+        Me.TextboxInfoServeradresse.Text = "{{Server Address}}"
+        Me.TextboxInfoServeradresse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'textboxInfoServerport
+        'TextboxInfoServerport
         '
-        Me.textboxInfoServerport.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.textboxInfoServerport.Location = New System.Drawing.Point(48, 168)
-        Me.textboxInfoServerport.Name = "textboxInfoServerport"
-        Me.textboxInfoServerport.ReadOnly = True
-        Me.textboxInfoServerport.Size = New System.Drawing.Size(290, 13)
-        Me.textboxInfoServerport.TabIndex = 4
-        Me.textboxInfoServerport.Text = "{{Server Port}}"
-        Me.textboxInfoServerport.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextboxInfoServerport.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextboxInfoServerport.Location = New System.Drawing.Point(48, 168)
+        Me.TextboxInfoServerport.Name = "TextboxInfoServerport"
+        Me.TextboxInfoServerport.ReadOnly = True
+        Me.TextboxInfoServerport.Size = New System.Drawing.Size(290, 13)
+        Me.TextboxInfoServerport.TabIndex = 4
+        Me.TextboxInfoServerport.Text = "{{Server Port}}"
+        Me.TextboxInfoServerport.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'textboxInfoAngemeldetAls
+        'TextboxInfoLoggedInAs
         '
-        Me.textboxInfoAngemeldetAls.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.textboxInfoAngemeldetAls.Location = New System.Drawing.Point(48, 216)
-        Me.textboxInfoAngemeldetAls.Name = "textboxInfoAngemeldetAls"
-        Me.textboxInfoAngemeldetAls.ReadOnly = True
-        Me.textboxInfoAngemeldetAls.Size = New System.Drawing.Size(290, 13)
-        Me.textboxInfoAngemeldetAls.TabIndex = 6
-        Me.textboxInfoAngemeldetAls.Text = "{{User Name}}"
-        Me.textboxInfoAngemeldetAls.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextboxInfoLoggedInAs.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextboxInfoLoggedInAs.Location = New System.Drawing.Point(48, 216)
+        Me.TextboxInfoLoggedInAs.Name = "TextboxInfoLoggedInAs"
+        Me.TextboxInfoLoggedInAs.ReadOnly = True
+        Me.TextboxInfoLoggedInAs.Size = New System.Drawing.Size(290, 13)
+        Me.TextboxInfoLoggedInAs.TabIndex = 6
+        Me.TextboxInfoLoggedInAs.Text = "{{User Name}}"
+        Me.TextboxInfoLoggedInAs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label3
+        'LabelLoggedInAs
         '
-        Me.Label3.Location = New System.Drawing.Point(48, 192)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(290, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "angemeldet als"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LabelLoggedInAs.Location = New System.Drawing.Point(48, 192)
+        Me.LabelLoggedInAs.Name = "LabelLoggedInAs"
+        Me.LabelLoggedInAs.Size = New System.Drawing.Size(290, 13)
+        Me.LabelLoggedInAs.TabIndex = 5
+        Me.LabelLoggedInAs.Text = "logged in as:"
+        Me.LabelLoggedInAs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox1
+        'PictureBoxInfo
         '
-        Me.PictureBox1.Image = Global.TankManager.My.Resources.Resources.if_gas_64313
-        Me.PictureBox1.Location = New System.Drawing.Point(13, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
+        Me.PictureBoxInfo.Image = Global.TankManager.My.Resources.Resources.if_gas_64313
+        Me.PictureBoxInfo.Location = New System.Drawing.Point(13, 12)
+        Me.PictureBoxInfo.Name = "PictureBoxInfo"
+        Me.PictureBoxInfo.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBoxInfo.TabIndex = 7
+        Me.PictureBoxInfo.TabStop = False
         '
-        'labelApplicationName
+        'LabelApplicationName
         '
-        Me.labelApplicationName.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelApplicationName.Location = New System.Drawing.Point(60, 10)
-        Me.labelApplicationName.Name = "labelApplicationName"
-        Me.labelApplicationName.Size = New System.Drawing.Size(264, 32)
-        Me.labelApplicationName.TabIndex = 8
-        Me.labelApplicationName.Text = "{{Application Name}}"
-        Me.labelApplicationName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LabelApplicationName.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelApplicationName.Location = New System.Drawing.Point(60, 10)
+        Me.LabelApplicationName.Name = "LabelApplicationName"
+        Me.LabelApplicationName.Size = New System.Drawing.Size(264, 32)
+        Me.LabelApplicationName.TabIndex = 8
+        Me.LabelApplicationName.Text = "{{Application Name}}"
+        Me.LabelApplicationName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'labelApplicationVersion
+        'LabelApplicationVersion
         '
-        Me.labelApplicationVersion.Location = New System.Drawing.Point(48, 48)
-        Me.labelApplicationVersion.Name = "labelApplicationVersion"
-        Me.labelApplicationVersion.Size = New System.Drawing.Size(290, 13)
-        Me.labelApplicationVersion.TabIndex = 9
-        Me.labelApplicationVersion.Text = "{{Application Version}}"
-        Me.labelApplicationVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LabelApplicationVersion.Location = New System.Drawing.Point(48, 48)
+        Me.LabelApplicationVersion.Name = "LabelApplicationVersion"
+        Me.LabelApplicationVersion.Size = New System.Drawing.Size(290, 13)
+        Me.LabelApplicationVersion.TabIndex = 9
+        Me.LabelApplicationVersion.Text = "{{Application Version}}"
+        Me.LabelApplicationVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'formInfo
+        'FormInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(384, 361)
-        Me.Controls.Add(Me.labelApplicationVersion)
-        Me.Controls.Add(Me.labelApplicationName)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.textboxInfoAngemeldetAls)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.textboxInfoServerport)
-        Me.Controls.Add(Me.textboxInfoServeradresse)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.buttonInfoSchliessen)
+        Me.Controls.Add(Me.LabelApplicationVersion)
+        Me.Controls.Add(Me.LabelApplicationName)
+        Me.Controls.Add(Me.PictureBoxInfo)
+        Me.Controls.Add(Me.TextboxInfoLoggedInAs)
+        Me.Controls.Add(Me.LabelLoggedInAs)
+        Me.Controls.Add(Me.TextboxInfoServerport)
+        Me.Controls.Add(Me.TextboxInfoServeradresse)
+        Me.Controls.Add(Me.LabelServerPort)
+        Me.Controls.Add(Me.LabelServerAddress)
+        Me.Controls.Add(Me.ButtonInfoClose)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "formInfo"
+        Me.Name = "FormInfo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Info"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxInfo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents buttonInfoSchliessen As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents textboxInfoServeradresse As TextBox
-    Friend WithEvents textboxInfoServerport As TextBox
-    Friend WithEvents textboxInfoAngemeldetAls As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents labelApplicationName As Label
-    Friend WithEvents labelApplicationVersion As Label
+    Friend WithEvents ButtonInfoClose As Button
+    Friend WithEvents LabelServerAddress As Label
+    Friend WithEvents LabelServerPort As Label
+    Friend WithEvents TextboxInfoServeradresse As TextBox
+    Friend WithEvents TextboxInfoServerport As TextBox
+    Friend WithEvents TextboxInfoLoggedInAs As TextBox
+    Friend WithEvents LabelLoggedInAs As Label
+    Friend WithEvents PictureBoxInfo As PictureBox
+    Friend WithEvents LabelApplicationName As Label
+    Friend WithEvents LabelApplicationVersion As Label
 End Class

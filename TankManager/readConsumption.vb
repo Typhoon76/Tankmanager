@@ -23,7 +23,7 @@ Module readConsumption
         Else
 
             'sonst abfrage ergebnis in textbox schreiben
-            formMain.textboxGesamterVerbrauch.Text = CType(myResultVerbrauchGesamt, Single).ToString("F" & tankmanagerSettings.format_quantity)
+            formMain.TextboxGesamterVerbrauch.Text = CType(myResultVerbrauchGesamt, Single).ToString("F" & tankmanagerSettings.format_quantity)
 
         End If
 
@@ -52,7 +52,7 @@ Module readConsumption
         Else
 
             'sonst abfrage ergebnis in textbox schreiben
-            formMain.textboxVerbrauchJahr.Text = CType(myResultVerbrauchJahr, Single).ToString("F" & tankmanagerSettings.format_quantity)
+            formMain.TextboxVerbrauchJahr.Text = CType(myResultVerbrauchJahr, Single).ToString("F" & tankmanagerSettings.format_quantity)
 
         End If
 

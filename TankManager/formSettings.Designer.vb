@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class formSettings
+Partial Class FormSettings
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -22,7 +22,7 @@ Partial Class formSettings
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formSettings))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormSettings))
         Me.buttonSettingsAbbrechen = New System.Windows.Forms.Button()
         Me.buttonSettingsEinstellungenStandard = New System.Windows.Forms.Button()
         Me.buttonSettingsSpeichernUndSchliessen = New System.Windows.Forms.Button()
@@ -544,7 +544,7 @@ Partial Class formSettings
         Me.tabControlAccount.Text = "Zugangsdaten"
         Me.tabControlAccount.UseVisualStyleBackColor = True
         '
-        'formSettings
+        'FormSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -554,7 +554,7 @@ Partial Class formSettings
         Me.Controls.Add(Me.buttonSettingsEinstellungenStandard)
         Me.Controls.Add(Me.buttonSettingsSpeichernUndSchliessen)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "formSettings"
+        Me.Name = "FormSettings"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Einstellungen"
         Me.groupBoxSettingsVerbindungVerbindenAls.ResumeLayout(False)
