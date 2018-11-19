@@ -47,48 +47,48 @@ Partial Class FormMain
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
-        Me.groupboxGesamtkostenBenzin = New System.Windows.Forms.GroupBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxFuelCostsAll = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelFuelCostsAll = New System.Windows.Forms.Label()
         Me.TextboxGesamtkostenBenzin = New System.Windows.Forms.TextBox()
-        Me.groupboxGesamtkostenReparatur = New System.Windows.Forms.GroupBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxRepairCostsAll = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelRepairCostsAll = New System.Windows.Forms.Label()
         Me.TextboxGesamtkostenReparatur = New System.Windows.Forms.TextBox()
-        Me.groupboxGesamtkilometerGefahren = New System.Windows.Forms.GroupBox()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxDrivenAll = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelDrivenAll = New System.Windows.Forms.Label()
         Me.TextboxGesamtkilometerGefahren = New System.Windows.Forms.TextBox()
-        Me.groupboxGesamtkostenBezahlt = New System.Windows.Forms.GroupBox()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxCostsAll = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelCostsAll = New System.Windows.Forms.Label()
         Me.TextboxGesamtkostenBezahlt = New System.Windows.Forms.TextBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxAverageConsumptionAll = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelAverageConsumptionAll = New System.Windows.Forms.Label()
         Me.TextboxGesamterVerbrauch = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
-        Me.groupboxBenzinkostenJahr = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxFuelCostsYear = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelFuelCostsYear = New System.Windows.Forms.Label()
         Me.TextboxBenzinkostenJahr = New System.Windows.Forms.TextBox()
-        Me.groupboxReparaturkostenJahr = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxRepairCostsYear = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelRepairCostsYear = New System.Windows.Forms.Label()
         Me.TextboxReparaturkostenJahr = New System.Windows.Forms.TextBox()
-        Me.groupboxKmGefahrenJahr = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxDrivenYear = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelDrivenYear = New System.Windows.Forms.Label()
         Me.TextboxKmGefahrenJahr = New System.Windows.Forms.TextBox()
-        Me.groupboxGesamtkostenJahr = New System.Windows.Forms.GroupBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxCostsYear = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelCostsYear = New System.Windows.Forms.Label()
         Me.TextboxGesamtkostenJahr = New System.Windows.Forms.TextBox()
-        Me.groupboxAutoDaten = New System.Windows.Forms.GroupBox()
+        Me.FormMainGroupboxCarData = New System.Windows.Forms.GroupBox()
         Me.textboxAutoAlter = New System.Windows.Forms.TextBox()
         Me.textboxAutoBaujahr = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.FormMainLabelCarAge = New System.Windows.Forms.Label()
+        Me.FormMainLabelCarYearOfConstruction = New System.Windows.Forms.Label()
+        Me.FormMainGroupboxAverageConsumptionYear = New System.Windows.Forms.GroupBox()
+        Me.FormMainLabelAverageConsumptionYear = New System.Windows.Forms.Label()
         Me.TextboxVerbrauchJahr = New System.Windows.Forms.TextBox()
         Me.SwitchReparaturen = New System.Windows.Forms.Button()
-        Me.groupboxJahrAuswahl = New System.Windows.Forms.GroupBox()
+        Me.FormMainGroupboxSelectYear = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.ComboboxJahrAuswahl = New System.Windows.Forms.ComboBox()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.FormMainLabelNumberOfDataRecords = New System.Windows.Forms.Label()
         Me.TextboxJahrDatensaetze = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
         Me.DatagridviewTanken = New System.Windows.Forms.DataGridView()
@@ -102,19 +102,19 @@ Partial Class FormMain
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
-        Me.groupboxGesamtkostenBenzin.SuspendLayout()
-        Me.groupboxGesamtkostenReparatur.SuspendLayout()
-        Me.groupboxGesamtkilometerGefahren.SuspendLayout()
-        Me.groupboxGesamtkostenBezahlt.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
+        Me.FormMainGroupboxFuelCostsAll.SuspendLayout()
+        Me.FormMainGroupboxRepairCostsAll.SuspendLayout()
+        Me.FormMainGroupboxDrivenAll.SuspendLayout()
+        Me.FormMainGroupboxCostsAll.SuspendLayout()
+        Me.FormMainGroupboxAverageConsumptionAll.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
-        Me.groupboxBenzinkostenJahr.SuspendLayout()
-        Me.groupboxReparaturkostenJahr.SuspendLayout()
-        Me.groupboxKmGefahrenJahr.SuspendLayout()
-        Me.groupboxGesamtkostenJahr.SuspendLayout()
-        Me.groupboxAutoDaten.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.groupboxJahrAuswahl.SuspendLayout()
+        Me.FormMainGroupboxFuelCostsYear.SuspendLayout()
+        Me.FormMainGroupboxRepairCostsYear.SuspendLayout()
+        Me.FormMainGroupboxDrivenYear.SuspendLayout()
+        Me.FormMainGroupboxCostsYear.SuspendLayout()
+        Me.FormMainGroupboxCarData.SuspendLayout()
+        Me.FormMainGroupboxAverageConsumptionYear.SuspendLayout()
+        Me.FormMainGroupboxSelectYear.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
@@ -267,7 +267,7 @@ Partial Class FormMain
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 0, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.groupboxJahrAuswahl, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.FormMainGroupboxSelectYear, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(807, 3)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
@@ -297,11 +297,11 @@ Partial Class FormMain
         '
         Me.TableLayoutPanel5.ColumnCount = 1
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel5.Controls.Add(Me.groupboxGesamtkostenBenzin, 0, 0)
-        Me.TableLayoutPanel5.Controls.Add(Me.groupboxGesamtkostenReparatur, 0, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.groupboxGesamtkilometerGefahren, 0, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.groupboxGesamtkostenBezahlt, 0, 2)
-        Me.TableLayoutPanel5.Controls.Add(Me.GroupBox2, 0, 4)
+        Me.TableLayoutPanel5.Controls.Add(Me.FormMainGroupboxFuelCostsAll, 0, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.FormMainGroupboxRepairCostsAll, 0, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.FormMainGroupboxDrivenAll, 0, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.FormMainGroupboxCostsAll, 0, 2)
+        Me.TableLayoutPanel5.Controls.Add(Me.FormMainGroupboxAverageConsumptionAll, 0, 4)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(225, 3)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
@@ -315,26 +315,26 @@ Partial Class FormMain
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(216, 531)
         Me.TableLayoutPanel5.TabIndex = 1
         '
-        'groupboxGesamtkostenBenzin
+        'FormMainGroupboxFuelCostsAll
         '
-        Me.groupboxGesamtkostenBenzin.Controls.Add(Me.Label6)
-        Me.groupboxGesamtkostenBenzin.Controls.Add(Me.TextboxGesamtkostenBenzin)
-        Me.groupboxGesamtkostenBenzin.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxGesamtkostenBenzin.Location = New System.Drawing.Point(3, 3)
-        Me.groupboxGesamtkostenBenzin.Name = "groupboxGesamtkostenBenzin"
-        Me.groupboxGesamtkostenBenzin.Size = New System.Drawing.Size(210, 54)
-        Me.groupboxGesamtkostenBenzin.TabIndex = 0
-        Me.groupboxGesamtkostenBenzin.TabStop = False
-        Me.groupboxGesamtkostenBenzin.Text = "Gesamtkosten Benzin"
+        Me.FormMainGroupboxFuelCostsAll.Controls.Add(Me.FormMainLabelFuelCostsAll)
+        Me.FormMainGroupboxFuelCostsAll.Controls.Add(Me.TextboxGesamtkostenBenzin)
+        Me.FormMainGroupboxFuelCostsAll.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxFuelCostsAll.Location = New System.Drawing.Point(3, 3)
+        Me.FormMainGroupboxFuelCostsAll.Name = "FormMainGroupboxFuelCostsAll"
+        Me.FormMainGroupboxFuelCostsAll.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxFuelCostsAll.TabIndex = 0
+        Me.FormMainGroupboxFuelCostsAll.TabStop = False
+        Me.FormMainGroupboxFuelCostsAll.Text = "Fuel Costs / All"
         '
-        'Label6
+        'FormMainLabelFuelCostsAll
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(115, 24)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(30, 13)
-        Me.Label6.TabIndex = 1
-        Me.Label6.Text = "EUR"
+        Me.FormMainLabelFuelCostsAll.AutoSize = True
+        Me.FormMainLabelFuelCostsAll.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelFuelCostsAll.Name = "FormMainLabelFuelCostsAll"
+        Me.FormMainLabelFuelCostsAll.Size = New System.Drawing.Size(30, 13)
+        Me.FormMainLabelFuelCostsAll.TabIndex = 1
+        Me.FormMainLabelFuelCostsAll.Text = "EUR"
         '
         'TextboxGesamtkostenBenzin
         '
@@ -344,26 +344,26 @@ Partial Class FormMain
         Me.TextboxGesamtkostenBenzin.TabIndex = 0
         Me.TextboxGesamtkostenBenzin.TabStop = False
         '
-        'groupboxGesamtkostenReparatur
+        'FormMainGroupboxRepairCostsAll
         '
-        Me.groupboxGesamtkostenReparatur.Controls.Add(Me.Label7)
-        Me.groupboxGesamtkostenReparatur.Controls.Add(Me.TextboxGesamtkostenReparatur)
-        Me.groupboxGesamtkostenReparatur.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxGesamtkostenReparatur.Location = New System.Drawing.Point(3, 63)
-        Me.groupboxGesamtkostenReparatur.Name = "groupboxGesamtkostenReparatur"
-        Me.groupboxGesamtkostenReparatur.Size = New System.Drawing.Size(210, 54)
-        Me.groupboxGesamtkostenReparatur.TabIndex = 1
-        Me.groupboxGesamtkostenReparatur.TabStop = False
-        Me.groupboxGesamtkostenReparatur.Text = "Gesamtkosten Reparatur:"
+        Me.FormMainGroupboxRepairCostsAll.Controls.Add(Me.FormMainLabelRepairCostsAll)
+        Me.FormMainGroupboxRepairCostsAll.Controls.Add(Me.TextboxGesamtkostenReparatur)
+        Me.FormMainGroupboxRepairCostsAll.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxRepairCostsAll.Location = New System.Drawing.Point(3, 63)
+        Me.FormMainGroupboxRepairCostsAll.Name = "FormMainGroupboxRepairCostsAll"
+        Me.FormMainGroupboxRepairCostsAll.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxRepairCostsAll.TabIndex = 1
+        Me.FormMainGroupboxRepairCostsAll.TabStop = False
+        Me.FormMainGroupboxRepairCostsAll.Text = "Repair Costs / All"
         '
-        'Label7
+        'FormMainLabelRepairCostsAll
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(115, 24)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(30, 13)
-        Me.Label7.TabIndex = 1
-        Me.Label7.Text = "EUR"
+        Me.FormMainLabelRepairCostsAll.AutoSize = True
+        Me.FormMainLabelRepairCostsAll.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelRepairCostsAll.Name = "FormMainLabelRepairCostsAll"
+        Me.FormMainLabelRepairCostsAll.Size = New System.Drawing.Size(30, 13)
+        Me.FormMainLabelRepairCostsAll.TabIndex = 1
+        Me.FormMainLabelRepairCostsAll.Text = "EUR"
         '
         'TextboxGesamtkostenReparatur
         '
@@ -373,26 +373,26 @@ Partial Class FormMain
         Me.TextboxGesamtkostenReparatur.TabIndex = 0
         Me.TextboxGesamtkostenReparatur.TabStop = False
         '
-        'groupboxGesamtkilometerGefahren
+        'FormMainGroupboxDrivenAll
         '
-        Me.groupboxGesamtkilometerGefahren.Controls.Add(Me.Label8)
-        Me.groupboxGesamtkilometerGefahren.Controls.Add(Me.TextboxGesamtkilometerGefahren)
-        Me.groupboxGesamtkilometerGefahren.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxGesamtkilometerGefahren.Location = New System.Drawing.Point(3, 183)
-        Me.groupboxGesamtkilometerGefahren.Name = "groupboxGesamtkilometerGefahren"
-        Me.groupboxGesamtkilometerGefahren.Size = New System.Drawing.Size(210, 54)
-        Me.groupboxGesamtkilometerGefahren.TabIndex = 2
-        Me.groupboxGesamtkilometerGefahren.TabStop = False
-        Me.groupboxGesamtkilometerGefahren.Text = "Gesamtkilometer gefahren:"
+        Me.FormMainGroupboxDrivenAll.Controls.Add(Me.FormMainLabelDrivenAll)
+        Me.FormMainGroupboxDrivenAll.Controls.Add(Me.TextboxGesamtkilometerGefahren)
+        Me.FormMainGroupboxDrivenAll.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxDrivenAll.Location = New System.Drawing.Point(3, 183)
+        Me.FormMainGroupboxDrivenAll.Name = "FormMainGroupboxDrivenAll"
+        Me.FormMainGroupboxDrivenAll.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxDrivenAll.TabIndex = 2
+        Me.FormMainGroupboxDrivenAll.TabStop = False
+        Me.FormMainGroupboxDrivenAll.Text = "Driven / All"
         '
-        'Label8
+        'FormMainLabelDrivenAll
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(115, 24)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(22, 13)
-        Me.Label8.TabIndex = 1
-        Me.Label8.Text = "Km"
+        Me.FormMainLabelDrivenAll.AutoSize = True
+        Me.FormMainLabelDrivenAll.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelDrivenAll.Name = "FormMainLabelDrivenAll"
+        Me.FormMainLabelDrivenAll.Size = New System.Drawing.Size(22, 13)
+        Me.FormMainLabelDrivenAll.TabIndex = 1
+        Me.FormMainLabelDrivenAll.Text = "Km"
         '
         'TextboxGesamtkilometerGefahren
         '
@@ -402,26 +402,26 @@ Partial Class FormMain
         Me.TextboxGesamtkilometerGefahren.TabIndex = 0
         Me.TextboxGesamtkilometerGefahren.TabStop = False
         '
-        'groupboxGesamtkostenBezahlt
+        'FormMainGroupboxCostsAll
         '
-        Me.groupboxGesamtkostenBezahlt.Controls.Add(Me.Label9)
-        Me.groupboxGesamtkostenBezahlt.Controls.Add(Me.TextboxGesamtkostenBezahlt)
-        Me.groupboxGesamtkostenBezahlt.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxGesamtkostenBezahlt.Location = New System.Drawing.Point(3, 123)
-        Me.groupboxGesamtkostenBezahlt.Name = "groupboxGesamtkostenBezahlt"
-        Me.groupboxGesamtkostenBezahlt.Size = New System.Drawing.Size(210, 54)
-        Me.groupboxGesamtkostenBezahlt.TabIndex = 3
-        Me.groupboxGesamtkostenBezahlt.TabStop = False
-        Me.groupboxGesamtkostenBezahlt.Text = "Gesamtkosten bezahlt:"
+        Me.FormMainGroupboxCostsAll.Controls.Add(Me.FormMainLabelCostsAll)
+        Me.FormMainGroupboxCostsAll.Controls.Add(Me.TextboxGesamtkostenBezahlt)
+        Me.FormMainGroupboxCostsAll.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxCostsAll.Location = New System.Drawing.Point(3, 123)
+        Me.FormMainGroupboxCostsAll.Name = "FormMainGroupboxCostsAll"
+        Me.FormMainGroupboxCostsAll.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxCostsAll.TabIndex = 3
+        Me.FormMainGroupboxCostsAll.TabStop = False
+        Me.FormMainGroupboxCostsAll.Text = "Costs / All"
         '
-        'Label9
+        'FormMainLabelCostsAll
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(115, 24)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(30, 13)
-        Me.Label9.TabIndex = 1
-        Me.Label9.Text = "EUR"
+        Me.FormMainLabelCostsAll.AutoSize = True
+        Me.FormMainLabelCostsAll.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelCostsAll.Name = "FormMainLabelCostsAll"
+        Me.FormMainLabelCostsAll.Size = New System.Drawing.Size(30, 13)
+        Me.FormMainLabelCostsAll.TabIndex = 1
+        Me.FormMainLabelCostsAll.Text = "EUR"
         '
         'TextboxGesamtkostenBezahlt
         '
@@ -431,26 +431,26 @@ Partial Class FormMain
         Me.TextboxGesamtkostenBezahlt.TabIndex = 0
         Me.TextboxGesamtkostenBezahlt.TabStop = False
         '
-        'GroupBox2
+        'FormMainGroupboxAverageConsumptionAll
         '
-        Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Controls.Add(Me.TextboxGesamterVerbrauch)
-        Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox2.Location = New System.Drawing.Point(3, 243)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(210, 54)
-        Me.GroupBox2.TabIndex = 4
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "gesamter durchschnittlicher Verbrauch"
+        Me.FormMainGroupboxAverageConsumptionAll.Controls.Add(Me.FormMainLabelAverageConsumptionAll)
+        Me.FormMainGroupboxAverageConsumptionAll.Controls.Add(Me.TextboxGesamterVerbrauch)
+        Me.FormMainGroupboxAverageConsumptionAll.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxAverageConsumptionAll.Location = New System.Drawing.Point(3, 243)
+        Me.FormMainGroupboxAverageConsumptionAll.Name = "FormMainGroupboxAverageConsumptionAll"
+        Me.FormMainGroupboxAverageConsumptionAll.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxAverageConsumptionAll.TabIndex = 4
+        Me.FormMainGroupboxAverageConsumptionAll.TabStop = False
+        Me.FormMainGroupboxAverageConsumptionAll.Text = "Average Consumption / All"
         '
-        'Label13
+        'FormMainLabelAverageConsumptionAll
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(115, 24)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(68, 13)
-        Me.Label13.TabIndex = 1
-        Me.Label13.Text = "Liter/100 Km"
+        Me.FormMainLabelAverageConsumptionAll.AutoSize = True
+        Me.FormMainLabelAverageConsumptionAll.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelAverageConsumptionAll.Name = "FormMainLabelAverageConsumptionAll"
+        Me.FormMainLabelAverageConsumptionAll.Size = New System.Drawing.Size(68, 13)
+        Me.FormMainLabelAverageConsumptionAll.TabIndex = 1
+        Me.FormMainLabelAverageConsumptionAll.Text = "Liter/100 Km"
         '
         'TextboxGesamterVerbrauch
         '
@@ -464,12 +464,12 @@ Partial Class FormMain
         '
         Me.TableLayoutPanel4.ColumnCount = 1
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel4.Controls.Add(Me.groupboxBenzinkostenJahr, 0, 0)
-        Me.TableLayoutPanel4.Controls.Add(Me.groupboxReparaturkostenJahr, 0, 1)
-        Me.TableLayoutPanel4.Controls.Add(Me.groupboxKmGefahrenJahr, 0, 3)
-        Me.TableLayoutPanel4.Controls.Add(Me.groupboxGesamtkostenJahr, 0, 2)
-        Me.TableLayoutPanel4.Controls.Add(Me.groupboxAutoDaten, 0, 6)
-        Me.TableLayoutPanel4.Controls.Add(Me.GroupBox1, 0, 4)
+        Me.TableLayoutPanel4.Controls.Add(Me.FormMainGroupboxFuelCostsYear, 0, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.FormMainGroupboxRepairCostsYear, 0, 1)
+        Me.TableLayoutPanel4.Controls.Add(Me.FormMainGroupboxDrivenYear, 0, 3)
+        Me.TableLayoutPanel4.Controls.Add(Me.FormMainGroupboxCostsYear, 0, 2)
+        Me.TableLayoutPanel4.Controls.Add(Me.FormMainGroupboxCarData, 0, 6)
+        Me.TableLayoutPanel4.Controls.Add(Me.FormMainGroupboxAverageConsumptionYear, 0, 4)
         Me.TableLayoutPanel4.Controls.Add(Me.SwitchReparaturen, 0, 7)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(3, 3)
@@ -486,26 +486,26 @@ Partial Class FormMain
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(216, 531)
         Me.TableLayoutPanel4.TabIndex = 0
         '
-        'groupboxBenzinkostenJahr
+        'FormMainGroupboxFuelCostsYear
         '
-        Me.groupboxBenzinkostenJahr.Controls.Add(Me.Label2)
-        Me.groupboxBenzinkostenJahr.Controls.Add(Me.TextboxBenzinkostenJahr)
-        Me.groupboxBenzinkostenJahr.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxBenzinkostenJahr.Location = New System.Drawing.Point(3, 3)
-        Me.groupboxBenzinkostenJahr.Name = "groupboxBenzinkostenJahr"
-        Me.groupboxBenzinkostenJahr.Size = New System.Drawing.Size(210, 54)
-        Me.groupboxBenzinkostenJahr.TabIndex = 0
-        Me.groupboxBenzinkostenJahr.TabStop = False
-        Me.groupboxBenzinkostenJahr.Text = "Benzinkosten/Jahr:"
+        Me.FormMainGroupboxFuelCostsYear.Controls.Add(Me.FormMainLabelFuelCostsYear)
+        Me.FormMainGroupboxFuelCostsYear.Controls.Add(Me.TextboxBenzinkostenJahr)
+        Me.FormMainGroupboxFuelCostsYear.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxFuelCostsYear.Location = New System.Drawing.Point(3, 3)
+        Me.FormMainGroupboxFuelCostsYear.Name = "FormMainGroupboxFuelCostsYear"
+        Me.FormMainGroupboxFuelCostsYear.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxFuelCostsYear.TabIndex = 0
+        Me.FormMainGroupboxFuelCostsYear.TabStop = False
+        Me.FormMainGroupboxFuelCostsYear.Text = "Fuel Costs / Year"
         '
-        'Label2
+        'FormMainLabelFuelCostsYear
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(115, 24)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(30, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "EUR"
+        Me.FormMainLabelFuelCostsYear.AutoSize = True
+        Me.FormMainLabelFuelCostsYear.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelFuelCostsYear.Name = "FormMainLabelFuelCostsYear"
+        Me.FormMainLabelFuelCostsYear.Size = New System.Drawing.Size(30, 13)
+        Me.FormMainLabelFuelCostsYear.TabIndex = 1
+        Me.FormMainLabelFuelCostsYear.Text = "EUR"
         '
         'TextboxBenzinkostenJahr
         '
@@ -515,26 +515,26 @@ Partial Class FormMain
         Me.TextboxBenzinkostenJahr.TabIndex = 0
         Me.TextboxBenzinkostenJahr.TabStop = False
         '
-        'groupboxReparaturkostenJahr
+        'FormMainGroupboxRepairCostsYear
         '
-        Me.groupboxReparaturkostenJahr.Controls.Add(Me.Label3)
-        Me.groupboxReparaturkostenJahr.Controls.Add(Me.TextboxReparaturkostenJahr)
-        Me.groupboxReparaturkostenJahr.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxReparaturkostenJahr.Location = New System.Drawing.Point(3, 63)
-        Me.groupboxReparaturkostenJahr.Name = "groupboxReparaturkostenJahr"
-        Me.groupboxReparaturkostenJahr.Size = New System.Drawing.Size(210, 54)
-        Me.groupboxReparaturkostenJahr.TabIndex = 1
-        Me.groupboxReparaturkostenJahr.TabStop = False
-        Me.groupboxReparaturkostenJahr.Text = "Reparaturkosten/Jahr:"
+        Me.FormMainGroupboxRepairCostsYear.Controls.Add(Me.FormMainLabelRepairCostsYear)
+        Me.FormMainGroupboxRepairCostsYear.Controls.Add(Me.TextboxReparaturkostenJahr)
+        Me.FormMainGroupboxRepairCostsYear.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxRepairCostsYear.Location = New System.Drawing.Point(3, 63)
+        Me.FormMainGroupboxRepairCostsYear.Name = "FormMainGroupboxRepairCostsYear"
+        Me.FormMainGroupboxRepairCostsYear.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxRepairCostsYear.TabIndex = 1
+        Me.FormMainGroupboxRepairCostsYear.TabStop = False
+        Me.FormMainGroupboxRepairCostsYear.Text = "Repair Costs / Year"
         '
-        'Label3
+        'FormMainLabelRepairCostsYear
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(115, 24)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(30, 13)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "EUR"
+        Me.FormMainLabelRepairCostsYear.AutoSize = True
+        Me.FormMainLabelRepairCostsYear.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelRepairCostsYear.Name = "FormMainLabelRepairCostsYear"
+        Me.FormMainLabelRepairCostsYear.Size = New System.Drawing.Size(30, 13)
+        Me.FormMainLabelRepairCostsYear.TabIndex = 1
+        Me.FormMainLabelRepairCostsYear.Text = "EUR"
         '
         'TextboxReparaturkostenJahr
         '
@@ -544,26 +544,26 @@ Partial Class FormMain
         Me.TextboxReparaturkostenJahr.TabIndex = 0
         Me.TextboxReparaturkostenJahr.TabStop = False
         '
-        'groupboxKmGefahrenJahr
+        'FormMainGroupboxDrivenYear
         '
-        Me.groupboxKmGefahrenJahr.Controls.Add(Me.Label4)
-        Me.groupboxKmGefahrenJahr.Controls.Add(Me.TextboxKmGefahrenJahr)
-        Me.groupboxKmGefahrenJahr.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxKmGefahrenJahr.Location = New System.Drawing.Point(3, 183)
-        Me.groupboxKmGefahrenJahr.Name = "groupboxKmGefahrenJahr"
-        Me.groupboxKmGefahrenJahr.Size = New System.Drawing.Size(210, 54)
-        Me.groupboxKmGefahrenJahr.TabIndex = 2
-        Me.groupboxKmGefahrenJahr.TabStop = False
-        Me.groupboxKmGefahrenJahr.Text = "Km gefahren/Jahr:"
+        Me.FormMainGroupboxDrivenYear.Controls.Add(Me.FormMainLabelDrivenYear)
+        Me.FormMainGroupboxDrivenYear.Controls.Add(Me.TextboxKmGefahrenJahr)
+        Me.FormMainGroupboxDrivenYear.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxDrivenYear.Location = New System.Drawing.Point(3, 183)
+        Me.FormMainGroupboxDrivenYear.Name = "FormMainGroupboxDrivenYear"
+        Me.FormMainGroupboxDrivenYear.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxDrivenYear.TabIndex = 2
+        Me.FormMainGroupboxDrivenYear.TabStop = False
+        Me.FormMainGroupboxDrivenYear.Text = "Driven / Year"
         '
-        'Label4
+        'FormMainLabelDrivenYear
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(115, 24)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(22, 13)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Km"
+        Me.FormMainLabelDrivenYear.AutoSize = True
+        Me.FormMainLabelDrivenYear.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelDrivenYear.Name = "FormMainLabelDrivenYear"
+        Me.FormMainLabelDrivenYear.Size = New System.Drawing.Size(22, 13)
+        Me.FormMainLabelDrivenYear.TabIndex = 1
+        Me.FormMainLabelDrivenYear.Text = "Km"
         '
         'TextboxKmGefahrenJahr
         '
@@ -573,26 +573,26 @@ Partial Class FormMain
         Me.TextboxKmGefahrenJahr.TabIndex = 0
         Me.TextboxKmGefahrenJahr.TabStop = False
         '
-        'groupboxGesamtkostenJahr
+        'FormMainGroupboxCostsYear
         '
-        Me.groupboxGesamtkostenJahr.Controls.Add(Me.Label5)
-        Me.groupboxGesamtkostenJahr.Controls.Add(Me.TextboxGesamtkostenJahr)
-        Me.groupboxGesamtkostenJahr.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxGesamtkostenJahr.Location = New System.Drawing.Point(3, 123)
-        Me.groupboxGesamtkostenJahr.Name = "groupboxGesamtkostenJahr"
-        Me.groupboxGesamtkostenJahr.Size = New System.Drawing.Size(210, 54)
-        Me.groupboxGesamtkostenJahr.TabIndex = 3
-        Me.groupboxGesamtkostenJahr.TabStop = False
-        Me.groupboxGesamtkostenJahr.Text = "Gesamtkosten/Jahr:"
+        Me.FormMainGroupboxCostsYear.Controls.Add(Me.FormMainLabelCostsYear)
+        Me.FormMainGroupboxCostsYear.Controls.Add(Me.TextboxGesamtkostenJahr)
+        Me.FormMainGroupboxCostsYear.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxCostsYear.Location = New System.Drawing.Point(3, 123)
+        Me.FormMainGroupboxCostsYear.Name = "FormMainGroupboxCostsYear"
+        Me.FormMainGroupboxCostsYear.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxCostsYear.TabIndex = 3
+        Me.FormMainGroupboxCostsYear.TabStop = False
+        Me.FormMainGroupboxCostsYear.Text = "Costs / Year"
         '
-        'Label5
+        'FormMainLabelCostsYear
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(115, 24)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(30, 13)
-        Me.Label5.TabIndex = 1
-        Me.Label5.Text = "EUR"
+        Me.FormMainLabelCostsYear.AutoSize = True
+        Me.FormMainLabelCostsYear.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelCostsYear.Name = "FormMainLabelCostsYear"
+        Me.FormMainLabelCostsYear.Size = New System.Drawing.Size(30, 13)
+        Me.FormMainLabelCostsYear.TabIndex = 1
+        Me.FormMainLabelCostsYear.Text = "EUR"
         '
         'TextboxGesamtkostenJahr
         '
@@ -602,18 +602,18 @@ Partial Class FormMain
         Me.TextboxGesamtkostenJahr.TabIndex = 0
         Me.TextboxGesamtkostenJahr.TabStop = False
         '
-        'groupboxAutoDaten
+        'FormMainGroupboxCarData
         '
-        Me.groupboxAutoDaten.Controls.Add(Me.textboxAutoAlter)
-        Me.groupboxAutoDaten.Controls.Add(Me.textboxAutoBaujahr)
-        Me.groupboxAutoDaten.Controls.Add(Me.Label11)
-        Me.groupboxAutoDaten.Controls.Add(Me.Label10)
-        Me.groupboxAutoDaten.Location = New System.Drawing.Point(3, 363)
-        Me.groupboxAutoDaten.Name = "groupboxAutoDaten"
-        Me.groupboxAutoDaten.Size = New System.Drawing.Size(210, 114)
-        Me.groupboxAutoDaten.TabIndex = 4
-        Me.groupboxAutoDaten.TabStop = False
-        Me.groupboxAutoDaten.Text = "Daten des Autos:"
+        Me.FormMainGroupboxCarData.Controls.Add(Me.textboxAutoAlter)
+        Me.FormMainGroupboxCarData.Controls.Add(Me.textboxAutoBaujahr)
+        Me.FormMainGroupboxCarData.Controls.Add(Me.FormMainLabelCarAge)
+        Me.FormMainGroupboxCarData.Controls.Add(Me.FormMainLabelCarYearOfConstruction)
+        Me.FormMainGroupboxCarData.Location = New System.Drawing.Point(3, 363)
+        Me.FormMainGroupboxCarData.Name = "FormMainGroupboxCarData"
+        Me.FormMainGroupboxCarData.Size = New System.Drawing.Size(210, 114)
+        Me.FormMainGroupboxCarData.TabIndex = 4
+        Me.FormMainGroupboxCarData.TabStop = False
+        Me.FormMainGroupboxCarData.Text = "Car Data"
         '
         'textboxAutoAlter
         '
@@ -625,7 +625,7 @@ Partial Class FormMain
         Me.textboxAutoAlter.Size = New System.Drawing.Size(190, 13)
         Me.textboxAutoAlter.TabIndex = 3
         Me.textboxAutoAlter.TabStop = False
-        Me.textboxAutoAlter.Text = "<Alter>"
+        Me.textboxAutoAlter.Text = "<Age>"
         '
         'textboxAutoBaujahr
         '
@@ -637,46 +637,46 @@ Partial Class FormMain
         Me.textboxAutoBaujahr.Size = New System.Drawing.Size(190, 13)
         Me.textboxAutoBaujahr.TabIndex = 2
         Me.textboxAutoBaujahr.TabStop = False
-        Me.textboxAutoBaujahr.Text = "<Baujahr>"
+        Me.textboxAutoBaujahr.Text = "<Date of Construction>"
         '
-        'Label11
+        'FormMainLabelCarAge
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(7, 65)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(28, 13)
-        Me.Label11.TabIndex = 1
-        Me.Label11.Text = "Alter"
+        Me.FormMainLabelCarAge.AutoSize = True
+        Me.FormMainLabelCarAge.Location = New System.Drawing.Point(7, 65)
+        Me.FormMainLabelCarAge.Name = "FormMainLabelCarAge"
+        Me.FormMainLabelCarAge.Size = New System.Drawing.Size(26, 13)
+        Me.FormMainLabelCarAge.TabIndex = 1
+        Me.FormMainLabelCarAge.Text = "Age"
         '
-        'Label10
+        'FormMainLabelCarYearOfConstruction
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(7, 25)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(43, 13)
-        Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Baujahr"
+        Me.FormMainLabelCarYearOfConstruction.AutoSize = True
+        Me.FormMainLabelCarYearOfConstruction.Location = New System.Drawing.Point(7, 25)
+        Me.FormMainLabelCarYearOfConstruction.Name = "FormMainLabelCarYearOfConstruction"
+        Me.FormMainLabelCarYearOfConstruction.Size = New System.Drawing.Size(104, 13)
+        Me.FormMainLabelCarYearOfConstruction.TabIndex = 0
+        Me.FormMainLabelCarYearOfConstruction.Text = "Date of Construction"
         '
-        'GroupBox1
+        'FormMainGroupboxAverageConsumptionYear
         '
-        Me.GroupBox1.Controls.Add(Me.Label12)
-        Me.GroupBox1.Controls.Add(Me.TextboxVerbrauchJahr)
-        Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 243)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(210, 54)
-        Me.GroupBox1.TabIndex = 5
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "durchschnittlicher Verbrauch/Jahr:"
+        Me.FormMainGroupboxAverageConsumptionYear.Controls.Add(Me.FormMainLabelAverageConsumptionYear)
+        Me.FormMainGroupboxAverageConsumptionYear.Controls.Add(Me.TextboxVerbrauchJahr)
+        Me.FormMainGroupboxAverageConsumptionYear.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxAverageConsumptionYear.Location = New System.Drawing.Point(3, 243)
+        Me.FormMainGroupboxAverageConsumptionYear.Name = "FormMainGroupboxAverageConsumptionYear"
+        Me.FormMainGroupboxAverageConsumptionYear.Size = New System.Drawing.Size(210, 54)
+        Me.FormMainGroupboxAverageConsumptionYear.TabIndex = 5
+        Me.FormMainGroupboxAverageConsumptionYear.TabStop = False
+        Me.FormMainGroupboxAverageConsumptionYear.Text = "Average Consumption / Year"
         '
-        'Label12
+        'FormMainLabelAverageConsumptionYear
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(115, 24)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(68, 13)
-        Me.Label12.TabIndex = 1
-        Me.Label12.Text = "Liter/100 Km"
+        Me.FormMainLabelAverageConsumptionYear.AutoSize = True
+        Me.FormMainLabelAverageConsumptionYear.Location = New System.Drawing.Point(115, 24)
+        Me.FormMainLabelAverageConsumptionYear.Name = "FormMainLabelAverageConsumptionYear"
+        Me.FormMainLabelAverageConsumptionYear.Size = New System.Drawing.Size(68, 13)
+        Me.FormMainLabelAverageConsumptionYear.TabIndex = 1
+        Me.FormMainLabelAverageConsumptionYear.Text = "Liter/100 Km"
         '
         'TextboxVerbrauchJahr
         '
@@ -694,20 +694,20 @@ Partial Class FormMain
         Me.SwitchReparaturen.Size = New System.Drawing.Size(140, 23)
         Me.SwitchReparaturen.TabIndex = 6
         Me.SwitchReparaturen.TabStop = False
-        Me.SwitchReparaturen.Text = "Reparaturen anzeigen >>"
+        Me.SwitchReparaturen.Text = "Show Repairs >>"
         Me.SwitchReparaturen.UseVisualStyleBackColor = True
         '
-        'groupboxJahrAuswahl
+        'FormMainGroupboxSelectYear
         '
-        Me.groupboxJahrAuswahl.Controls.Add(Me.TableLayoutPanel6)
-        Me.groupboxJahrAuswahl.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxJahrAuswahl.Location = New System.Drawing.Point(6, 3)
-        Me.groupboxJahrAuswahl.Margin = New System.Windows.Forms.Padding(6, 3, 6, 3)
-        Me.groupboxJahrAuswahl.Name = "groupboxJahrAuswahl"
-        Me.groupboxJahrAuswahl.Size = New System.Drawing.Size(432, 88)
-        Me.groupboxJahrAuswahl.TabIndex = 1
-        Me.groupboxJahrAuswahl.TabStop = False
-        Me.groupboxJahrAuswahl.Text = "Jahr auswählen:"
+        Me.FormMainGroupboxSelectYear.Controls.Add(Me.TableLayoutPanel6)
+        Me.FormMainGroupboxSelectYear.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FormMainGroupboxSelectYear.Location = New System.Drawing.Point(6, 3)
+        Me.FormMainGroupboxSelectYear.Margin = New System.Windows.Forms.Padding(6, 3, 6, 3)
+        Me.FormMainGroupboxSelectYear.Name = "FormMainGroupboxSelectYear"
+        Me.FormMainGroupboxSelectYear.Size = New System.Drawing.Size(432, 88)
+        Me.FormMainGroupboxSelectYear.TabIndex = 1
+        Me.FormMainGroupboxSelectYear.TabStop = False
+        Me.FormMainGroupboxSelectYear.Text = "Select Year:"
         '
         'TableLayoutPanel6
         '
@@ -743,7 +743,7 @@ Partial Class FormMain
         Me.TableLayoutPanel7.ColumnCount = 2
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200.0!))
-        Me.TableLayoutPanel7.Controls.Add(Me.Label1, 0, 0)
+        Me.TableLayoutPanel7.Controls.Add(Me.FormMainLabelNumberOfDataRecords, 0, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.TextboxJahrDatensaetze, 1, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(0, 34)
@@ -754,16 +754,16 @@ Partial Class FormMain
         Me.TableLayoutPanel7.Size = New System.Drawing.Size(426, 35)
         Me.TableLayoutPanel7.TabIndex = 1
         '
-        'Label1
+        'FormMainLabelNumberOfDataRecords
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(124, 10)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(3, 10, 3, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(99, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Anzahl Datensätze:"
+        Me.FormMainLabelNumberOfDataRecords.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.FormMainLabelNumberOfDataRecords.AutoSize = True
+        Me.FormMainLabelNumberOfDataRecords.Location = New System.Drawing.Point(98, 10)
+        Me.FormMainLabelNumberOfDataRecords.Margin = New System.Windows.Forms.Padding(3, 10, 3, 0)
+        Me.FormMainLabelNumberOfDataRecords.Name = "FormMainLabelNumberOfDataRecords"
+        Me.FormMainLabelNumberOfDataRecords.Size = New System.Drawing.Size(125, 13)
+        Me.FormMainLabelNumberOfDataRecords.TabIndex = 0
+        Me.FormMainLabelNumberOfDataRecords.Text = "Number of Data Records"
         '
         'TextboxJahrDatensaetze
         '
@@ -865,30 +865,30 @@ Partial Class FormMain
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel5.ResumeLayout(False)
-        Me.groupboxGesamtkostenBenzin.ResumeLayout(False)
-        Me.groupboxGesamtkostenBenzin.PerformLayout()
-        Me.groupboxGesamtkostenReparatur.ResumeLayout(False)
-        Me.groupboxGesamtkostenReparatur.PerformLayout()
-        Me.groupboxGesamtkilometerGefahren.ResumeLayout(False)
-        Me.groupboxGesamtkilometerGefahren.PerformLayout()
-        Me.groupboxGesamtkostenBezahlt.ResumeLayout(False)
-        Me.groupboxGesamtkostenBezahlt.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
+        Me.FormMainGroupboxFuelCostsAll.ResumeLayout(False)
+        Me.FormMainGroupboxFuelCostsAll.PerformLayout()
+        Me.FormMainGroupboxRepairCostsAll.ResumeLayout(False)
+        Me.FormMainGroupboxRepairCostsAll.PerformLayout()
+        Me.FormMainGroupboxDrivenAll.ResumeLayout(False)
+        Me.FormMainGroupboxDrivenAll.PerformLayout()
+        Me.FormMainGroupboxCostsAll.ResumeLayout(False)
+        Me.FormMainGroupboxCostsAll.PerformLayout()
+        Me.FormMainGroupboxAverageConsumptionAll.ResumeLayout(False)
+        Me.FormMainGroupboxAverageConsumptionAll.PerformLayout()
         Me.TableLayoutPanel4.ResumeLayout(False)
-        Me.groupboxBenzinkostenJahr.ResumeLayout(False)
-        Me.groupboxBenzinkostenJahr.PerformLayout()
-        Me.groupboxReparaturkostenJahr.ResumeLayout(False)
-        Me.groupboxReparaturkostenJahr.PerformLayout()
-        Me.groupboxKmGefahrenJahr.ResumeLayout(False)
-        Me.groupboxKmGefahrenJahr.PerformLayout()
-        Me.groupboxGesamtkostenJahr.ResumeLayout(False)
-        Me.groupboxGesamtkostenJahr.PerformLayout()
-        Me.groupboxAutoDaten.ResumeLayout(False)
-        Me.groupboxAutoDaten.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.groupboxJahrAuswahl.ResumeLayout(False)
+        Me.FormMainGroupboxFuelCostsYear.ResumeLayout(False)
+        Me.FormMainGroupboxFuelCostsYear.PerformLayout()
+        Me.FormMainGroupboxRepairCostsYear.ResumeLayout(False)
+        Me.FormMainGroupboxRepairCostsYear.PerformLayout()
+        Me.FormMainGroupboxDrivenYear.ResumeLayout(False)
+        Me.FormMainGroupboxDrivenYear.PerformLayout()
+        Me.FormMainGroupboxCostsYear.ResumeLayout(False)
+        Me.FormMainGroupboxCostsYear.PerformLayout()
+        Me.FormMainGroupboxCarData.ResumeLayout(False)
+        Me.FormMainGroupboxCarData.PerformLayout()
+        Me.FormMainGroupboxAverageConsumptionYear.ResumeLayout(False)
+        Me.FormMainGroupboxAverageConsumptionYear.PerformLayout()
+        Me.FormMainGroupboxSelectYear.ResumeLayout(False)
         Me.TableLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
@@ -918,20 +918,20 @@ Partial Class FormMain
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
     Friend WithEvents DatagridviewTanken As DataGridView
-    Friend WithEvents groupboxJahrAuswahl As GroupBox
+    Friend WithEvents FormMainGroupboxSelectYear As GroupBox
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
     Friend WithEvents ComboboxJahrAuswahl As ComboBox
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
-    Friend WithEvents Label1 As Label
+    Friend WithEvents FormMainLabelNumberOfDataRecords As Label
     Friend WithEvents TextboxJahrDatensaetze As TextBox
-    Friend WithEvents groupboxGesamtkostenBenzin As GroupBox
-    Friend WithEvents groupboxGesamtkostenReparatur As GroupBox
-    Friend WithEvents groupboxGesamtkilometerGefahren As GroupBox
-    Friend WithEvents groupboxGesamtkostenBezahlt As GroupBox
-    Friend WithEvents groupboxBenzinkostenJahr As GroupBox
-    Friend WithEvents groupboxReparaturkostenJahr As GroupBox
-    Friend WithEvents groupboxKmGefahrenJahr As GroupBox
-    Friend WithEvents groupboxGesamtkostenJahr As GroupBox
+    Friend WithEvents FormMainGroupboxFuelCostsAll As GroupBox
+    Friend WithEvents FormMainGroupboxRepairCostsAll As GroupBox
+    Friend WithEvents FormMainGroupboxDrivenAll As GroupBox
+    Friend WithEvents FormMainGroupboxCostsAll As GroupBox
+    Friend WithEvents FormMainGroupboxFuelCostsYear As GroupBox
+    Friend WithEvents FormMainGroupboxRepairCostsYear As GroupBox
+    Friend WithEvents FormMainGroupboxDrivenYear As GroupBox
+    Friend WithEvents FormMainGroupboxCostsYear As GroupBox
     Friend WithEvents TextboxGesamtkostenBenzin As TextBox
     Friend WithEvents TextboxGesamtkostenReparatur As TextBox
     Friend WithEvents TextboxGesamtkilometerGefahren As TextBox
@@ -940,19 +940,19 @@ Partial Class FormMain
     Friend WithEvents TextboxReparaturkostenJahr As TextBox
     Friend WithEvents TextboxKmGefahrenJahr As TextBox
     Friend WithEvents TextboxGesamtkostenJahr As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents groupboxAutoDaten As GroupBox
+    Friend WithEvents FormMainLabelFuelCostsAll As Label
+    Friend WithEvents FormMainLabelRepairCostsAll As Label
+    Friend WithEvents FormMainLabelDrivenAll As Label
+    Friend WithEvents FormMainLabelCostsAll As Label
+    Friend WithEvents FormMainLabelFuelCostsYear As Label
+    Friend WithEvents FormMainLabelRepairCostsYear As Label
+    Friend WithEvents FormMainLabelDrivenYear As Label
+    Friend WithEvents FormMainLabelCostsYear As Label
+    Friend WithEvents FormMainGroupboxCarData As GroupBox
     Friend WithEvents textboxAutoAlter As TextBox
     Friend WithEvents textboxAutoBaujahr As TextBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents FormMainLabelCarAge As Label
+    Friend WithEvents FormMainLabelCarYearOfConstruction As Label
     Friend WithEvents FormMainMenuFilePrint As ToolStripMenuItem
     Friend WithEvents FormMainMenuEditNewRepair As ToolStripMenuItem
     Friend WithEvents FormMainMenuXtrasExportToPDF As ToolStripMenuItem
@@ -963,11 +963,11 @@ Partial Class FormMain
     Friend WithEvents PrintDialogFormMain As PrintDialog
     Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
     Friend WithEvents DatagridviewReparaturen As DataGridView
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Label13 As Label
+    Friend WithEvents FormMainGroupboxAverageConsumptionAll As GroupBox
+    Friend WithEvents FormMainLabelAverageConsumptionAll As Label
     Friend WithEvents TextboxGesamterVerbrauch As TextBox
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label12 As Label
+    Friend WithEvents FormMainGroupboxAverageConsumptionYear As GroupBox
+    Friend WithEvents FormMainLabelAverageConsumptionYear As Label
     Friend WithEvents TextboxVerbrauchJahr As TextBox
     Friend WithEvents SwitchReparaturen As Button
     Friend WithEvents PageSetupDialogFormMain As PageSetupDialog

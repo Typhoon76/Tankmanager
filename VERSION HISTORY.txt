@@ -9,6 +9,12 @@ FIX - Fehlerbeseitigungen
 
 ####################################################################################################
 
+19.11.18
+
+0.5.8.3 - CHG - alle Texte in FormEditRefuel durch lokalisierbare Zeichenfolgen ersetzt
+0.5.8.2 - CHG - allen Objekten in FormEditRefuel definierte Namen zugewiesen
+0.5.8.1 - CHG - alle restlichen Texte in FormMain durch lokalisierbare Zeichenfolgen ersetzt
+0.5.8.0 - CHG - allen Objekten in FormMain definierte Namen zugewiesen
 
 17.11.18
 

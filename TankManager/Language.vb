@@ -33,6 +33,34 @@
     Public TM_MESSAGE_TITLE_EXIT_PROGRAM = "Programm beenden"
     Public TM_MESSAGE_QUESTION_EXIT_PROGRAM = "Wollen Sie das Programm wirklich beenden?"
 
+    '### Standard ###
+
+    Public TM_STANDARD_DATE = "Datum"
+    Public TM_STANDARD_TIME = "Uhrzeit"
+    Public TM_STANDARD_FUELLED = "Getankt"
+    Public TM_STANDARD_PAID = "Bezahlt"
+    Public TM_STANDARD_SPEEDOMETER = "Tacho"
+    Public TM_STANDARD_DRIVEN = "Gefahren"
+    Public TM_STANDARD_MILAGE = "Tachostand"
+    Public TM_STANDARD_CURRENCY = "EUR"
+    Public TM_STANDARD_LITRE = "Liter"
+    Public TM_STANDARD_COSTS = "Kosten"
+    Public TM_STANDARD_CONSUMPTION = "Verbrauch"
+    Public TM_STANDARD_KILOMETER = "Kilometer"
+    Public TM_STANDARD_QUANTITY = "Menge"
+    Public TM_STANDARD_TOTAL = "Summe"
+    Public TM_STANDARD_TOTAL_SHORT = "Km"
+    Public TM_STANDARD_CONSUMPTION_100KM = "Liter/100 Km"
+    Public TM_STANDARD_PER_100KM = "pro 100 Km"
+    Public TM_STANDARD_COSTS_PER_LITER = "Preis/Liter"
+    Public TM_STANDARD_QUESTION_DELETE_ENTRY = "Eintrag löschen?"
+    Public TM_STANDARD_QUESTION_SAVE_ENTRY = "Eintrag speichern?"
+
+    Public TM_STANDARD_BUTTON_CANCEL = "Abbruch"
+    Public TM_STANDARD_BUTTON_DELETE_ENTRY = "Eintrag löschen"
+    Public TM_STANDARD_BUTTON_SAVE_AND_NEW = "Speichern && Neu"
+    Public TM_STANDARD_BUTTON_SAVE_AND_EXIT = "Speichern && Schließen"
+
     '### FormMain ###
 
     'menu
@@ -55,6 +83,25 @@
 
     Public TM_MAIN_MENU_HELP = "&Hilfe"
     Public TM_MAIN_MENU_HELP_INFO = "&Info"
+
+    'grouboxes
+    Public TM_MAIN_GROUPBOX_SELECT_YEAR = "Jahr auswählen:"
+    Public TM_MAIN_GROUPBOX_FUEL_COSTS_YEAR = "Benzinkosten/Jahr:"
+    Public TM_MAIN_GROUPBOX_FUEL_COSTS_ALL = "Gesamtkosten Benzin:"
+    Public TM_MAIN_GROUPBOX_REPAIR_COSTS_YEAR = "Reparaturkosten/Jahr:"
+    Public TM_MAIN_GROUPBOX_REPAIR_COSTS_ALL = "Gesamtkosten Reparatur:"
+    Public TM_MAIN_GROUPBOX_COSTS_YEAR = "Gesamtkosten/Jahr:"
+    Public TM_MAIN_GROUPBOX_COSTS_ALL = "Gesamtkosten alles:"
+    Public TM_MAIN_GROUPBOX_DRIVEN_YEAR = "Km gefahren/Jahr:"
+    Public TM_MAIN_GROUPBOX_DRIVEN_ALL = "Gesamtkilometer gefahren:"
+    Public TM_MAIN_GROUPBOX_AVERAGE_CONSUMPTION_YEAR = "durchschnittlicher Verbrauch/Jahr:"
+    Public TM_MAIN_GROUPBOX_AVERAGE_CONSUMPTION_ALL = "gesamter durchschnittlicher Verbrauch"
+    Public TM_MAIN_GROUPBOX_CAR_DATA = "Daten des Autos:"
+
+    'labels
+    Public TM_MAIN_LABEL_NUMBER_OF_DATARECORDS = "Anzahl Datensätze:"
+    Public TM_MAIN_LABEL_CAR_YEAR_OF_CONSTRUCTION = "Baujahr"
+    Public TM_MAIN_LABEL_CAR_AGE = "Alter"
 
     'combobox
     Public TM_MAIN_COMBOBOX_SHOW_ALL_YEARS = "Alle Jahre anzeigen"
@@ -86,6 +133,8 @@
     Public TM_MAIN_PRINT_REQUEST_TITLE = "Abfrage für Druck"
     Public TM_MAIN_PRINT_REQUEST_QUESTION = "Welche Liste soll gedruckt werden?"
 
+    '### FormNewRefuel ###
+
     '### FormNewRepair ###
 
     'listview
@@ -94,6 +143,24 @@
     Public TM_REPAIR_LV_REPAIR_NEW_POSITION_DESCRIPTION_TEXT = "Bitte den Arbeitsschritt eingeben, der in der Reparaturliste erfasst werden soll."
     Public TM_REPAIR_LV_REPAIR_CHANGE_POSITION_TITLE_TEXT = "Arbeitsschritt ändern"
     Public TM_REPAIR_LV_REPAIR_CHANGE_POSITION_DESCRIPTION_TEXT = "Bitte die neue oder geänderte Bezeichnung für den Abreitsschritt eingeben."
+
+    '### FormEditRefuel ###
+    Public TM_EDIT_REFUEL_TITLE = "Eintrag bearbeiten"
+
+    'groupboxes
+    Public TM_EDIT_REFUEL_GROUPBOX_DATE_AND_TIME = "Datum und Uhrzeit"
+
+    'texte
+    Public TM_EDIT_REFUEL_QUESTION_DELETE_ENTRY = "Wollen Sie folgenden Eintrag wirklich löschen?"
+    Public TM_EDIT_REFUEL_QUESTION_DELETE_ENTRY_SUCCESS = "Eintrag wurde erfolgreich gelöscht"
+    Public TM_EDIT_REFUEL_QUESTION_DELETE_ENTRY_ERROR = "Eintrag konnte nicht gelöscht werden"
+    Public TM_EDIT_REFUEL_ENTRY_COULD_NOT_SAVED_SELECTED_DATE_IS_IN_FUTURE = "Der Eintrag kann nicht gespeichert werden. Das gewählte Datum liegt in der Zukunft."
+    Public TM_EDIT_REFUEL_ENTRY_COULD_NOT_SAVED_FIELD_HAS_INVALID_VALUE = "Der Eintrag kann nicht gespeichert werden. Das Feld enthält einen ungültigen Wert."
+    Public TM_EDIT_REFUEL_QUESTION_SAVE_ENTRY = "Wollen Sie folgenden Eintrag wirklich speichern?"
+    Public TM_EDIT_REFUEL_QUESTION_SAVE_ENTRY_SUCCESS = "Eintrag wurde erfolgreich speichert."
+    Public TM_EDIT_REFUEL_QUESTION_SAVE_ENTRY_ERROR = "Eintrag konnte nicht speichert werden"
+
+    '### FormEditRepair ###
 
     '### FormInfo ###
     Public TM_INFO_SERVER_ADDRESS = "Serveradresse:"

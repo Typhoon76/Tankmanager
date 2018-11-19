@@ -1,8 +1,39 @@
 ﻿Public Class FormEditRefuel
 
-    Private Sub formEditRefuel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FormEditRefuel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        'andere Felder auf 0 stellentextBoxNewRefuelPreis
+        'title
+        Me.Text = TM_EDIT_REFUEL_TITLE
+
+        'grouboxen
+        FormEditRefuelGroupboxDateandTime.Text = TM_EDIT_REFUEL_GROUPBOX_DATE_AND_TIME
+        FormEditRefuelGroupboxFuelled.Text = TM_STANDARD_FUELLED
+        FormEditRefuelGroupboxSpeedometer.Text = TM_STANDARD_SPEEDOMETER
+        FormEditRefuelGroupboxCosts.Text = TM_STANDARD_COSTS
+        FormEditRefuelGroupboxConsumption.Text = TM_STANDARD_CONSUMPTION
+
+        'label
+        FormEditRefuelLabelDate.Text = TM_STANDARD_DATE
+        FormEditRefuelLabelTime.Text = TM_STANDARD_TIME
+        FormEditRefuelLabelQuantity.Text = TM_STANDARD_QUANTITY
+        FormEditRefuelLabelQuantityLitre.Text = TM_STANDARD_LITRE
+        FormEditRefuelLabelTotal.Text = TM_STANDARD_TOTAL
+        FormEditRefuelLabelTotalCurrency.Text = TM_STANDARD_CURRENCY
+        FormEditRefuelLabelCosts.Text = TM_STANDARD_COSTS_PER_LITER
+        FormEditRefuelLabelCostsCurrency.Text = TM_STANDARD_CURRENCY
+        FormEditRefuelLabelDriven.Text = TM_STANDARD_DRIVEN
+        FormEditRefuelLabelDrivenKm.Text = TM_STANDARD_TOTAL_SHORT
+        FormEditRefuelLabelMileage.Text = TM_STANDARD_MILAGE
+        FormEditRefuelLabelMileageKm.Text = TM_STANDARD_TOTAL_SHORT
+        FormEditRefuelLabelConsumption.Text = TM_STANDARD_PER_100KM
+        FormEditRefuelLabelConsumptionLitre.Text = TM_STANDARD_LITRE
+
+        'button
+        buttonEditRefuelCancel.Text = TM_STANDARD_BUTTON_CANCEL
+        buttonEditRefuelDelete.Text = TM_STANDARD_BUTTON_DELETE_ENTRY
+        buttonEditRefuelSaveAndExit.Text = TM_STANDARD_BUTTON_SAVE_AND_EXIT
+
+        'Felder auf 0 stellentextBoxNewRefuelPreis
         textBoxEditRefuelMenge.Text = 0
         textBoxEditRefuelSumme.Text = 0
         textBoxEditRefuelGefahreneStrecke.Text = 0
@@ -165,13 +196,13 @@
     Private Sub buttonEditRefuelDelete_Click(sender As Object, e As EventArgs) Handles buttonEditRefuelDelete.Click
 
         'Abfrage ob Eintrag wirklich gelöscht werden soll
-        Select Case MsgBox("Wollen Sie folgenden Eintrag wirklich löschen?" & vbNewLine & vbNewLine &
-                "Datum" & vbTab & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_date & vbNewLine &
-                "Uhrzeit" & vbTab & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_time & vbNewLine &
-                "Getankt" & vbTab & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_quantity & " Liter" & vbNewLine &
-                "Bezahlt" & vbTab & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_price & " EUR" & vbNewLine &
-                "Gefahren" & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_route & " Kilometer" & vbNewLine &
-                "Tachostand" & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_mileage & " Kilometer", vbQuestion Or vbYesNo Or vbDefaultButton2, "Eintrag löschen?")
+        Select Case MsgBox(TM_EDIT_REFUEL_QUESTION_DELETE_ENTRY & vbNewLine & vbNewLine &
+                TM_STANDARD_DATE & vbTab & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_date & vbNewLine &
+                TM_STANDARD_TIME & vbTab & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_time & vbNewLine &
+                TM_STANDARD_FUELLED & vbTab & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_quantity & " " & TM_STANDARD_LITRE & vbNewLine &
+                TM_STANDARD_PAID & vbTab & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_price & " " & TM_STANDARD_CURRENCY & vbNewLine &
+                TM_STANDARD_DRIVEN & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_route & " " & TM_STANDARD_KILOMETER & vbNewLine &
+                TM_STANDARD_MILAGE & vbTab & ">" & vbTab & tankmanagerRefuel.refuel_mileage & " " & TM_STANDARD_KILOMETER, vbQuestion Or vbYesNo Or vbDefaultButton2, TM_STANDARD_QUESTION_DELETE_ENTRY)
 
             'wenn ja
             Case vbYes
@@ -180,12 +211,12 @@
                 If LoescheTankenEintrag(MySqlDeleteTankenEintrag(tankmanagerRefuel.refuel_id)) = True Then
 
                     'wenn ohne fehler, erfolgsmeldung und fenster schließen
-                    MessageBox.Show("Eintrag wurde erfolgreich gelöscht")
+                    MessageBox.Show(TM_EDIT_REFUEL_QUESTION_DELETE_ENTRY_SUCCESS)
 
                 Else
 
                     'wenn fehler, fehler melden
-                    MessageBox.Show("Eintrag konnte nicht gelöscht werden")
+                    MessageBox.Show(TM_EDIT_REFUEL_QUESTION_DELETE_ENTRY_ERROR)
 
                 End If
 
@@ -258,25 +289,26 @@
         If myDateError = True Then
 
             'Datumsfehler anzeigen
-            MessageBox.Show("Das gewählte Datum liegt in der Zukunft. Der Eintrag kann nicht gespeichert werden")
+            MessageBox.Show(TM_EDIT_REFUEL_ENTRY_COULD_NOT_SAVED_SELECTED_DATE_IS_IN_FUTURE)
 
         ElseIf myValueError = True Then
 
             'Zahlenfehler anzeigen
-            MessageBox.Show("Das Feld enthält einen ungültigen Wert. Der Eintrag kann nicht gespeichert werden")
+            MessageBox.Show(TM_EDIT_REFUEL_ENTRY_COULD_NOT_SAVED_FIELD_HAS_INVALID_VALUE)
 
         Else
 
             'wenn kein Fehler
             'Abfrage ob Eintrag wirklich gespeichert werden soll
 
-            Select Case MsgBox("Wollen Sie folgenden Eintrag wirklich speichern?" & vbNewLine & vbNewLine &
-                    "Datum" & vbTab & vbTab & ">" & vbTab & Format(datetimepickerEditRefuelDate.Value, tankmanagerSettings.format_date) & vbNewLine &
-                    "Uhrzeit" & vbTab & vbTab & ">" & vbTab & Format(datetimepickerEditRefuelTime.Value, tankmanagerSettings.format_time) & vbNewLine &
-                    "Getankt" & vbTab & vbTab & ">" & vbTab & textBoxEditRefuelMenge.Text & " Liter" & vbNewLine &
-                    "Bezahlt" & vbTab & vbTab & ">" & vbTab & textBoxEditRefuelSumme.Text & " EUR" & vbNewLine &
-                    "Gefahren" & vbTab & ">" & vbTab & textBoxEditRefuelGefahreneStrecke.Text & " Kilometer" & vbNewLine &
-                    "Tachostand" & vbTab & ">" & vbTab & textBoxEditRefuelTachostand.Text & " Kilometer", vbQuestion Or vbYesNo Or vbDefaultButton2, "Eintrag speichern?")
+            Select Case MsgBox(TM_EDIT_REFUEL_QUESTION_SAVE_ENTRY & vbNewLine & vbNewLine &
+                    TM_STANDARD_DATE & vbTab & vbTab & ">" & vbTab & Format(datetimepickerEditRefuelDate.Value, tankmanagerSettings.format_date) & vbNewLine &
+                    TM_STANDARD_TIME & vbTab & vbTab & ">" & vbTab & Format(datetimepickerEditRefuelTime.Value, tankmanagerSettings.format_time) & vbNewLine &
+                    TM_STANDARD_FUELLED & vbTab & vbTab & ">" & vbTab & textBoxEditRefuelMenge.Text & " " & TM_STANDARD_LITRE & vbNewLine &
+                    TM_STANDARD_PAID & vbTab & vbTab & ">" & vbTab & textBoxEditRefuelSumme.Text & " " & TM_STANDARD_CURRENCY & vbNewLine &
+                    TM_STANDARD_DRIVEN & vbTab & ">" & vbTab & textBoxEditRefuelGefahreneStrecke.Text & " " & TM_STANDARD_KILOMETER & vbNewLine &
+                    TM_STANDARD_MILAGE & vbTab & ">" & vbTab & textBoxEditRefuelTachostand.Text & " " & TM_STANDARD_KILOMETER, vbQuestion Or vbYesNo Or vbDefaultButton2, TM_STANDARD_QUESTION_SAVE_ENTRY)
+
 
                 'wenn ja
                 Case vbYes
@@ -291,12 +323,12 @@
                                         tankmanagerRefuel.refuel_id) = False Then
 
                         'wenn ohne fehler, erfolgsmeldung und fenster schließen
-                        MessageBox.Show("Eintrag wurde erfolgreich speichert.")
+                        MessageBox.Show(TM_EDIT_REFUEL_QUESTION_SAVE_ENTRY_SUCCESS)
 
                     Else
 
                         'wenn fehler, fehler melden
-                        MessageBox.Show("Eintrag konnte nicht speichert werden")
+                        MessageBox.Show(TM_EDIT_REFUEL_QUESTION_SAVE_ENTRY_ERROR)
 
                     End If
 

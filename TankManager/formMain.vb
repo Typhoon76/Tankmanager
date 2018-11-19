@@ -53,20 +53,49 @@ Public Class FormMain
         FormMainMenuFilePreview.Text = TM_MAIN_MENU_FILE_PRINT_PREVIEW
         FormMainMenuFilePrint.Text = TM_MAIN_MENU_FILE_PRINT
         FormMainMenuFileExit.Text = TM_MAIN_MENU_FILE_EXIT
-
         FormMainMenuEdit.Text = TM_MAIN_MENU_EDIT
         FormMainMenuEditNewRefuel.Text = TM_MAIN_MENU_EDIT_NEW_REFUEL
         FormMainMenuEditNewRepair.Text = TM_MAIN_MENU_EDIT_NEW_REPAIR
         FormMainMenuEditSearch.Text = TM_MAIN_MENU_EDIT_SEARCH
-
         FormMainMenuXtras.Text = TM_MAIN_MENU_EXTRAS
         FormMainMenuXtrasExportToPDF.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF
         FormMainMenuXtrasExportToPDFTableRefuel.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REFUEL
         FormMainMenuXtrasExportToPDFTableRepair.Text = TM_MAIN_MENU_EXTRAS_EXPORT_TO_PDF_TABLE_REPAIR
         FormMainMenuXtrasSettings.Text = TM_MAIN_MENU_EXTRAS_SETTINGS
-
         FormMainMenuHelp.Text = TM_MAIN_MENU_HELP
         FormMainMenuHelpInfo.Text = TM_MAIN_MENU_HELP_INFO
+
+        'Groupbox Texte setzen
+        FormMainGroupboxSelectYear.Text = TM_MAIN_GROUPBOX_SELECT_YEAR
+        FormMainGroupboxFuelCostsYear.Text = TM_MAIN_GROUPBOX_FUEL_COSTS_YEAR
+        FormMainGroupboxFuelCostsAll.Text = TM_MAIN_GROUPBOX_FUEL_COSTS_ALL
+        FormMainGroupboxRepairCostsYear.Text = TM_MAIN_GROUPBOX_REPAIR_COSTS_YEAR
+        FormMainGroupboxRepairCostsAll.Text = TM_MAIN_GROUPBOX_REPAIR_COSTS_ALL
+        FormMainGroupboxCostsYear.Text = TM_MAIN_GROUPBOX_COSTS_YEAR
+        FormMainGroupboxCostsAll.Text = TM_MAIN_GROUPBOX_COSTS_ALL
+        FormMainGroupboxDrivenYear.Text = TM_MAIN_GROUPBOX_DRIVEN_YEAR
+        FormMainGroupboxDrivenAll.Text = TM_MAIN_GROUPBOX_DRIVEN_ALL
+        FormMainGroupboxAverageConsumptionYear.Text = TM_MAIN_GROUPBOX_AVERAGE_CONSUMPTION_YEAR
+        FormMainGroupboxAverageConsumptionAll.Text = TM_MAIN_GROUPBOX_AVERAGE_CONSUMPTION_ALL
+        FormMainGroupboxCarData.Text = TM_MAIN_GROUPBOX_CAR_DATA
+
+        'Label Texte setzen
+        FormMainLabelNumberOfDataRecords.Text = TM_MAIN_LABEL_NUMBER_OF_DATARECORDS
+        FormMainLabelFuelCostsYear.Text = TM_STANDARD_CURRENCY
+        FormMainLabelFuelCostsAll.Text = TM_STANDARD_CURRENCY
+        FormMainLabelRepairCostsYear.Text = TM_STANDARD_CURRENCY
+        FormMainLabelRepairCostsAll.Text = TM_STANDARD_CURRENCY
+        FormMainLabelCostsYear.Text = TM_STANDARD_CURRENCY
+        FormMainLabelCostsAll.Text = TM_STANDARD_CURRENCY
+        FormMainLabelDrivenYear.Text = TM_STANDARD_TOTAL_SHORT
+        FormMainLabelDrivenAll.Text = TM_STANDARD_TOTAL_SHORT
+        FormMainLabelAverageConsumptionYear.Text = TM_STANDARD_CONSUMPTION_100KM
+        FormMainLabelAverageConsumptionAll.Text = TM_STANDARD_CONSUMPTION_100KM
+        FormMainLabelCarYearOfConstruction.Text = TM_MAIN_LABEL_CAR_YEAR_OF_CONSTRUCTION
+        FormMainLabelCarAge.Text = TM_MAIN_LABEL_CAR_AGE
+
+        'Button Texte setzen
+        SwitchReparaturen.Text = TM_MAIN_BUTTON_SHOW_REPAIRS
 
         Try
 
@@ -313,7 +342,7 @@ Public Class FormMain
         Tim.Enabled = True
 
         'die blaue markierung des buttons entfernen durch setzen des focus auf ein anderes objekt
-        Label1.Focus()
+        FormMainLabelNumberOfDataRecords.Focus()
 
     End Sub
 

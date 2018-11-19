@@ -162,7 +162,7 @@
         LeseAlter()
 
         'die blaue markierung eines ausgewählten eintrages entfernen durch setzen des focus auf ein anderes objekt
-        formMain.Label1.Focus()
+        formMain.FormMainLabelNumberOfDataRecords.Focus()
 
     End Function
 
